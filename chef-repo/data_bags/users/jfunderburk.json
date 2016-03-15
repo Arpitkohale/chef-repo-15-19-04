@@ -1,0 +1,12 @@
+{
+  "id": "jfunderburk",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA5ENjetT52ZhTgmovZ21yDGLvYOnFKpGRlSHAx9xjOFBV41tk0dQFFNqCeBrnu8YwmHhZIOedhg7GBifCG2lZKF+CLhbQHOHQQr/rW5GtuY/3jg6XVtgTwctjOx42jp+m6gVPlfUrBb0XojaCJs3nleK3SaDdxyFRFyg2+oeUEW/2nR/iRYRVYYD265GEb9ZCNG2eVasJ7sXLwFihe44ViZ+zCThCIqyChSGx+FMduSCXYGiMt2emPosM+cuPsKYv4vx+64N7ZVeIUJDQsSbz+R0Yn1N1IwosA0rpE+byChEapHQPDLMus1GTLYPopCYFJ+U0HWlfQjyIBjouSYi6YQ== jakef@jakef-laptop"
+  ],
+  "groups": [ "jfunderburk", "users", "optdev" ],
+  "uid": 45032,
+  "gid": 45032,
+  "shell": "/bin/bash",
+  "home": "/home/jfunderburk",
+  "comment": "Jake Funderburk"
+}

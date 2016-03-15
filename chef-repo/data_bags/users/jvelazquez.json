@@ -1,0 +1,16 @@
+{
+  "id": "jvelazquez",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAqm4f5gYfi1J5fssZ4GkE6zSzFUC3H4MEuEPOc8OUcH92EXYnFqMj4mQOQWhbGaOaRI++Zpj1SnkPAPkXuQzymrKieBaq4n6LKBTKd4JUA2LxY890N1YWxA0k6n2NmEb6h8Km/AGgVNgEoSqVNFmUVWmgqulqLQTq0UyClXMXfqgyButXps0r0puTOp7AArOYYrYp3MR6MFhG0lI6vS2q4Wj+BqXtPJVcX3lIRCymuq4VyZq+iT11pwAgO+LcQJfEuPouXl6MryV3MzkQR0obbo7z4ZNc/xcxmWqKe4ckQ9YZ+KFDk7WrpDwaAAdUqEZ25lth+q15bJFXrEWU89Y+NQ=="
+  ],
+  "groups": [
+    "jvelazquez",
+    "users",
+    "mis"
+  ],
+  "uid": 45042,
+  "gid": 45042,
+  "shell": "/bin/bash",
+  "home": "/home/jvelazquez",
+  "comment": "Javier Velazquez"
+}

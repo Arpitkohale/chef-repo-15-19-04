@@ -1,0 +1,12 @@
+{
+  "id": "jbrown",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDjvfFhnZU5qvU68XLxSGmTe/tdYeK9WuIoei0p2zpXopSAdhWS2rgNCkZsT1ok9RsTpTCGlYZEhXbrri8JGlPIg3bPDGCqrk8WuHgOJd6p4x8gWmB/ApodGPNqVAejYZGOH5n9EV1YJr4rGCH3B+K9deveWvLFNuxJuyC7rpcrkW6rjfyHO686tqaf48sm1QIwFOF9GLsf4NR7zkTH/bPoaceUEg4Ts+Kl5H6mvJeFxUH95WvYuUVsiHUdR8vVWYEwBnO3nNef/2jDZBoofP2mMcOW4pgSbdkCHwtqW1owppGX+DLRW6ucGcieLBQmnx1YZYECM1UvOk+R6+pVqjjT jbrown@naboo.tidaltv.local"
+  ],
+  "groups": [ "jbrown", "users", "data", "appdev" ],
+  "uid": 45023,
+  "gid": 45023,
+  "shell": "/bin/bash",
+  "home": "/home/jbrown",
+  "comment": "Jeff Brown"
+}

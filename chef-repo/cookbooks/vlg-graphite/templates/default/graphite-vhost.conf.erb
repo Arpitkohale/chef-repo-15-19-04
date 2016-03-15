@@ -1,0 +1,36 @@
+# Disted by Chef
+NameVirtualHost *:80
+
+WSGIRestrictEmbedded On
+WSGISocketPrefix run/wsgi
+<VirtualHost *:80>
+        ServerName "<%= node['vlg-graphite']['vhost'] =%>"
+        ErrorLog <%= node['vlg-graphite']['home'] =%>/storage/log/webapp/error.log
+        CustomLog <%= node['vlg-graphite']['home'] =%>/storage/log/webapp/access.log common
+	DocumentRoot <%= node['vlg-graphite']['home'] =%>/webapp
+        WSGIDaemonProcess graphite processes=5 threads=5 display-name='%{GROUP}' inactivity-timeout=120 python-path=<%= node['vlg-graphite']['home'] =%>/lib/python2.6/site-packages
+        WSGIProcessGroup graphite
+        WSGIApplicationGroup %{GLOBAL}
+        WSGIImportScript <%= node['vlg-graphite']['home'] =%>/conf/graphite.wsgi process-group=graphite application-group=%{GLOBAL}
+        WSGIScriptAlias / <%= node['vlg-graphite']['home'] =%>/conf/graphite.wsgi
+        Alias /content/ <%= node['vlg-graphite']['home'] =%>/webapp/content/
+	Header set Access-Control-Allow-Origin "*"
+	Header set Access-Control-Allow-Methods "GET, OPTIONS"
+	Header set Access-Control-Allow-Headers "origin, authorization, accept"
+        <Location "/content/">
+                SetHandler None
+        </Location>
+        Alias /media/ "@DJANGO_ROOT@/contrib/admin/media/"
+        <Location "/media/">
+                SetHandler None
+        </Location>
+        <Directory <%= node['vlg-graphite']['home'] =%>/conf/>
+                Order deny,allow
+                Allow from all
+        </Directory>
+</VirtualHost>
+
+<VirtualHost *:80>
+        ServerName "<%= node['vlg-graphite']['grafana_vhost'] =%>"
+	DocumentRoot <%= node['vlg-graphite']['grafana_dir'] %>
+</VirtualHost>

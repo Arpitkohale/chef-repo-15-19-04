@@ -1,0 +1,12 @@
+{
+  "id": "elouie",
+  "ssh_keys": [
+    "ssh-dss AAAAB3NzaC1kc3MAAACBAO481wt/1FXiapH6cz3wHq4ThhmeqF4OVyM+Qu8cuwZ+rRs/tr22zRGxL7+SgKnMRU0tYrJzXasTbhdU7iCrJeGTAl6R2w3ghfSRGfdBosysaZhcDDaHu8Aj+0svMM1Iqjjt+XBFfijnO2PNakq/KTmHHhkqZHz/ioj2KPhSD1eNAAAAFQDkxSNHtGdhGdFveZdhujXgJb3H5wAAAIBa2g2odGXrbAlggtxFqC+gr/jkrunghYXHKgoWrNg+kQcMppCWj4Cj41tRSA9ZKb7VngDsFOYcBU9c6ZqdvTlrvzYG0TGyGI0fnuakE2lDTBc6ISP2GeqR3Rbag+xlpDx5WdLEGc6kfheGnS8fReGAg1BmOVhhSD0kqARxj72aBgAAAIEA7NONqSBtPAEoX449oNfnBuccAWOE3kkx3LRid2wE5ddHl/4IgXAPCsZRJaovp448WzYdy/IzvQqbUOrK7Yn32glIExk40rx24kqx+IC5b+hldHoa23SZAR7HT4rjHq7VkWDGrwtMoTI+tUAPmRqYmOU02z14uXy6tXdYo5Y93cE= elouie@C02P140DG3QD.local"
+  ],
+  "groups": [ "elouie", "users", "wheel", "gio", "eliza" ],
+  "uid": 45049,
+  "gid": 45049,
+  "shell": "/bin/bash",
+  "home": "/home/elouie",
+  "comment": "Elise Louie"
+}

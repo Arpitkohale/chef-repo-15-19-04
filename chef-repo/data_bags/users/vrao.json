@@ -1,0 +1,13 @@
+{
+  "id": "vrao",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDT4Pffwp7Ar4iG3AJVDxR4zEVv3JBB+614XEUFlKqtnV5lyELc85bQH2El+IofqbckOgz4sTUuO0d5t1S/ZhnE9eoV6X0w/+JsICRQqQlLgknYknY6HjHQ6SsB6ELW+Ze+pxBnP0lsJuFCXGjGbUJ6G5e1fS5DICcO/FwwARgxREoiFmK/d3TCSBCVsl+CncgTjTyqsnyMVa3cDn1TgLGwNroO5zOvHUNKHYe08Qubtd2YK391Y/2ph3wE1zssEVyS9s87mgtFUjCYtHoDz1kCqjZDjxdPL1rbAnCVordaJF2Q4ljOdCwSA5KeR7ncN25cJeo1V7yrywGB7iXMbGVN jlalwani@ladmins-MacBook-Pro.local",
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDT8q9spshg044xV7490DzYsiUtte/F4ULJ+Wi1EZKhOo05KuO9X6C/gDGaZmJfbXlG/PKZEGsXQqZVp5UIuRJDjGEepWXm9GPVM3NztQl6oWasrGM3jb2O74zq41TPm/E5FSPmie2C2sop5n0mcKN6PTsgYaZXPw1slZPS6E6N/fjKUGE19uJ30l4lf7hn8RTnC7q/4wZS8lx7agHcCylBgnt9tCTas5S8cW1L5+LfmNszSayYq2Y8QxS/8rQq2rdgSERWT+/zTjsk5JDOQEbDEgGFn93UUCrRMUxhaC8NYkNxupxRUA/1GvqRrtisMpLyf0lF0O+xjfMM8qR6YS6L jlalu@C02MP2SPFD58-0517.local"
+  ],
+  "groups": [ "vrao", "users", "eliza", "wheel" ],
+  "uid": 45027,
+  "gid": 45027,
+  "shell": "/bin/bash",
+  "home": "/home/vrao",
+  "comment": "Vivek Rao"
+}

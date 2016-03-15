@@ -1,0 +1,65 @@
+#!/bin/sh
+#
+# chkconfig: 345 99 01
+# description: Storm Supervisor
+#
+# File : Storm
+#
+# Description: Starts and stops storm services
+#
+
+source /etc/rc.d/init.d/functions
+
+STORM_HOME=<%= node['vlg-storm']['home_dir'] %>
+STORM_USER=<%= node['vlg-storm']['user'] %>
+STORM_LOGS=<%= node['vlg-storm']['log_dir'] %>
+
+function start()
+{
+  echo -n "Starting Storm Supervisor:"
+  /bin/su $STORM_USER -c "nohup $STORM_HOME/bin/storm supervisor > $STORM_LOGS/storm-supervisor-server.out 2> $STORM_LOGS/storm-supervisorserver.err &"
+  echo " done."
+}
+
+function stop()
+{
+  echo -e "Stopping Storm Supervisor"
+  pid=$(ps -ef | grep java | grep [s]torm | awk '{print $2}')
+  if [ "$pid" != "" ]
+  then
+    kill $pid
+  fi
+}
+
+case "$1" in
+start)
+    start
+    ;;
+
+stop)
+    stop
+    ;;
+
+status)
+    ps -ef | grep java | grep [s]torm > /dev/null
+    if [ $? -eq 1 ]
+    then
+      echo "Storm is not running"
+      exit 1
+    else
+      echo "Storm is running"
+      exit 0
+    fi
+    ;;
+
+restart)
+    stop
+    start
+    ;;
+
+  *)
+    echo "Usage: storm-supervisor {start|stop|status|restart}"
+    exit 1
+    ;;
+
+esac

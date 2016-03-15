@@ -1,0 +1,10 @@
+name             'vlg-lz-pe'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-lz-pe'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '1.0.20'
+depends		 'vlg-base'
+depends		 'vlg-haproxy'
+depends		 'vlg-ssl'

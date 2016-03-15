@@ -1,0 +1,12 @@
+{
+  "id": "saltukhov",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA0hIKpXYYw1E2RMlNLMH/Bx5iWSMjBDAGuJe1l6rNkOqV3muZ966g2W6uZWw0OsZBjPbkTRDuy5NJmMWob7RWnQ1+byIvQmx2JsmsU3XWzkKq7kNZ8y3wMdYZ6CUTEO57F9hswjXBQnxh+7yFwBVb7oznCya0ezJsWmaO2/cEkJcjgwlCEnQ+dFVjYUdn6iHAiULXUKlfsrS4ttdwVYo3CwyiI5IJRosIW+NemBKgIrf0mT6WbvYLyRjHt2ptSWMtC0TpsgSWh27640XvdEVPrMImQAGPfQ7dGPs475oRxpeDeZylMB/7zkjKsddRBn0tlnYhlUW/tDz8NouRBuARjQ== saltukhov.consultant@videologygroup.com"
+  ],
+  "groups": [ "saltukhov", "users" ],
+  "uid": 45014,
+  "gid": 45014,
+  "shell": "/bin/bash",
+  "home": "/home/saltukhov",
+  "comment": "Stan Altukhov"
+}

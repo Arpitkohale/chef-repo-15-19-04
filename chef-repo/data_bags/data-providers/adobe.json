@@ -1,0 +1,13 @@
+{
+  "id": "adobe",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCfWjijVEEac7u76fKSi5aR2JeQrq5NfjS3alkEngIcePzyCGf4+IlKyF098jcPtzJXR/8uvg3cVCqe4jvCDvJBfpZ9XQQyFAYzqjWVx3J+17ue7J7VPEMZVecDg3vg5rvntHbhywdprEqOyNmy8PuWXxft9ujUG1Moonyk1oz2xZTyjaG8+iGfkvhPH8/HsfSL4IW+2TvpW+B85AA/hXNMt0JEH8Z3afkACaSoJCKgRQXjSpVXof2eRUGB04GZLrjitrc9oQvJCjNWlflROs0jDhhHF9GlHJGVFir7icnjI8QawHovZq62TyX5LXE7feFOibbb/SfOk1tC9+UUdsyp adobe-videology"
+  ],
+  "groups": [ "adobe", "sftpusers" ],
+  "uid": 66016,
+  "gid": 66016,
+  "shell": "/sbin/nologin",
+  "comment": "adobe",
+  "home": "/data/provider/adobe",
+  "action"  : "create"
+}

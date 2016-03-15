@@ -1,0 +1,12 @@
+{
+  "id": "jpollara",
+  "ssh_keys": [
+    "ssh-dss AAAAB3NzaC1kc3MAAACBAKermD9x/12T24VveQcIE6p0BLsjTofmn0+OMm4kIw1RoQfaCadZ835yfDInv9f+qii8GCI5lPeDmiJAZ5UkpSXuw6CZDX/Nn4WbodEapPup54ZHJxj/elNNAxOR3nb9REvhucGGdUlbm+XJZ04gOUwgYB31s60dFnAQXSL4apj9AAAAFQCRnmvYbV0K9myFWdAw2JLVr6d4CQAAAIBlAPYGtjdOl6bCNw52+nBPbkdMZGdsVNrRdYhopV3P4OMrTVN2p9a+PtIw3/KuyIPOs6PR54phYbZV0l+NTLoxgqf2TQFC3F4gvDqDXMjCRQ4GCodJ/aQRcehnAvc77tRz9FP2MKr0926Rclx2was7uSre+yQPJN01CPwl/psL7wAAAIB2MD466451K7pHtRcin4gqJwpVFmEBvE9jT577AVZTnM4U5q7y1us3pfldKP/+x8+WMqizE/xV3NCV7a160v304+E8f0dOWl12+Y8SdX1JE1nGuU9DnBCOSisYCGmA0ACEFqbQwc87AyO7SBhEosLd9ot6Eg9/0b/OPSbQPDTMfA== jpollara@jpmbp.local"
+  ],
+  "groups": [ "jpollara", "users", "wheel", "gio" ],
+  "uid": 45000,
+  "gid": 45000,
+  "shell": "/bin/bash",
+  "home": "/home/jpollara",
+  "comment": "Josh Pollara"
+}

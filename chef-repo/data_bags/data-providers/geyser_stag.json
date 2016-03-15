@@ -1,0 +1,13 @@
+{
+  "id": "geyser_stag",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDmQgkhOygwm4NNo51MqmXPChmeyMcDIMqmMUMBPn1Fc5NdJCnTwOXgZeXHnUJogf+LatWr6WkN58KTbMjW2ixmGz79LJwA6Qe2X92Q7IPI42GzJirzASxYdzRuT2pg7QUIA4qmi3UMXXXigGmb40mzCHWzrR1olIN90WBc0Pk2jI/ItvWGUfxbcphVekJl1DzZb0YZKUxRWluEFz7GNqHjamK/DPw/B8GA5QDxwSZxxjYqX8yYUCbyTUQIORCG0aXU3sIVLNWzRlV2ZgWhGdv4FmUP+JZrJ2P9eWR92vqT2uS+goWz9l++7C1iewic80t09r8U65JbrWweqPWI5Ru9 geyser_stag@bl-yarnpoc-s01"
+  ],
+  "groups": [ "geyser_stag", "sftpusers" ],
+  "uid": 66018,
+  "gid": 66018,
+  "shell": "/sbin/nologin",
+  "comment": "geyser_stag",
+  "home": "/data/provider/geyser_stag",
+  "action"  : "create"
+}

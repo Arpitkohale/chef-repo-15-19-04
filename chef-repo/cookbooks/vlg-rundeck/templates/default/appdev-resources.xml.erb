@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <node name="localhost" description="Rundeck server node" tags="" hostname="localhost" osArch="amd64" osFamily="unix" osName="Linux" osVersion="3.14.35-28.38.amzn1.x86_64" username="vlg"/>
+  <node name="windowsServer" description="remote windows server" tags ="" hostname="<%= node['vlg-rundeck']['appdev']['tv']['etlhost']=%>" osArch="x86_64" osFamily="windows" osName="Windows Server 2012" osVersion="2012" username="rundeck" node-executor="overthere-winrm" winrm-password-option="winrmPassword" />
+  <node name="tvServer" description="remote tv linux server" tags="" hostname="<%= node['vlg-rundeck']['appdev']['tv']['nielsen_ingest_host']=%>" osArch="amd64" osFamily="unix" osName="Linux" osVersion="3.14.35-28.38.amzn1.x86_64" username="vlg" ssh-authentication="privateKey"/>
+</project>

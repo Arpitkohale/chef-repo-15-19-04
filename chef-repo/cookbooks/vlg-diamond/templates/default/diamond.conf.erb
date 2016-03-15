@@ -1,0 +1,87 @@
+# Disted by Chef
+[server]
+handlers = diamond.handler.graphite.GraphiteHandler
+user = root
+group = root
+pid_file = /var/run/diamond.pid
+collectors_path = /usr/share/diamond/collectors/
+collectors_config_path = /etc/diamond/empty/
+handlers_config_path = /etc/diamond/empty/
+handlers_path = /etc/diamond/empty/
+collectors_reload_interval = 3600
+
+[handlers]
+keys = rotated_file
+
+[[default]]
+
+[[GraphiteHandler]]
+host = graphite.inf.videologygroup.com
+port = 2003
+timeout = 15
+batch = 1
+
+[collectors]
+
+[[default]]
+interval = 300
+hostname_method = shell
+hostname = "echo ${HOSTNAME:0:4}.`hostname -s`"
+
+[[NetworkCollector]]
+enabled = True
+
+[[CPUCollector]]
+enabled = True
+interval = 60
+percore = False
+normalize = True
+
+[[LoadAverageCollector]]
+enabled = True
+simple = True
+
+[[DiskSpaceCollector]]
+enabled = True
+
+[[MemoryCollector]]
+enabled = True
+
+[[VMStatCollector]]
+enabled = True
+
+[[DiskUsageCollector]]
+enabled = True
+
+[[HAProxyCollector]]
+enabled = True
+url = 'http://127.0.0.1:8162/lbstats;csv'
+ignore_servers = True
+
+[[TCPCollector]]
+enabled = True
+
+[[UserScriptsCollector]]
+enabled = True
+scripts_path = <%= node['vlg-base']['bin_dir'] %>/diamond
+
+[loggers]
+keys = root
+
+[formatters]
+keys = default
+
+[logger_root]
+level = INFO
+handlers = rotated_file
+propagate = 1
+
+[handler_rotated_file]
+class = handlers.TimedRotatingFileHandler
+level = DEBUG
+formatter = default
+args = ('/var/log/diamond/diamond.log', 'midnight', 1, 7)
+
+[formatter_default]
+format = [%(asctime)s] [%(threadName)s] %(message)s
+datefmt =

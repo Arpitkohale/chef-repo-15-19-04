@@ -1,0 +1,12 @@
+{
+  "id": "yhasabnis",
+  "ssh_keys": [
+    ""
+  ],
+  "groups": [ "yhasabnis", "users" ],
+  "uid": 45045,
+  "gid": 45045,
+  "shell": "/bin/false",
+  "home": "/home/yhasabnis",
+  "comment": "Yogesh Hasabnis"
+}

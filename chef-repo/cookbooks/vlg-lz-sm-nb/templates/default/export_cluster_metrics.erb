@@ -1,0 +1,81 @@
+#!/bin/bash
+#
+# Init file for Exporting Storm cluster metrics
+#
+# chkconfig: 35 85 15
+# processname: export_cluster_metrics
+# pidfile: /var/run/export_cluster_metrics.pid
+
+source /etc/rc.d/init.d/functions
+
+STORM_USER=<%= node['vlg-storm']['user'] %>
+STORM_METRICS_PID=<%= node['vlg-lz-sm-nb']['storm-metrics-pid'] %>
+STORM_SCRIPT_DIR=<%= node['vlg-lz-sm-nb']['cluster-metrics-script-dir'] %>
+STORM_SCRIPT_LOG=<%= node['vlg-storm']['log_dir'] %>/export-cluster-metrics.log
+STORM_NIMBUS_HOST=<%= node['vlg-storm']['nimbus']['server'] %>
+GRAPHITE_HOST=<%= node['vlg-storm']['graphite']['host'] %>
+GRAPHITE_PORT=<%= node['vlg-storm']['graphite']['port'] %>
+GRAPHITE_METRICS_PREFIX=<%= node['vlg-storm']['graphite']['prefix'] %>
+
+CMD="<%= node['groovy']['home'] %>/bin/groovy $STORM_SCRIPT_DIR/ExportClusterMetrics.groovy $STORM_NIMBUS_HOST 8081 $GRAPHITE_HOST $GRAPHITE_PORT 1 $GRAPHITE_METRICS_PREFIX > $STORM_SCRIPT_LOG & echo \$! > ${STORM_METRICS_PID} &"
+
+start(){
+
+  echo -n $"Starting export Storm cluster metrics: "
+  touch ${STORM_METRICS_PID} && chown ${STORM_USER} ${STORM_METRICS_PID}
+  daemon --user ${STORM_USER} --pidfile ${STORM_METRICS_PID} ${CMD}
+  RETVAL=$?
+  [ $RETVAL -eq 0 ] && touch /var/lock/subsys/export_cluster_metrics && success || failure
+  echo
+  return $RETVAL
+
+}
+
+stop() {
+
+  echo -n $"Stopping export Storm cluster metrics: "
+  killproc -p $STORM_METRICS_PID $STORM_USER
+  RETVAL=$?
+  echo
+  [ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/export_cluster_metrics && success || failure
+  return $RETVAL
+
+}
+
+kill9() {
+
+  echo -n $"Killing export Storm cluster metrics: "
+  pkill -9 -f "export_cluster_metrics"
+  rm -f /var/lock/subsys/export_cluster_metrics && rm -f ${STORM_METRICS_PID} && success || failure
+  echo
+  return 0
+
+}
+
+case "$1" in
+
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  kill9)
+    kill9
+    ;;
+  status)
+    status -p ${STORM_METRICS_PID} export_cluster_metrics
+    RETVAL=$?
+    ;;
+  restart)
+    stop
+    start
+    ;;
+  *)
+    echo "Usage: export_cluster_metrics {start|stop|kill9|status|restart}"
+    exit 1
+    ;;
+
+esac
+
+exit $RETVAL

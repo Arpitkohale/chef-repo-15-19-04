@@ -1,0 +1,12 @@
+name             'vlg-lz-up'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-lz-up'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.10'
+depends          'vlg-base'
+depends		 'vlg-clicksense'
+depends		 'vlg-tomcat'
+depends		 'vlg-s3cmd'
+depends		 'vlg-ssl'

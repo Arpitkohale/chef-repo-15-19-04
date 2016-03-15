@@ -1,0 +1,12 @@
+{
+  "id": "nkleinschmidt",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPTKknEP91cVbMfwUVKkMdGvz4LfrFpV93CgqlYS4kdGHA310phibek/rD1HOxHzYEPJ3TrabEU25mD2wUX/4KvU1mLLXPfWph5YJi0uNcyy4aVtJBxTL1GHicWXjqwfqwHT2gg4rjNnGrqquYkAc9folNO+BJByS4Ur5BGoyHGw6gez4STDPadFaG3fXzrXO8ThVL8MjeG8YLfY3sbmhpV1oWvPgqooWsA2519ZvO2QjXFFuw/RfGePym9YdnkWqkxEzTb3jfNNH5rSa5VemQD0JFgkwNrsBGW4p3eMUGWIb7Ndc0VYG0vv8BK9/tTDFD7NptpNPocRw4l97/rPVH nick.kleinschmidt@gmail.com"
+  ],
+  "groups": [ "nkleinschmidt", "users", "eliza" ],
+  "uid": 45013,
+  "gid": 45013,
+  "shell": "/bin/bash",
+  "home": "/home/nkleinschmidt",
+  "comment": "Nick Kleinschmidt"
+}

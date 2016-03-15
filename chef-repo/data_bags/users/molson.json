@@ -1,0 +1,12 @@
+{
+  "id": "molson",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD12g9gKOsff0nBgz5fKRErgv1cVdl0Vw7RqecWmJDch2T2kOWE26bWqQm1midQPxgBXfkQPwyhYGZUPrhlFDQR3l1FkxBAZeAAMCxIiJ5phs1ylKrTiCil4cZFZanBlfy7uEgZv34jmRGhI5jOHKeU3CY1dDvNrqXSIK1SjSFXgoqj8rMQ8VBPU3sPIBhXM4osmpWoixZcLD5eAjxTCJmqVDrGmXWSl+53boCR0Y/cGXAANuph1Qzb74qDE7t0aPQoC+sVyp0O8Cv30AMVs3yNMmEFxkOhtHHOsqB+kSmT67MmvyeXhEVQz3TL0QJZ3+DcfSjERQ3qO/vX9KuNbx+N molson@C02ML7SGFD57.local"
+  ],
+  "groups": [ "molson", "users", "gio", "wheel" ],
+  "uid": 45046,
+  "gid": 45046,
+  "shell": "/bin/bash",
+  "home": "/home/molson",
+  "comment": "Michael Olson"
+}

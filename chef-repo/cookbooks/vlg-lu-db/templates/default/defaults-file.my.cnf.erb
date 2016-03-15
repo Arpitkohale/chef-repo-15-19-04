@@ -1,0 +1,19 @@
+[client]
+user="root"
+password="<%= node['vlg-lu-db']['mysql_root_password'] %>"
+socket=/var/run/mysql-<%= node['vlg-lu-db']['mysql_service_name'] %>/mysqld.sock
+
+[mysql]
+user="root"
+password="<%= node['vlg-lu-db']['mysql_root_password'] %>"
+socket=/var/run/mysql-<%= node['vlg-lu-db']['mysql_service_name'] %>/mysqld.sock
+
+[mysqldump]
+user="root"
+password="<%= node['vlg-lu-db']['mysql_root_password'] %>"
+socket=/var/run/mysql-<%= node['vlg-lu-db']['mysql_service_name'] %>/mysqld.sock
+
+[mysqldiff]
+user="root"
+password="<%= node['vlg-lu-db']['mysql_root_password'] %>"
+socket=/var/run/mysql-<%= node['vlg-lu-db']['mysql_service_name'] %>/mysqld.sock

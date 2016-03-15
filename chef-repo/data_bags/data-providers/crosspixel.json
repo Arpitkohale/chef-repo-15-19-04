@@ -1,0 +1,13 @@
+{
+  "id": "crosspixel",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAtc63AEX4yk53fZiaSvrQ3ck6UIIxmDwYR4tGR60vaCPx+iIeIlSfmcGk1Tn13uXMVC2CicX7mntroB80AkCsFEXxKFmNfk26Blx4ExL2Wefeb2aQFJ0mc+B3ujVjdzbUeoybmO39qNDFYiIXY29uD47HSGK2iRE0gFpXngfyFay7PRTFhEAYBneH0PdOwX2eh0bgaACtuUpRHvEkhy8ZcnvrIHgxhuFXYYMzz88rjDuAK9j9CZV608u8JjijC8hk1dh9a4sgGXt7oXi0YMguIzSynlmrTxeHEZLPdbZLrbZj+8tmfuEke70kdWwSOvW8DffmIGYxx7ExhG9Gjl9O3w== ec2-user"
+  ],
+  "groups": [ "crosspixel", "sftpusers" ],
+  "uid": 66002,
+  "gid": 66002,
+  "shell": "/sbin/nologin",
+  "comment": "crosspixel",
+  "home": "/data/provider/crosspixel",
+  "action"  : "create"
+}

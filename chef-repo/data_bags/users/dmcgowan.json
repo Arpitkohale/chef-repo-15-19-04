@@ -1,0 +1,12 @@
+{
+  "id": "dmcgowan",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAivEUH09NZ1dzOETpUMUCc3Q1loLJ45Y5ySIZ/dL5w9jBDsHyWvXm0zHBB9OjqsJF9rIESDPJuqbUCMC7saWC31heDBAPs5//dbAyUKdvIg0Sbk08qDfT0oik1tAcLojas1U5wpfmXQ5oCTc9kczb/EJih8e0xSvfuh/2xRG86gJDx+dv8iKIOCMtaen9EU7YAh+93TfrGP3PdiIgQIk3IPE1k7FNdQB8PPGJsHzQffgXHnDqWtwVmT/3+ON/fWgDuTB9b3xKFBrQuDJVHtzo5t26QpypkNX29z7q04o7K3iGS3RA36Vj7Jrcy9Bh5qYFo+7mOSMOi38hi57etMHX damienmcgowan@Damiens-Mac.local"
+  ],
+  "groups": [ "dmcgowan", "users", "lucy" ],
+  "uid": 45037,
+  "gid": 45037,
+  "shell": "/bin/bash",
+  "home": "/home/dmcgowan",
+  "comment": "Damien McGowan"
+}

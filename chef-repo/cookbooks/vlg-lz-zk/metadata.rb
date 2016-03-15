@@ -1,0 +1,10 @@
+name             'vlg-lz-zk'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-lz-kz'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.15'
+depends          'vlg-base'
+depends		 'vlg-zookeeper'
+depends		 'vlg-s3cmd'

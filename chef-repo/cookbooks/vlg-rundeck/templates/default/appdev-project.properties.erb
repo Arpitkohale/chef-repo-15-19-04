@@ -1,0 +1,15 @@
+# Disted by Chef
+#Project AppDev configuration, generated
+#location /var/rundeck/projects/AppDev/etc/resources
+project.name=AppDev
+resources.source.1.config.requireFileExists=false
+project.ssh-authentication=privateKey
+resources.source.1.config.includeServerNode=true
+resources.source.1.config.generateFileAutomatically=true
+resources.source.1.config.format=resourcexml
+resources.source.1.config.file=/var/rundeck/projects/${project.name}/etc/resources.xml
+project.ssh-keypath=/mnt/vlg/.ssh/id_rsa
+service.FileCopier.default.provider=jsch-scp
+resources.source.1.type=file
+project.winrm-auth-type=basic
+project.winrm-protocol=http

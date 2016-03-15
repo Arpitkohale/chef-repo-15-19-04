@@ -1,0 +1,19 @@
+[client]
+user="<%= node['vlg-rundeck']['mysql']['username'] %>"
+password="<%= node['vlg-rundeck']['mysql']['password'] %>"
+socket=/var/run/mysql-<%= node['vlg-rundeck']['mysql']['name'] %>/mysqld.sock
+
+[mysql]
+user="<%= node['vlg-rundeck']['mysql']['username'] %>"
+password="<%= node['vlg-rundeck']['mysql']['password'] %>"
+socket=/var/run/mysql-<%= node['vlg-rundeck']['mysql']['name'] %>/mysqld.sock
+
+[mysqldump]
+user="<%= node['vlg-rundeck']['mysql']['username'] %>"
+password="<%= node['vlg-rundeck']['mysql']['password'] %>"
+socket=/var/run/mysql-<%= node['vlg-rundeck']['mysql']['name'] %>/mysqld.sock
+
+[mysqldiff]
+user="<%= node['vlg-rundeck']['mysql']['username'] %>"
+password="<%= node['vlg-rundeck']['mysql']['password'] %>"
+socket=/var/run/mysql-<%= node['vlg-rundeck']['mysql']['name'] %>/mysqld.sock

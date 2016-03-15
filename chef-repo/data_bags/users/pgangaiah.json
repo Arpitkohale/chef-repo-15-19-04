@@ -1,0 +1,12 @@
+{
+  "id": "pgangaiah",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCW9Ncl6+KAadSw6DhDQRM/IUze8bBo6YKugGXqFhHRvgLGBNXGAVx4C9tRHQWxDTYv+XQ00GmZVOx0jyVwk442QHM1He89dy5bLnsGvSWgcS+uyByiC/uEZPAJy1GVdYzwWyaHX9Zh7YtK8CP2NGaJWJwWjRJIOMNxpQuqMdUrq9s9oG1KBWgbMVEFs1SIG3fwjw8ghSdEe63zV0ydLszMj1ibe2zBHh5n3JPAfu2TzxJPLWDmjiJRwt0wEOlp2ccTBpjls/zZqrgWt36wc3vGhv6uIn9TQWfm96H171XfhdZRNGjrQJJc6JrkNWA0pqZmmfed0eCWOPg0QRA4NHup pgangaiah@pgangaiahs-MacBook-Pro.local"
+  ],
+  "groups": [ "pgangaiah", "users", "lucy" ],
+  "uid": 45020,
+  "gid": 45020,
+  "shell": "/bin/bash",
+  "home": "/home/pgangaiah",
+  "comment": "Pallavi Gangaiah"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "asidorovich",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA6jzPReKP5WK3tp/P4utXX1Mr6iryRBOkT2aKxlv+tdQmCVLOKD29XNMf5uxHa8IHnE4gh60IdxC9gi8I1XxoZ0cXwn2JlMhPfLzRIffuqGdFud1vdON2f26WRPAjuSUEk6x6CnYwVc0LFT5ztn99PL0VaSX1mKi7HBgCJ1N2+OgMflefctfgycUPqbJ/ZGSx9owuUp/MPe9wxpvCMADBV2E17jowPMpM56Bn7+ACZrXVMaDcmY47Ru481eFUTxlTNxk8XGgEszIUZ8SLgJQmwDjN1TDDnATwMB4TFg0L8BrPWXsRzrQ05lVZui1v94rVEPjZ9+tXR0F9zmGckfO2/Q== antonsidorovich@coherentsolutions.com"
+  ],
+  "groups": [ "asidorovich", "users", "eliza" ],
+  "uid": 45006,
+  "gid": 45006,
+  "shell": "/bin/bash",
+  "home": "/home/asidorovich",
+  "comment": "Anton Sidorovich"
+}

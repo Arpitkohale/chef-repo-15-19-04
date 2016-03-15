@@ -1,0 +1,7 @@
+environment="<%= @environment %>"
+location="<%= @location %>"
+roles="<%= @roles %>"
+<% node[:roles].each do |role| %>
+<% role = role.gsub("-", "_") -%>
+<%= role %>="true"
+<% end %>

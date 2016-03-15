@@ -1,0 +1,5 @@
+<% node["zookeeper"]["zoo.cfg"].each do |key, value| -%>
+<% if key["server"] && value.split(':')[0].split('.')[0] == node['hostname'] -%>
+<%= key.tr('a-z', '').tr('.', '') %>
+<% end -%>
+<% end -%>

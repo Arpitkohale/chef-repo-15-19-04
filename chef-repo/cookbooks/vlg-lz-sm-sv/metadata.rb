@@ -1,0 +1,11 @@
+name             'vlg-lz-sm-sv'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-lz-sm-sv'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.10'
+depends          'vlg-base'
+depends          'vlg-java'
+depends          'vlg-storm'
+depends		       'vlg-lz-sm'

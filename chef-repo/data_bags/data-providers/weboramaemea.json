@@ -1,0 +1,13 @@
+{
+  "id": "weboramaemea",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTMOCDzGxQLlfqMI0UiQoCDBA1bsWQbb9UOhFUc2EOovdChJOqE98mfODpwK1upX+IL0QNGgzwE6etOw5z/SvGlUluPLt1b/WZAeEOMt3zF78+kBmr6FEmOf9P6+N0C4vVOyiTrMiU0fZYIawobSZjCUzptH/RZQzoJ6W5BN7esI/YdtysOLP0Fic6D71R7T7+ChdiXpJjMLN+tq6PCRp5WJLl6QUL98KHD5DG12Zq2yjaLhZlHT/ZzMOAd15FXsUAcvBdORhmJvDW9D6O1HfPEVPjdjBJiTLIFNlKmD1StzlfzI0MQzYs3dFeuDzC3P3RxbOyzY6ykd78LYV95GB1 videology@aub-daemon-01"
+  ],
+  "groups": [ "weboramaemea", "sftpusers" ],
+  "uid": 66014,
+  "gid": 66014,
+  "shell": "/sbin/nologin",
+  "comment": "weboramaemea",
+  "home": "/data/provider/weboramaemea",
+  "action"  : "create"
+}

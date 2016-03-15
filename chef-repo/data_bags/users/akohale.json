@@ -1,0 +1,12 @@
+{
+  "id": "akohale",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIEApP6LvOhxMLWvqo2DFPgHgBmR7noKiA9SMG7ZxruzFkfmSLzQ/RCNb/mC94vEeywwZMv5TxXg619g0PbcQtsNKvBwgA+/J+1b9mMaeoD/3mKiRyToCTO3UAJGHpu/iVLCS0qnA2Ic3vaDyJnyeZO2K/9RoQ0JxL7R8uGwiROvLls= rsa-key-20140702"
+  ],
+  "groups": [ "akohale", "users", "wheel", "gio" ],
+  "uid": 45028,
+  "gid": 45028,
+  "shell": "/bin/bash",
+  "home": "/home/akohale",
+  "comment": "Arpit Kohale"
+}

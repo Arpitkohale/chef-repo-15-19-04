@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Server port="<%= @vlg_tomcat_shutdown_port %>" shutdown="SHUTDOWN">
+
+  <!-- APR library loader -->
+  <Listener className="org.apache.catalina.core.AprLifecycleListener" SSLEngine="on" />
+
+  <!-- Initialize Jasper prior to webapps are loaded -->
+  <Listener className="org.apache.catalina.core.JasperListener" />
+
+  <!-- Prevent memory leaks due to use of particular java/javax APIs -->
+  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+  <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
+
+  <GlobalNamingResources>
+    <!-- Editable user database that can also be used by UserDatabaseRealm to authenticate users -->
+    <Resource name="UserDatabase" auth="Container"
+              type="org.apache.catalina.UserDatabase"
+              description="User database that can be updated and saved"
+              factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+              pathname="conf/tomcat-users.xml" />
+  </GlobalNamingResources>
+
+  <!-- A "Service" is a collection of one or more "Connectors" that share
+       a single "Container" Note:  A "Service" is not itself a "Container",
+       so you may not define subcomponents such as "Valves" at this level.
+  -->
+  <Service name="Catalina">
+
+    <!-- Shared executor -->
+    <Executor name="tomcatThreadPool"
+              namePrefix="catalina-exec-"
+              maxThreads="<%= @vlg_tomcat_max_threads %>"
+              minSpareThreads="<%= @vlg_tomcat_min_spare_threads %>"
+              daemon="true"
+    />
+
+<% if @vlg_tomcat_port_8080_enable == 'true' %>
+
+    <!-- A "Connector" represents an endpoint by which requests are received and responses are returned. -->
+    <Connector port="8080"
+               protocol="<%= @vlg_tomcat_port_8080_protocol %>"
+               connectionTimeout="<%= @vlg_tomcat_connection_timeout %>"
+               enableLookups="<%= @vlg_tomcat_enable_lookups %>"
+               maxHttpHeaderSize="<%= @vlg_tomcat_max_http_header_size %>"
+               executor="<%= @vlg_tomcat_executor %>"
+               acceptCount="<%= @vlg_tomcat_accept_count %>"
+               maxKeepAliveRequests="<%= @vlg_tomcat_max_keep_alive_requests %>"
+               keepAliveTimeout="<%= @vlg_tomcat_keep_alive_timeout %>"
+    />
+
+<% end %>
+
+<% if @vlg_tomcat_port_9030_enable == 'true' %>
+
+    <Connector port="9030"
+               protocol="<%= @vlg_tomcat_port_9030_protocol %>"
+               connectionTimeout="<%= @vlg_tomcat_connection_timeout %>"
+               enableLookups="<%= @vlg_tomcat_enable_lookups %>"
+               maxHttpHeaderSize="<%= @vlg_tomcat_max_http_header_size %>"
+               executor="<%= @vlg_tomcat_executor %>"
+               acceptCount="<%= @vlg_tomcat_accept_count %>"
+               maxKeepAliveRequests="<%= @vlg_tomcat_max_keep_alive_requests %>"
+               keepAliveTimeout="<%= @vlg_tomcat_keep_alive_timeout %>"
+    />
+
+<% end %>
+
+<% if @vlg_tomcat_port_8443_enable == 'true' %>
+
+    <Connector port="8443"
+               protocol="<%= @vlg_tomcat_port_8443_protocol %>"
+               connectionTimeout="<%= @vlg_tomcat_connection_timeout %>"
+               enableLookups="<%= @vlg_tomcat_enable_lookups %>"
+               executor="<%= @vlg_tomcat_executor %>"
+               acceptCount="<%= @vlg_tomcat_accept_count %>"
+               maxKeepAliveRequests="<%= @vlg_tomcat_max_keep_alive_requests %>"
+               keepAliveTimeout="<%= @vlg_tomcat_keep_alive_timeout %>"
+               scheme="<%= @vlg_tomcat_port_8443_scheme %>"
+               secure="<%= @vlg_tomcat_port_8443_secure %>"
+               sslProtocol="<%= @vlg_tomcat_port_8443_ssl_protocol %>"
+               SSLEnabled="<%= @vlg_tomcat_port_8443_ssl_enabled %>"
+               SSLCertificateFile="<%= @vlg_tomcat_port_8443_ssl_certificate_file %>"
+               SSLCertificateKeyFile="<%= @vlg_tomcat_port_8443_ssl_certificate_key_file %>"
+               SSLCACertificateFile="<%= @vlg_tomcat_port_8443_ssl_ca_certificate_file %>"
+    />
+
+<% end %>
+
+<% if @vlg_tomcat_port_8444_enable == 'true' %>
+
+    <Connector port="8444"
+               protocol="<%= @vlg_tomcat_port_8444_protocol %>"
+               connectionTimeout="<%= @vlg_tomcat_connection_timeout %>"
+               enableLookups="<%= @vlg_tomcat_enable_lookups %>"
+               executor="<%= @vlg_tomcat_executor %>"
+               acceptCount="<%= @vlg_tomcat_accept_count %>"
+               maxKeepAliveRequests="<%= @vlg_tomcat_max_keep_alive_requests %>"
+               keepAliveTimeout="<%= @vlg_tomcat_keep_alive_timeout %>"
+               scheme="<%= @vlg_tomcat_port_8444_scheme %>"
+               secure="<%= @vlg_tomcat_port_8444_secure %>"
+               sslProtocol="<%= @vlg_tomcat_port_8444_ssl_protocol %>"
+               SSLEnabled="<%= @vlg_tomcat_port_8444_ssl_enabled %>"
+               SSLCertificateFile="<%= @vlg_tomcat_port_8444_ssl_certificate_file %>"
+               SSLCertificateKeyFile="<%= @vlg_tomcat_port_8444_ssl_certificate_key_file %>"
+               SSLCACertificateFile="<%= @vlg_tomcat_port_8444_ssl_ca_certificate_file %>"
+    />
+
+<% end %>
+
+<% if @vlg_tomcat_port_8445_enable == 'true' %>
+
+    <Connector port="8445"
+               protocol="<%= @vlg_tomcat_port_8445_protocol %>"
+               connectionTimeout="<%= @vlg_tomcat_connection_timeout %>"
+               enableLookups="<%= @vlg_tomcat_enable_lookups %>"
+               executor="<%= @vlg_tomcat_executor %>"
+               acceptCount="<%= @vlg_tomcat_accept_count %>"
+               maxKeepAliveRequests="<%= @vlg_tomcat_max_keep_alive_requests %>"
+               keepAliveTimeout="<%= @vlg_tomcat_keep_alive_timeout %>"
+               scheme="<%= @vlg_tomcat_port_8445_scheme %>"
+               secure="<%= @vlg_tomcat_port_8445_secure %>"
+               sslProtocol="<%= @vlg_tomcat_port_8445_ssl_protocol %>"
+               SSLEnabled="<%= @vlg_tomcat_port_8445_ssl_enabled %>"
+               SSLCertificateFile="<%= @vlg_tomcat_port_8445_ssl_certificate_file %>"
+               SSLCertificateKeyFile="<%= @vlg_tomcat_port_8445_ssl_certificate_key_file %>"
+               SSLCACertificateFile="<%= @vlg_tomcat_port_8445_ssl_ca_certificate_file %>"
+    />
+
+<% end %>
+
+<% if @vlg_tomcat_port_8447_enable == 'true' %>
+
+    <Connector port="8447"
+               protocol="<%= @vlg_tomcat_port_8447_protocol %>"
+               connectionTimeout="<%= @vlg_tomcat_connection_timeout %>"
+               enableLookups="<%= @vlg_tomcat_enable_lookups %>"
+               executor="<%= @vlg_tomcat_executor %>"
+               acceptCount="<%= @vlg_tomcat_accept_count %>"
+               maxKeepAliveRequests="<%= @vlg_tomcat_max_keep_alive_requests %>"
+               keepAliveTimeout="<%= @vlg_tomcat_keep_alive_timeout %>"
+               scheme="<%= @vlg_tomcat_port_8447_scheme %>"
+               secure="<%= @vlg_tomcat_port_8447_secure %>"
+               sslProtocol="<%= @vlg_tomcat_port_8447_ssl_protocol %>"
+               SSLEnabled="<%= @vlg_tomcat_port_8447_ssl_enabled %>"
+               SSLCertificateFile="<%= @vlg_tomcat_port_8447_ssl_certificate_file %>"
+               SSLCertificateKeyFile="<%= @vlg_tomcat_port_8447_ssl_certificate_key_file %>"
+               SSLCACertificateFile="<%= @vlg_tomcat_port_8447_ssl_ca_certificate_file %>"
+    />
+
+<% end %>
+
+<% if @vlg_tomcat_port_8443_enable == 'true' %>
+
+    <Connector port="8010"
+               protocol="AJP/1.3"
+               redirectPort="8443"
+    />
+
+<% end %>
+
+    <!-- An Engine represents the entry point (within Catalina) that processes
+         every request.  The Engine implementation for Tomcat stand alone
+         analyzes the HTTP headers included with the request, and passes them
+         on to the appropriate Host (virtual host). -->
+    <Engine name="Catalina" defaultHost="localhost">
+
+      <!-- This Realm uses the UserDatabase configured in the global JNDI
+           resources under the key "UserDatabase".  Any edits
+           that are performed against this UserDatabase are immediately
+           available for use by the Realm.  -->
+      <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+             resourceName="UserDatabase"/>
+
+      <!-- Define the default virtual host -->
+      <Host name="localhost"
+            appBase="webapps"
+            unpackWARs="true"
+            autoDeploy="false"
+            deployOnStartup="false">
+
+      <!-- Setup the root context -->
+      <Context path="" docBase="<%= @vlg_tomcat_doc_base %>"/>
+
+        <!-- Access log -->
+        <Valve className="org.apache.catalina.valves.AccessLogValve"
+               directory="logs"
+               prefix="access_log."
+               suffix=".txt"
+               pattern="%{X-Forwarded-For}i %p %l %u %t &quot;%r&quot; %s %b %D %{Host}i"
+               resolveHosts="false"
+               fileDateFormat="yyyy-MM-dd.HH" />
+      </Host>
+    </Engine>
+  </Service>
+</Server>

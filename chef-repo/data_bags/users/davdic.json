@@ -1,0 +1,12 @@
+{
+  "id": "davdic",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEt7GJz5YOLV/J4UGu06hJ4V/LIAwLMACvvZ4RV6iai8aSDROGxGrPZsx+nr/XvdfJxDFpRH/RpCcnovs9HbyLyJm7YtafOuMBX90uZx+wREAo3e8ZDAx8i/CPVLk49iFPCoYXYYZpLP6xiou9vIeJ2KGW8iAjwTi8ZEzRFkBnugEnN9Pz6Eyl7NK1yDj6Q49ovGHvNlzMsiKzFlRP7mIdbUKJYRwjTjjS8XP86NuPj/ZDQzP9b/sfyjJHvVEgMGnjXabyFTLIfxVPuDETbXbz9Yqj7imOuU1g550AxNDS/zH+A9/0qjeF+mKXKvQJaeFG2WxEgL3PfM1rBxhTW8e/ davdic@c02pf0v2g3qp.tidaltv.local"
+  ],
+  "groups": [ "davdic", "users", "data" ],
+  "uid": 45069,
+  "gid": 45069,
+  "shell": "/bin/bash",
+  "home": "/home/davdic",
+  "comment": "Denis Avdic"
+}

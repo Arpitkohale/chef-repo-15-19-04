@@ -1,0 +1,17 @@
+{
+  "id": "jreier",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChdAQtw9eKtaLx4XG91425LTiZfeQwJwKAzycdGDD+u7PHc1+vy2trnMHdICmpc4BwCeau4KgOG2oGoJEgbWG3nV8v0kFTQR1V5FBzTJe/7+BuivTriPBji2YVXdzIWIyicYZPtGwtLjIs+HZq3pnmXsIE9POuDuprOSaPCVwz84zVSJdWpFy9a6NSzohwhUIdOLX+wueMrGu4afxv29y6I5ouuYtOD5ozuNeZ5PdNsbW+Hl8MAxKFLhnCFPVqC312WHIBEhZnnE0IS6EKt0ISpUrmEqUqJn5CVNHQeWnaEE2Ow3kkqi1U3QcJHZik8UCLVqvudNT6MtqyAw65bBin jreier@c02n61zgg3qd-0817.tidaltv.local"
+  ],
+  "groups": [
+    "jreier",
+    "users",
+    "wheel",
+    "gio"
+  ],
+  "uid": 45044,
+  "gid": 45044,
+  "shell": "/bin/bash",
+  "home": "/home/jreier",
+  "comment": "Julie Reier"
+}

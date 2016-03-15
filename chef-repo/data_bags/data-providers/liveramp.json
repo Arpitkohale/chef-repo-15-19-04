@@ -1,0 +1,11 @@
+{
+  "id": "liveramp",
+  "password": "$1$t/eujj.Z$nyr8LZh8iJsAi/SMPydCI.",
+  "groups": [ "liveramp", "sftpusers" ],
+  "uid": 66003,
+  "gid": 66003,
+  "shell": "/sbin/nologin",
+  "comment": "liveramp",
+  "home": "/data/provider/liveramp",
+  "action"  : "create"
+}

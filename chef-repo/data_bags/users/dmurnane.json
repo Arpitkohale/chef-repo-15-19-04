@@ -1,0 +1,12 @@
+{
+  "id": "dmurnane",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCnQCyNQGpwG4/RWvNlTRGY827Q/r8jUM6svNMYT2q4eAFi4U4Mp4z+MIhjjexBu4CktbkQEWDBt41w8tUVBTcAJE0ECO+pbfWFujksliuj79AFWiYK0Y3RAQ1cy90iRq0S12xu3eGTFrnmH8DQ9dl5lDn8Q24xlYraS1xRpEtz3xxTkcOaNYYTnPmmkdq2yLeEr8fRFBT13jqYVuHUQKeeM2azF6KAfarZpMOVnBdQSbcLEeMwPkvS5dDPvRVpaRX+aubUA4q2tIpTxZ8uLnLNaDiiGi+SydfKmQkLK4T5905bMfSed41oK0NpP6j3EM42JANxyxlsdI/QztdkYEaJ dmurnane@locals-mbp.tidaltv.local"
+  ],
+  "groups": [ "dmurnane", "users", "wheel", "gio" ],
+  "uid": 45078,
+  "gid": 45078,
+  "shell": "/bin/bash",
+  "home": "/home/dmurnane",
+  "comment": "Daniel Murnane"
+}

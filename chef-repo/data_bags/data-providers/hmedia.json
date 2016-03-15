@@ -1,0 +1,13 @@
+{
+  "id": "hmedia",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHw+zg2zVJEqk/qeoSFsTGI2Nc/RLn1ykqr6sJWgSZEjDpcgcrCCN4oYXWUCqePiU7eweIuvrtlxnpC4CHnsN7iP0tl5Xcas+z8dvdp2EkghbV8N2nldNZMPV15+8+9GpyTJbL1eiMZoF/6eGMts43ZaFNoRJlQVMJ9AAd7CHtBMfAp1jD4IEqvfDtjljK7nidAsGvPQuLBqGC47mLXCH0mlqmBMRbPKCUj10AX3Dlzk3aUm8IkhQsOsuFMwsRtnMc0XgGGDabUoFLfLPwT2ilF623b/tgQIA/DSiPn2vrLlXwBCxBer1cfgWKVH5kJla0l+0gy4b2FG6YN9r1yQB3 sftp access keypair for videology/himedia data exchange"
+  ],
+  "groups": [ "hmedia", "sftpusers" ],
+  "uid": 66012,
+  "gid": 66012,
+  "shell": "/sbin/nologin",
+  "comment": "hmedia",
+  "home": "/data/provider/hmedia",
+  "action"  : "create"
+}

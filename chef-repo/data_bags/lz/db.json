@@ -1,0 +1,15 @@
+{
+  "id": "db",
+  "lucidmedia-password": {
+    "encrypted_data": "//rf28M3XYXzGhbPr9rLnSDhjqSfJCJRYioXCrY1zUY=\n",
+    "iv": "teQslBd3+ul7E4WPEJZ5Fw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "root-password": {
+    "encrypted_data": "dWeVhHJVlp6X67VvQC4gvXZNTAJ9nevU999mKopKuW0=\n",
+    "iv": "EMbm3b1zXBjoN95h7alSIg==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

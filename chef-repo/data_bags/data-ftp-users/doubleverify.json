@@ -1,0 +1,11 @@
+{
+  "id": "doubleverify",
+  "password": "$1$j49DXdOG$LGj9H5unyJQJdNTGIt/3o0",
+  "groups": [ "doubleverify", "ftpusers" ],
+  "uid": 86004,
+  "gid": 86004,
+  "shell": "/sbin/nologin",
+  "comment": "doubleverify",
+  "home": "/data/ftp/doubleverify",
+  "action"  : "create"
+}

@@ -1,0 +1,19 @@
+#!/bin/bash
+# Disted by Chef
+knife_cmd="/opt/chef/bin/knife"
+knife_cfg="/etc/chef/knife.rb"
+mailto="lucy-dev@videologygroup.com"
+
+if [ $(whoami) != "root" ]
+then
+  exit 1
+fi
+
+if [[ ! -f "$knife_cmd" || ! -f "$knife_cfg" ]]
+then
+  exit 1
+fi
+
+echo | mail -s "shutting down $(hostname)" "$mailto"
+$knife_cmd node delete -y -c $knife_cfg <%= node['hostname'] %>
+$knife_cmd client delete -y -c $knife_cfg <%= node['hostname'] %>

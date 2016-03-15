@@ -1,0 +1,70 @@
+#!/bin/bash
+#
+# Init script for Tomcat
+#
+# chkconfig: 345 86 14
+# description: Tomcat
+# processname: tomcat
+# pidfile: <%= @vlg_tomcat_catalina_pid %>
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+export TOMCAT_USER=<%= @vlg_tomcat_user %>
+export CATALINA_HOME=<%= @vlg_tomcat_catalina_home %>
+export CATALINA_BASE=<%= @vlg_tomcat_catalina_base %>
+export CATALINA_PID=<%= @vlg_tomcat_catalina_pid %>
+
+thread_dump() {
+  if [ -f "$CATALINA_PID" ]
+  then
+    echo "Generating thread dumps"
+    for i in 01 02 03;
+    do
+      kill -3 $(cat $CATALINA_PID)
+      sleep 2
+    done
+  fi
+}
+
+case "$1" in
+start)
+  echo "Starting Tomcat"
+  exec su -l $TOMCAT_USER -c "CATALINA_HOME=$CATALINA_HOME CATALINA_BASE=$CATALINA_BASE CATALINA_PID=$CATALINA_PID $CATALINA_HOME/bin/catalina.sh start"
+;;
+
+stop)
+  echo "Stopping Tomcat"
+  thread_dump
+  exec su -l $TOMCAT_USER -c "CATALINA_HOME=$CATALINA_HOME CATALINA_BASE=$CATALINA_BASE CATALINA_PID=$CATALINA_PID $CATALINA_HOME/bin/catalina.sh stop"
+;;
+
+force-stop)
+  echo "Force Stopping Tomcat"
+  thread_dump
+  exec su -l $TOMCAT_USER -c "CATALINA_HOME=$CATALINA_HOME CATALINA_BASE=$CATALINA_BASE CATALINA_PID=$CATALINA_PID $CATALINA_HOME/bin/catalina.sh stop -force"
+;;
+
+status)
+  if [ ! -f "$CATALINA_PID" ]
+  then
+    echo "$CATALINA_PID not found"
+    exit
+  fi
+  kill -0 $(cat $CATALINA_PID) > /dev/null 2>&1
+  if [ $? -eq "0" ]
+  then
+    echo "Tomcat is running with pid $(cat $CATALINA_PID)"
+  else
+    echo "Tomcat is not running"
+  fi
+;;
+
+*)
+        echo $"Usage: $0 {stop|start|status|force-stop}"
+        exit 1
+;;
+esac
+
+exit $RETVAL

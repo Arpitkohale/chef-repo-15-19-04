@@ -1,0 +1,12 @@
+{
+  "id": "skare",
+  "ssh_keys": [
+          "ssh-dss AAAAB3NzaC1kc3MAAACBAP4/SN/RiXCuI9+TAUQhtCFHsDNpyZhHso/T8GD2fycHy1QuMORACUqNmTNifpPK4+WF6WE9Moo+5hIhHiEpl876Wi8k5Gnrl8WFZgrpQyXF6LpPbkPpcDH/WTkitjf02Cj67hVUkqalvfc+CgnqaWj5PHyb/wyLuqAtU9VJ79UhAAAAFQC/PqySrz2hdZnfAuIVBGw1gLU7LQAAAIAroEQXzhzU8GQtcpu01TBCoapf+6RxqRMPpH570ukq30+nWiUn/mwRiHHfSae61TKydhGKx39802lytFl7i/A8F/tDX+kAoBjwsN/Ck8dc5kvrdu+cd1ltvMbOgabokimalkvuIsyv6fsUZqxCrkbCbaIH5JZ+qYP54ocJH07JRQAAAIBd1GDgJV4rsqI6ooKeqtzgF2it3CIenK6ytrhGD1kjzBPcgb/l8BwH57NLANwoBMc20wHokQLyynDcHOPc5qa69Zbd/0mVYaV6+QTZWWQ09SUoPQn7BmKYWwYT8udco9Kad9EIItC8tC1V8PvLLtnbeXi3CuvOZuUKFLGCVn++Dg== skare@9GWPL12-0917"
+  ],
+  "groups": [ "skare", "users", "data" ],
+  "uid": 45052,
+  "gid": 45052,
+  "shell": "/bin/bash",
+  "home": "/home/skare",
+  "comment": "Sarvani Kare"
+}

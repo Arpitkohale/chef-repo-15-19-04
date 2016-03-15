@@ -1,0 +1,12 @@
+{
+  "id": "dlipiev",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAprvGUIQYyoNrRaYUmS7M8JkLFtNNyzdugcXCcRZRNYr5ENVcMKon5zs4l5j/28NSQJfbLsYeUyoDYlzT2a7+nTEnnj5qPeibxu/YPZQfX3wIF+w/RF32ZctDBt03Oliu0kR11PzTXbP4aG2CqAmybLcf9qqH55OVMBaB1Ye8y6jp+uuu5cV5OKN+7GcCttVxCgdhghFewRUOejCW1CuNJhhoQ3PW27hTUjUrsaWfj1dGyrIMFyh2Vnu/BfJ3nM6HceMtFO+4yZ4om/AePE/CgMr0hjMchesVL2SmAjXzcYDUna71XN5GPj3kS805dDy9Jh+D32Q9EWrwdMM9gFAyAw== DmitryLipiev@LIPIEV"
+  ],
+  "groups": [ "dlipiev", "users", "lucy" ],
+  "uid": 45009,
+  "gid": 45009,
+  "shell": "/bin/bash",
+  "home": "/home/dlipiev",
+  "comment": "Dmitry Lipiev"
+}

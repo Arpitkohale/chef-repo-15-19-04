@@ -1,0 +1,12 @@
+{
+  "id": "ahailemichael",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDBoa73VD5dI8RYIqn/u/3JTUVtBGcbCuVVPnvySWrglBH9z2PQim6qe4hKdTPHHXxYbLQcBxkp6e21CxO8ZQqs2SmD/9rPj/nhBr7cKiYHChpcVcFWnpeov5eOkE/B7Y0RUewpJvap/XWqJALszeGLqm7Y/U+46DyPo3UN6SmowqW/4Wy/R6F3EDJHmJmSl75nuc1YxYXqZCHzuSuRoGvbBuXtZnSbmmBLUSOu6ng3kCknApGnOghvSnk9PuhyF0LdEeCZYJmDswartplPbOwxoycBKRYWYSG46N8L1FPEXHaNRUauHm8aBJBiAKxO5eMn/38aq5M8lOlBAwSjuZOp"
+  ],
+  "groups": [ "ahailemichael", "users", "eliza", "data" ],
+  "uid": 45040,
+  "gid": 45040,
+  "shell": "/bin/bash",
+  "home": "/home/ahailemichael",
+  "comment": "Abiy Hailemichael"
+}

@@ -1,0 +1,34 @@
+# Disted by Chef
+global
+        maxconn 16384
+        nbproc 1
+        chroot /usr/share/haproxy
+        user haproxy
+        group haproxy
+        daemon
+
+defaults
+        mode http
+        option dontlognull
+        retries 3
+        option redispatch
+        maxconn 65536
+        timeout connect 150000
+        timeout client 150000
+        timeout server 150000
+
+listen stats :8162
+        option httpclose
+        stats uri /lbstats
+
+listen http :80
+        option http-server-close
+        option httpchk GET /status/ready
+        option forwardfor header x-forwarded-for
+        server localhost 127.0.0.1:8080 check port 8080
+
+listen https :443
+        mode tcp
+        option ssl-hello-chk
+        option httpchk GET /status/ready
+        server localhost 127.0.0.1:8443 check port 8080

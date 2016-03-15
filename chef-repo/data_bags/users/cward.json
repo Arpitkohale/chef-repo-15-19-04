@@ -1,0 +1,12 @@
+{
+  "id": "cward",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAn2ov9MrqB1OrTfQHm6qAjfAk8LQcFyM+i3A603UMJf9UGDNf3RkDA4FEVGB6ZpBgHo+bhv3yiwrkekhwnFm3UxRTUpu7E/5qfUDuPdnic2uBdN3lxAYDO5wz/QVXZKWsI4QC7sf1XQedSwnBBrGxSBCDiRTFNBmj1/WRu1A1rZLyiLMymIfbQLKdeaE/D/7Zm6aX4hgkWKFsthlcEqusTu1ox22y9SA6X3q9Hh6vMm6GeE74SY7tNyCYF65yPGT6WW8zVeeLWScbLh7hASefia3qhOC1wYvGXz7qhh2oZIkaJ0f1dPG0JQLlEefNI6/WyeulkYTT8oXDZNvWPg1NwQ== carrie@videologygroup.com"
+  ],
+  "groups": [ "cward", "users", "optdev" ],
+  "uid": 45055,
+  "gid": 45055,
+  "shell": "/bin/bash",
+  "home": "/home/cward",
+  "comment": "Carrie Ward"
+}

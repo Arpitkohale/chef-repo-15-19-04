@@ -1,0 +1,12 @@
+{
+  "id": "sandrusevich",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuAzOk1xlkMwwFjyzz8WHUQfuLPevDffoVgBisXU2CZPPypjFrf5ePwFxIxEyhdiQYv4wlJ/XOmhLkTDsrBYM34da26TJy/NCi5Kji8201Cfqk/TX/ryto+HKyOY4dlt6EQR88Tma2Yg8VVMeWlF9XsqNZ0cIt0eypQuNMP0/lziffKRmRTLF9nE+Aeosc4J0INXX6zKpOQWbSrChsKRjhb8WbROBGYp94s07haCPAALJcrS9NxKEfJJ149Go4MLcWJaR3Op3KkBWuk2jYuJJFKYHOUY4KRuYIfrsh5Wms1A+TPnLTSzvLHSPc7lEW6JG2cgcyeB5jDn1cJfI1emhx sandrusevich.consultant@videologygroup.com"
+  ],
+  "groups": [ "sandrusevich", "users", "eliza" ],
+  "uid": 45064,
+  "gid": 45064,
+  "shell": "/bin/bash",
+  "home": "/home/sandrusevich",
+  "comment": "Sergey Andrusevich"
+}

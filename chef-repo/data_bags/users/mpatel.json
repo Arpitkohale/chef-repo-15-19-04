@@ -1,0 +1,12 @@
+{
+  "id": "mpatel",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCpsgwVd6LcMuH8nWe0hCo+9HF3av/GUBj9DP5BhUd6YHCUSZCwHOEPIKuPEI75NBawfpdFH+iEeetovflvprQ9ULp3AhnSU151tIFSbOXITgNui97YYwevfQhBwHuwXj/AzDkndZyY1Ec9ZiRcTGWvZr6BCSwbJh6gALX5jWsutleSu8L7ZNCvwx1/j62hsrTz8vGjng8rk2/tw+3MEZ3IYqtSFcZoSmKEfUi1HaJd1D5LY+igaYG34HGTi5CFsZS/frBLU0vlLIJvlKCiw9nONpKesnKgg07lD/8TBAubVbWOphLxvL1Ju2dgGFxz16Z3cicVmKfTWygv0pDr4vvX mpatel@ninjaiphone.entrieva.com"
+  ],
+  "groups": [ "mpatel", "users", "eliza" ],
+  "uid": 45029,
+  "gid": 45029,
+  "shell": "/bin/bash",
+  "home": "/home/mpatel",
+  "comment": "Mahesh Patel"
+}

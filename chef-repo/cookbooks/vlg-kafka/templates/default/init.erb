@@ -1,0 +1,88 @@
+#!/bin/bash
+#
+# Init file for Apache Kafka
+#
+# chkconfig: 35 85 15
+# description: Apache Kafka is a distributed publish-subscribe messaging system
+# processname: kafka
+# config: KAFKA_HOME/config/server.properties
+# pidfile: /var/run/kafka.pid
+
+source /etc/rc.d/init.d/functions
+
+[ -e /etc/sysconfig/kafka ] && source /etc/sysconfig/kafka
+
+KAFKA_USER=<%= node['vlg-kafka']['user'] %>
+KAFKA_PID=<%= node['vlg-kafka']['kafka_pid'] %>
+KAFKA_HOME=<%= node['vlg-kafka']['kafka_home'] %>
+KAFKA_LOGS=<%= node['vlg-kafka']['logs_dir'] %>
+KAFKA_CONF=<%= node['vlg-kafka']['conf_dir'] %>
+KAFKA_JVM_HEAP=<%= node['vlg-kafka']['jvm_heap'] %>
+
+
+CMD="${KAFKA_HOME}/bin/kafka-run-class.sh kafka.Kafka ${KAFKA_CONF}/server.properties >> ${KAFKA_LOGS}/server.out 2>> ${KAFKA_LOGS}/server.err & echo \$! > ${KAFKA_PID}"
+
+start(){
+
+  echo -n $"Starting kafka: "
+  touch ${KAFKA_PID} && chown ${KAFKA_USER} ${KAFKA_PID}
+  export KAFKA_HEAP_OPTS="-Xmx${KAFKA_JVM_HEAP} -Xms${KAFKA_JVM_HEAP}"
+  export KAFKA_LOG4J_OPTS="-Dlog4j.configuration=file:${KAFKA_CONF}/log4j.properties"
+  export LOG_DIR=${KAFKA_LOGS}
+  export JMX_PORT="9999"
+  daemon --user ${KAFKA_USER} --pidfile ${KAFKA_PID} ${CMD}
+  RETVAL=$?
+  [ $RETVAL -eq 0 ] && touch /var/lock/subsys/kafka && success || failure
+  echo
+  return $RETVAL
+
+}
+
+stop() {
+
+  echo -n $"Stopping kafka: "
+  killproc -p $KAFKA_PID $KAFKA_USER
+  RETVAL=$?
+  echo
+  [ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/kafka && success || failure
+  return $RETVAL
+
+}
+
+kill9() {
+
+  echo -n $"Killing kafka: "
+  pkill -9 -f "kafka.Kafka"
+  rm -f /var/lock/subsys/kafka && rm -f ${KAFKA_PID} && success || failure
+  echo
+  return 0
+
+}
+
+case "$1" in
+
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  kill9)
+    kill9
+    ;;
+  status)
+    status -p ${KAFKA_PID} kafka
+    RETVAL=$?
+    ;;
+  restart)
+    stop
+    start
+    ;;
+  *)
+    echo "Usage: kafka {start|stop|kill9|status|restart}"
+    exit 1
+    ;;
+
+esac
+
+exit $RETVAL

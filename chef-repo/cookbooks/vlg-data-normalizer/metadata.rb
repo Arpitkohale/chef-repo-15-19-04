@@ -1,0 +1,11 @@
+name             'vlg-data-normalizer'
+maintainer       'Videology Group, Inc'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-data-normalizer'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.18'
+depends 	 'vlg-base'
+depends 	 'vlg-java'
+depends 	 'vlg-tomcat'
+depends 	 'vlg-s3cmd'

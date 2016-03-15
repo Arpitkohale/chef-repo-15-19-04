@@ -1,0 +1,12 @@
+{
+  "id": "nhaynes",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAj5o7nRZ8TfQGTyAvr7eDZeBCSKa2q0aQwO9is1K7Hcmn1XvhIutX3wqa0wSyFUeIeAAMn8h1FZz8ZPfEwzObbehtjMhsiDbMj+bZ72AHL8ACtQl+asI7E9ht9mnVgbbaDYO+14aJZylIPZVp3hf9lLecOAZa/l/bQCEJvZJbOE0Hlor/QLpVyJMZv7pNWyKeB8Nqi/M1QDef2imBFpQ4QEKtT4YETyseDS7FnU2ZHEjiqwZeXZVvZtMvYQaoEcu63GYovHAKwazvz96e5b8R5V6wue+TivLTEKHCF2PBJ1eBKJcYAd/A37Qd511Yy6+QYvgXnhYiQd7tyyUWGGOkbQ== nhaynes"
+  ],
+  "groups": [ "nhaynes", "users", "data", "appdev" ],
+  "uid": 45073,
+  "gid": 45073,
+  "shell": "/bin/bash",
+  "home": "/home/nhaynes",
+  "comment": "Nate Haynes"
+}

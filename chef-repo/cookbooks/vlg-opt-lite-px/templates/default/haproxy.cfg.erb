@@ -1,0 +1,55 @@
+# Disted by Chef
+global
+        maxconn 16384
+        nbproc 1
+        chroot /usr/share/haproxy
+        user haproxy
+        group haproxy
+        daemon
+
+defaults
+        mode http
+        option dontlognull
+        retries 3
+        option redispatch
+        maxconn 65536
+        timeout connect 150000
+        timeout client 150000
+        timeout server 150000
+
+listen  stats :8162
+        option httpclose
+        stats uri /lbstats
+
+frontend http-in
+    bind 0.0.0.0:80
+    <%= node['vlg-opt-lite-px']['http_auth_header'] %>
+    <%= node['vlg-opt-lite-px']['http_Authorization'] %>
+    acl has_ce_uri path_beg /ce
+    use_backend ce_server if has_ce_uri
+    acl has_fc_uri path_beg /fc
+    use_backend fc_server if has_fc_uri
+    default_backend nomatch
+
+backend nomatch
+    errorfile 503 <%= node['vlg-haproxy']['etc_dir'] %>/503.error.html
+
+backend fc_server
+    balance roundrobin
+    cookie SERVERID insert
+    option httpchk HEAD /status/ready HTTP/1.0
+    option httpclose
+    option forwardfor
+    <% node['vlg-opt-lite-px']['fc_backend'].each do |backend| %>
+    server <%= backend %> <%= backend %>:8080 check port 8080 inter 5000 rise 1 fall 1
+    <% end %>
+
+backend ce_server
+    balance roundrobin
+    cookie SERVERID insert
+    option httpchk HEAD /status/ready HTTP/1.0
+    option httpclose
+    option forwardfor
+    <% node['vlg-opt-lite-px']['ce_backend'].each do |backend| %>
+    server <%= backend %> <%= backend %>:8080 check port 8080 inter 5000 rise 1 fall 1
+    <% end %>

@@ -1,0 +1,15 @@
+{
+  "name": "vlg-lz-cb-r32x",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+   "override_attributes":{
+   },
+  "chef_type": "role",
+   "run_list":[
+      "recipe[vlg-lz-cb-r32x]"
+   ],
+  "env_run_lists": {
+  }
+}

@@ -1,0 +1,10 @@
+# Disted by Chef
+<%= node['vlg-tomcat']['logs_dir'] %>/gc.log
+<%= node['vlg-tomcat']['logs_dir'] %>/catalina.out
+{
+  copytruncate
+  daily
+  rotate 7
+  compress
+  missingok
+}

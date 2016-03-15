@@ -1,0 +1,31 @@
+# Disted by Chef
+global
+        maxconn 16384
+        nbproc 1
+        chroot /usr/share/haproxy
+        user haproxy
+        group haproxy
+        daemon
+
+defaults
+        mode http
+        retries 3
+        timeout client 3s
+        timeout connect 3s
+        timeout server 15s
+        timeout http-keep-alive 5s
+        timeout http-request 3s
+        timeout queue 3s
+        option redispatch
+        default-server inter 3s rise 3 fall 3
+
+listen  stats :<%= node['vlg-haproxy']['stats_port'] %>
+        option httpclose
+        stats uri /lbstats
+
+listen frontend :80
+        balance roundrobin
+        option http-server-close
+        option httpchk GET /status/ready
+        option forwardfor header x-forwarded-for
+        server localhost 127.0.0.1:8080 check port 8080 weight 100

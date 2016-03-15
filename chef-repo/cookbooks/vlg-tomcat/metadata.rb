@@ -1,0 +1,12 @@
+name             'vlg-tomcat'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-tomcat'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.20'
+depends		 'vlg-base'
+depends		 'vlg-java'
+depends    'vlg-ssl'
+depends    'vlg-clicksense'
+depends		 'ark'

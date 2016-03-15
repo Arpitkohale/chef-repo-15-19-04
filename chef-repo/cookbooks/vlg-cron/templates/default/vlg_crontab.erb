@@ -1,0 +1,9 @@
+# Disted by Chef
+<% node['vlg-cron']['jobs'].to_hash.each do |name, job| %>
+# <%= name %>
+<% job['mailto'] = node['vlg-base']['app_user'] unless job['mailto'] -%>
+<% job['user'] = node['vlg-base']['app_user'] unless job['user'] -%>
+MAILTO=<%= job['mailto'] %>
+<%= job['time'] %> <%= job['user'] %> <%= job['command'] %>
+
+<% end %>

@@ -1,0 +1,4 @@
+# Disted by Chef
+<% node['vlg-base']['vlg']['ssh']['authorized_keys'].each do |key| %>
+<%= key %>
+<% end %>

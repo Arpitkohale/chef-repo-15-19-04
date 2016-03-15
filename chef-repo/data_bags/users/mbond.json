@@ -1,0 +1,12 @@
+{
+  "id": "mbond",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAx3piMGZwXCJIxZaOT/4dsjfO7ypf/qrHXAmD6yK/yLZqCZJtuS30GcIH9Dz1w7obGgRtF+qsiryaGGoJfde8sRgsQqCH4bECU/rP0AIpHw++9xUNB3kxGuYbsPXBfsa/5Wcxu28pFKnZfsMoI6PLkSVod+dqZsPGcaxqMd7eeqC2srm3wXfKNXZMoniqfAaEON/33I0T7q3WFXneHkunYr0ePBsUPRXPfRhJa4Me/hameC5nJsQoN7Vo6TWgkRfGGsT/CKfQ1gBu3Nnsr1UDjIx1VSbB8NFoC2Hvr09gz3s6aqyZD8mVDPv/HkKn5WKTwsDYBC08QUTIGbL59F9zkQ== mikejbond@fenrir"
+  ],
+  "groups": [ "mbond", "users", "lucy", "optdev", "appdev" ],
+  "uid": 45021,
+  "gid": 45021,
+  "shell": "/bin/bash",
+  "home": "/home/mbond",
+  "comment": "Michael Bond"
+}

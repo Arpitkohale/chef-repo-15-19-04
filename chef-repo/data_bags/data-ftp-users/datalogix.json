@@ -1,0 +1,10 @@
+{
+  "id": "datalogix",
+  "groups": [ "datalogix", "ftpusers" ],
+  "uid": 86002,
+  "gid": 86002,
+  "shell": "/sbin/nologin",
+  "comment": "datalogix",
+  "home": "/data/ftp/datalogix",
+  "action"  : "create"
+}

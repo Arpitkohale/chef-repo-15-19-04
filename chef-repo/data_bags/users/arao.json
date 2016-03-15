@@ -1,0 +1,12 @@
+{
+  "id": "arao",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCzH9yi1dUprSKmdX9T4CGdKAF0g5pBYnGCRrFouSWBTbhuZ+jjrv3SSxKl7+13w9+vTCZlkY7aFn6crV4IJ6MhHNJkcBtGBjJtdMqyhUJflpqNHPk6Pzq/O1mcTlsQ42wTAXYp1bkNps5x6tYQXfTVU2cvLe9F9EwH3vu2XHD5tunkNQV/ZfSASYo7Pa50U4hcS6Mj50GPXyLyX7RciT6cZWUxPiaFpJ8PniwQ62FfnDxalttx44NQDB4RMJ2MRdwbEE6G2XrIjkdv1VHhC1PXNEIEEgItJqFbgE0+X8/oBb/Wlq0LDUVsEau9hClfej0iviF7HNSR5umTFEAOvdC7 arao"
+  ],
+  "groups": [ "arao", "users", "lucy" ],
+  "uid": 45005,
+  "gid": 45005,
+  "shell": "/bin/bash",
+  "home": "/home/arao",
+  "comment": "Aditya Rao"
+}

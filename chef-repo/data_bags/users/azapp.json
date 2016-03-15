@@ -1,0 +1,12 @@
+{
+  "id": "azapp",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAmu6TwanpMkNq132X1nVzWQfiKkTL9wAL6Dj/hlGfrKLKoQ/A03Wb/wD9iwGkQJZ1ESnWeqZAOvwHQSuorSS3ctW3/tHvmBmoz04/Vom5ltu0FA4WywccxJJljS/Uixf0x2wKKXqMv/WvcwFxJ6MSxkuDZdAtfMtAcX4GYArpAVEOleVBw8rrcVSj9fo89S3FGT7Q9LEsMYW3uy3EgIJ+vkxTsRtrGTLo4u29TEusSeNifwO+k+ad9QuMl6SWUT0yX3DinjTvUJVCQ1RkD7W7d/QlPuG3Z0d0ckbcP3NYKsJuul3M29lhM/8I0jhid4U0/BaqpzOoVJ5pgRM0QnGJxQ=="
+  ],
+  "groups": [ "azapp", "users" ],
+  "uid": 45060,
+  "gid": 45060,
+  "shell": "/bin/bash",
+  "home": "/home/azapp",
+  "comment": "Ashley Zapp"
+}

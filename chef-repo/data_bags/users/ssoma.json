@@ -1,0 +1,12 @@
+{
+  "id": "ssoma",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIBkkAnXIJlZQd31wXRqRxLDvndqRKc79KP1LdrBFsvLmoyU2lCdfZFKCedcj2kwcThKnXYBlO6b7IUQL60/1CrgC1SaX0ghiWE6S/hV+6ztbVwJoUp3Yo9gswJawJzGn6ZE2FdIiur38qC5j+GBlzo4nfU9Zud0loC3v9+4HuqvTw== rsa-key-20150724"
+  ],
+  "groups": [ "ssoma", "users", "wheel", "gio" ],
+  "uid": 45076,
+  "gid": 45076,
+  "shell": "/bin/bash",
+  "home": "/home/ssoma",
+  "comment": "Suraj Soma"
+}

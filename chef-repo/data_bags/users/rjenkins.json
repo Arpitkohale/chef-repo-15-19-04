@@ -1,0 +1,12 @@
+{
+  "id": "rjenkins",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAnpTrnZT17GmYl9S42puV0c93lF0Xo/BoOkIAoHAGMKzHrjMZPVdKSRo41uDxTGdfuXWgQ60pNsWMM5dFS7pHjMPmgahEHKcZRlGLzt7YeI3ZOl4OsMRHIJTI9ZH+2L+dw2zT8HQNNMOuDal2YZIJ+Thw5X2XGC7Ge3prUjbO9itUeZdSOf8dnTs1Lgfj4RSZQ/f+MOHSvexZnJG/mOwaUSNNGBjqMS9ZbH/HqwF3/k2kj1D/PVr//7PllB7ztOriQhIjj9wM1jJ+bkMT5OPx0VMVpV3cEQ9EbVHysHilo81S4aSz2ShLprBjHW8BlmDJBZx/dp88lTszXCveV/PQmw=="
+  ],
+  "groups": [ "rjenkins", "users", "lucy" ],
+  "uid": 45070,
+  "gid": 45070,
+  "shell": "/bin/bash",
+  "home": "/home/rjenkins",
+  "comment": "Ryan Jenkins"
+}

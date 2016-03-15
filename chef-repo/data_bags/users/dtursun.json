@@ -1,0 +1,12 @@
+{
+  "id": "dtursun",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDoOPcv9l0vHSZjjfrBzbFn3vQL3ndUpuG8zgS0Dzsk4G9M8vJXBgV2q81c7k+t/oqgMkwwjp7Nac5xzj38+9odaLcDOC48nahaKrnp3KS2IVrkcwqC/o6M1jDRQtvLQwLKYtmnIjnsueshOEbmgJFF/hzLIU2XO6zZs7P64YlZUuamD2Xz1AUBR8OrJGzx+PJ4ekeRnGSBIc9uZA/RIq6jQsxiJDsEhEosb0YDQtx9+/ogwiR4Vl7Q2phMQXjvh5cCAn+3T5A6doZ1Je3XEToM59HLACNBgXevNIgk9GUh8DAf7zvSj+4szAgcMPOob5ceSzG8uGSypTTpNGdwck5D dtuerxun@3FWPL12-0917"
+  ],
+  "groups": [ "dtursun", "users", "optdev" ],
+  "uid": 45067,
+  "gid": 45067,
+  "shell": "/bin/bash",
+  "home": "/home/dtursun",
+  "comment": "Dolkun Tursun"
+}

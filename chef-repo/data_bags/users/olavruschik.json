@@ -1,0 +1,12 @@
+{
+  "id": "olavruschik",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAinmdH1Yob/54OMoE3y22WzbM3aRdwwX2Rl9s3aW6XpuLcYE8/Az1kHkOds+Z8XGuFjlvm/XKw8JUmc2rPFliZDtErR7cRAilhb9Njor+avSqCoui6sBjlPpQj5Je44GVYXIVITk0Yc/kQLKhGcxmCpqG8jJcayhmZBZ8rvDIYWx2nYKThfnT8ZIqpyoxyUtXwGYexPrby8xBLmMkri9hzAbIzFxFzBBi62UDkAWpu0T7VENxwgz70pu4fRYz2Epadeilf4zqOiuoCrFcE4zOZdZ96U+V37V54nSZ5Xj4RnnLUydCyWWitqhdtYIsuo7cjFvKVXF7CEJVZESOpDm3tQ== rsa-key-20150629"
+  ],
+  "groups": [ "olavruschik", "users", "wheel" ],
+  "uid": 45068,
+  "gid": 45068,
+  "shell": "/bin/bash",
+  "home": "/home/olavruschik",
+  "comment": "Oleg Lavruschik"
+}

@@ -1,0 +1,9 @@
+init_config:
+instances:
+     - server: http://localhost:8091
+       timeout: 10
+       user: <%= node['vlg-couchbase']['server']['username_ro']  %>
+       password: <%= node['vlg-couchbase']['server']['password_ro'] %>
+       tags:
+         - application:couchbaseNew
+         - platform:eliza

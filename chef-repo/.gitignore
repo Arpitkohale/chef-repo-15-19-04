@@ -1,0 +1,10 @@
+.rake_test_cache
+
+###
+# Ignore Chef key files and secrets
+###
+.chef/
+vagrant/*/.vagrant
+.idea/
+.kitchen/
+.kitchen.local.yml

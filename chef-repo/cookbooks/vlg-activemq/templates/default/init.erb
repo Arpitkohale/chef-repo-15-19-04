@@ -1,0 +1,56 @@
+#!/bin/bash
+#
+# Init script for ActiveMQ
+#
+# chkconfig: 345 86 14
+# description: ActiveMQ
+# processname: activemq
+# pidfile: <%= @vlg_activemq_pid %>
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+export ACTIVEMQ_USER=<%= @vlg_activemq_user %>
+export ACTIVEMQ_HOME=<%= @vlg_activemq_home %>
+export ACTIVEMQ_PID=<%= @vlg_activemq_pid %>
+export ACTIVEMQ_BASE=<%= @vlg_activemq_base_dir %>
+export ACTIVEMQ_DATA=<%= @vlg_activemq_data_dir %>
+export ACTIVEMQ_TMP=<%= @vlg_activemq_tmp_dir %>
+export ACTIVEMQ_OPTS_MEMORY=<%= @vlg_activemq_jvm_heap %>
+export ACTIVEMQ_OPTS="ACTIVEMQ_BASE=$ACTIVEMQ_BASE ACTIVEMQ_DATA=$ACTIVEMQ_DATA ACTIVEMQ_TMP=$ACTIVEMQ_TMP ACTIVEMQ_OPTS_MEMORY=\"-Xms$ACTIVEMQ_OPTS_MEMORY -Xmx$ACTIVEMQ_OPTS_MEMORY\""
+
+case "$1" in
+start)
+  echo "Starting ActiveMQ"
+  exec su -l $ACTIVEMQ_USER -c "$ACTIVEMQ_OPTS $ACTIVEMQ_HOME/bin/activemq start"
+;;
+
+stop)
+  echo "Stopping ActiveMQ"
+  exec su -l $ACTIVEMQ_USER -c "$ACTIVEMQ_OPTS $ACTIVEMQ_HOME/bin/activemq stop"
+;;
+
+status)
+  if [ ! -f "$ACTIVEMQ_PID" ]
+  then
+    echo "$ACTIVEMQ_PID not found"
+    exit 1
+  fi
+  kill -0 $(cat $ACTIVEMQ_PID) > /dev/null 2>&1
+  if [ $? -eq "0" ]
+  then
+    echo "ActiveMQ is running with pid $(cat $ACTIVEMQ_PID)"
+  else
+    echo "ActiveMQ is not running"
+    exit 1
+  fi
+;;
+
+*)
+        echo $"Usage: $0 {stop|start|status}"
+        exit 1
+;;
+esac
+
+exit $RETVAL

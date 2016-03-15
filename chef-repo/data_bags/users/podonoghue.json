@@ -1,0 +1,12 @@
+{
+  "id": "podonoghue",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC37YlFd8GX1ARj95HvjSsIIsR4s1ahSzRs6BRACh41Tbjw5INu2GbBVMw/tDCbobYnJk8oZ3WmmTByk61rwTveDA/DRC3ujSTee1GZs60BvzqfFTbfNRdaMp6vQGzqhDuw3NS4Uz+0iFMNsQr1J9578u8HB2GZR+TzM+2rlfWi+/znN9Xoe/FSygpQAu3+ddDRkfVDKK1NHBBOOR6IBEMyIM7z0CMqvoUpeIdNTHQaWkWQxHf+YiSiNtiemU0uZ+bgmLWLof5s86SAvklPe9hUS/b7OsEAGOvgsL4dZfcgR52iWLAzMSSlq/HYys6So7CsKYOkXWrpt8PTXkKiumPp podonoghue@deveire.com"
+  ],
+  "groups": [ "podonoghue", "users" ],
+  "uid": 45033,
+  "gid": 45033,
+  "shell": "/bin/bash",
+  "home": "/home/podonoghue",
+  "comment": "Paul O'Donoghue"
+}

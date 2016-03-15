@@ -1,0 +1,62 @@
+user <%= node['vlg-graphite']['user'] %>;
+worker_processes <%= node['vlg-graphite']['nginx']['worker']['processes'] %>;
+error_log /var/log/nginx/error.log;
+pid /var/run/nginx.pid;
+
+events {
+  worker_connections <%= node['vlg-graphite']['nginx']['worker']['connections'] %>;
+}
+
+http {
+  include /etc/nginx/mime.types;
+  default_type application/octet-stream;
+  log_format main '$remote_addr - $remote_user [$time_local] "$request" '
+                  '$status $body_bytes_sent "$http_referer" '
+                  '"$http_user_agent" "$http_x_forwarded_for"';
+  access_log /var/log/nginx/access.log  main;
+  sendfile on;
+  keepalive_timeout 65;
+  add_header Access-Control-Allow-Origin *;
+  server {
+    listen 80 default;
+    server_name _;
+    access_log /var/log/nginx/access.log;
+    error_log /var/log/nginx/error.log;
+    location / {
+      root /usr/share/nginx/html;
+      index index.html index.htm;
+    }
+    error_page 404 /404.html;
+    location = /404.html {
+      root /usr/share/nginx/html;
+    }
+    error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+      root /usr/share/nginx/html;
+    }
+  }
+  server {
+    listen 80;
+    server_name <%= node['vlg-graphite']['vhost'] %>;
+    location / {
+      include uwsgi_params;
+      uwsgi_pass <%= node['vlg-graphite']['uwsgi']['socket'] %>;
+      uwsgi_read_timeout <%= node['vlg-graphite']['nginx']['uwsgi']['read']['timeout'] %>;
+    }
+  }
+  server {
+    listen 80;
+    server_name <%= node['vlg-graphite']['grafana']['vhost'] %>;
+    location / {
+      proxy_pass http://127.0.0.1:3000;
+      proxy_read_timeout 300s;
+    }
+  }
+  server {
+      listen 80;
+      server_name <%= node['vlg-graphite']['seyren']['vhost'] %>;
+      location / {
+        proxy_pass http://127.0.0.1:<%= node['vlg-graphite']['seyren']['port'] %>/;
+    }
+  }
+}

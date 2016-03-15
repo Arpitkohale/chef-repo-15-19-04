@@ -1,0 +1,87 @@
+{
+  "id": "cb",
+  "username": {
+    "encrypted_data": "/EJqBdXej6zS1Ov102TKos3jrp4pnYwsVF+TGD+zovkIrbJ6FcvHBGqisWrc\nRpK5\n",
+    "iv": "70FGxvd+KYtYoLkVKD4WoA==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "password": {
+    "encrypted_data": "zjikBA6cQXn3GDITpQY2DrKvGLAZLqodfDVA5lcR0gg=\n",
+    "iv": "/EwGCzy9aUFzLURzXAaq0Q==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "production_username_ro": {
+    "encrypted_data": "fYQihabPAr/GAzC/cCq6qYy0wKEIc3zw3ng3f8dOk10=\n",
+    "iv": "cBRdYz7watZ59/H73Bn36w==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "production_password_ro": {
+    "encrypted_data": "1+x7jMtNEUNxhB7uofahT8chT4MBWwBeXTbmWO5+GSc=\n",
+    "iv": "lEWEUyJT2usvZOV5BuF0WQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "production_username_rw": {
+    "encrypted_data": "MxrJ6TkJcslNzzI202eXWQQ4N57wSXta7tJVwphwPR6hIj/iaoT867RzkWWd\nYjWH\n",
+    "iv": "6PJuM43Dlh3N9OJOVDwIqA==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "production_password_rw": {
+    "encrypted_data": "vHW4ynaJybcI8iXzt+MIVQI469FqmnR9Y5ED4XuOee8=\n",
+    "iv": "rqFHGnvdebKAXl4QvvEm7g==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "staging_username_ro": {
+    "encrypted_data": "FT5vEdAoHACOl/ZW+N7gzTDnx1tvgTiFC1XyRGolgNo=\n",
+    "iv": "pJYoShfUq1u8nqo8YeEztQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "staging_password_ro": {
+    "encrypted_data": "6kDYwq2tvwTGNtJuQS2EQt4yp9Sj225wbEnEXIxWqIg=\n",
+    "iv": "V/cHqMjcJw4C42DfvTVAQg==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "staging_username_rw": {
+    "encrypted_data": "L87XfY81lMjOxonkRIMq9c5b/O+5UpkabW53tDbEpyYS7haKxl6FSiPdIfgt\n9dWL\n",
+    "iv": "C5pKOqwQee8UK0wQOcBZ3Q==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "staging_password_rw": {
+    "encrypted_data": "M6ldUHbyB5nLO/UfdQxIxdnvhfPKhC/0QzLuGyEY4zo=\n",
+    "iv": "grSlqIQdBe/m7eCA8uM6tQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "sandbox_username_ro": {
+    "encrypted_data": "B07Nkd8qHDUnq7LIiejNlBYnGj3tW8Rs9j78v9/TFAk=\n",
+    "iv": "ZJ25IT9ca9kDwuBJgPm86Q==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "sandbox_password_ro": {
+    "encrypted_data": "3pwkLT9pzcGvCnwV8Y9E2wamAjsbk++byQH5N/ID9A8=\n",
+    "iv": "vtOrhSAAUjbnHeUd7BH7yw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "sandbox_username_rw": {
+    "encrypted_data": "2YOVZp8Se5MlOt609CKEHISZVI8aLjTlRLdR1jtPpfwX1kWxg/L74d7KKeBL\nrZ2L\n",
+    "iv": "uus9/GbvLNok49EbI7i72Q==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "sandbox_password_rw": {
+    "encrypted_data": "j+AV9toVkDD9EAXGbveqiIeof9ydMUXtHqN409bipWA=\n",
+    "iv": "zYV3UAxOvMoYG4cTmOFEGg==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

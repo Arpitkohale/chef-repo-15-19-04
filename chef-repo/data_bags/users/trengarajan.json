@@ -1,0 +1,12 @@
+{
+  "id": "trengarajan",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIEAh74SGyW086B0lEkZxtVHZ9U5jesY2f8RevfXz+zF5jbckoKH14Npr+bVXw15nYg5BKAV9+05rQ7+IZmIOi+RLeHLmrWZ1KCE/FreoNSTkWwT0Uq3BSMEVdoJaqQ27pxrgWXmnCEpHON74+kUvAXryBw8ESliV/ld6WD1578OnZU= trengarajan@videologygroup.com"
+  ],
+  "groups": [ "trengarajan", "users", "optdev" ],
+  "uid": 45056,
+  "gid": 45056,
+  "shell": "/bin/bash",
+  "home": "/home/trengarajan",
+  "comment": "Tara Rengarajan"
+}

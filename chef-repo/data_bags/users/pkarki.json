@@ -1,0 +1,12 @@
+{
+  "id": "pkarki",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeBo97ypjuaCHwRt1tHW6cmQIwmC9cI7Kjz/Lh58TFZwgveFQCgVG5HIJLaOfQnSwMIzZOO5yp4M053uwANi7b5ULGiwvsSckPMjq0iiKJz/o72S4gQ3Xdmtlj+ecgxrLRFtWWduBKvQq7jqFY8JcfC4uCdUdPVXlguOZt4DavStChPBduTebBhB4TNa5UU+9yRYUdkF6JERGTqu6VN9Vf2lR/0B9uELIF9mfYXBeA0ueeQ5Ukt8YhSueJ6bf0kQG0HHhP2SpyKP6cb2cl7bhq94dW1fEP8YE+FNlClOd9jnO+vFGatTYDCzCT/HiyxAEIHpwVXr59TLJ3OaR2LQdL karki@ninjaMBP.local"
+  ],
+  "groups": [ "pkarki", "users", "eliza" ],
+  "uid": 45026,
+  "gid": 45026,
+  "shell": "/bin/bash",
+  "home": "/home/pkarki",
+  "comment": "Pradyumna Karki"
+}

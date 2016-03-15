@@ -1,0 +1,12 @@
+{
+  "id": "jhack",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDns317A9ukA6Sg2Avqt9xafvFKKe3gDwqqt2F6wqp1dYyYxzBfV0p+qhEYitjMru0Eh18PYWvAgmkeMl6hSs0G5jI5nn70Otv5XBULqq+nh1yUd6BqDhTT9lT8tI5wQljXbiQgAqqEzK1o/PTIgGyfDjXes+I3g7McyPi4rfTIZNCS70BFODu2btl+Nk8xLiiP8XJjCFpi5or9QXokaWCSCXN88YD90QnQvWE5LjG3/htOY8NmSG8eR09kJwoXhza0H6u+J0HICr2p17ksQW7QfMjddlZdYUR80qunQXBDrFvmFwcOjR8SzEMWgJVrO3SO3vUaTd9ugv9lDIJlgxOJ jhack@C02ML4FJFD57-0717.local"
+  ],
+  "groups": [ "jhack", "users", "lucy" ],
+  "uid": 45011,
+  "gid": 45011,
+  "shell": "/bin/bash",
+  "home": "/home/jhack",
+  "comment": "Joel Hack"
+}

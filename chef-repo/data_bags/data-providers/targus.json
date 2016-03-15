@@ -1,0 +1,13 @@
+{
+  "id": "targus",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVJNC5oiNxkq+VXWjmF2bn+GIxu5PF2GpqT75H2j4mpd4IltoGQOS6DfJDnCpPL/sYdqp/Va9SgME3F2s2Idi4+wkMqIO7M87R1LvmIpFx58Ig5cGbzDG4c2v5/fbkNMi4yRvwjVwKn7x63721RbcopBdpJPvD/sH0D965QkonQXfJwtD+UyduFgtc+DPT4hL94xUipATmM13JD17AJw7fZRr90HP240YuYDcgcUzlFAfHd2YWFl5TIP47dmdTjc9DDHsZ1VK+aOXCXYMXkneHXqVbaHBvx+fpkhdYS1/NExZo/BMOoi3HffOk8lzeHwnCw4ZC7M1KCHvuMHvoIkBt turn@adadvisor"
+  ],
+  "groups": [ "targus", "sftpusers" ],
+  "uid": 66017,
+  "gid": 66017,
+  "shell": "/sbin/nologin",
+  "comment": "targus",
+  "home": "/data/provider/targus",
+  "action"  : "create"
+}

@@ -1,0 +1,10 @@
+name             'vlg-kafka'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-kafka'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '1.0.15'
+depends		 'vlg-base'
+depends		 'vlg-java'
+depends		 'ark'

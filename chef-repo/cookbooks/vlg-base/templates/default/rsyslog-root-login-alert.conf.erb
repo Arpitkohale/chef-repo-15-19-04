@@ -1,0 +1,9 @@
+$ModLoad ommail
+$ActionMailSMTPServer 127.0.0.1
+$ActionMailFrom rsyslog@videologygroup.com
+$ActionMailTo systems@videologygroup.com
+$template mailSubject,"rsyslog alert %hostname%"
+$template mailBody,"%msg%"
+$ActionMailSubject mailSubject
+$ActionExecOnlyOnceEveryInterval 3600
+if $msg contains 'Accepted publickey for root' then :ommail:;mailBody

@@ -1,0 +1,63 @@
+#!/bin/sh
+#
+# chkconfig: 345 99 01
+# description: Storm Nimbus
+#
+# File : Storm Nimbus
+#
+# Description: Starts and stops storm nimbus
+#
+
+source /etc/rc.d/init.d/functions
+
+STORM_HOME=<%= node['vlg-storm']['home_dir'] %>
+STORM_USER=<%= node['vlg-storm']['user'] %>
+STORM_LOGS=<%= node['vlg-storm']['log_dir'] %>
+
+function start()
+{
+  echo -n "Starting Storm Nimbus:"
+  /bin/su $STORM_USER -c "nohup $STORM_HOME/bin/storm nimbus > $STORM_LOGS/storm-nimbus-server.out 2> $STORM_LOGS/storm-nimbus-server.err &"
+  echo " done."
+}
+
+function stop()
+{
+  echo -n "Stopping Storm Nimbus: "
+  ps -ef | grep nimbus | grep -v grep | awk '{print $2}' | xargs kill
+  echo " done."
+}
+
+case "$1" in
+start)
+    start
+    exit 0
+    ;;
+
+stop)
+    stop
+    exit 0
+    ;;
+
+status)
+    nimbus=`ps -ef | grep nimbus | grep -v grep | awk '{print $2}'`
+    if [ "$nimbus" = "" ] ; then
+      echo "Nimbus Stopped"
+    else
+      echo "Nimbus running. pid:$nimbus"
+    fi
+    exit 0
+    ;;
+
+restart)
+    stop
+    start
+    ;;
+
+  *)
+    echo "Usage: storm-nimbus {start|stop|status|restart}"
+    exit 1
+    ;;
+
+esac
+exit 0

@@ -1,0 +1,6 @@
+# Disted by Chef
+postmaster: root
+root: "<%= node['vlg-base']['exim']['aliases']['root'] %>"
+mailer-daemon: "postmaster"
+postfix: "postmaster"
+devnull: "/dev/null"

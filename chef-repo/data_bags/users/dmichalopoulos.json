@@ -1,0 +1,12 @@
+{
+  "id": "dmichalopoulos",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAyC7o/DdBzo5ZkGsS12X3DJSkXNmA9VNYS0RRbhQw03nYs9k2tmRce1/bH4l6/aDj1yCzn/ME+angy9Vrcc/fSY9MFmeYXAHZHdK1Uz79HJwezyB/p9kDVGSBG5pKXBvC8KgXlBKkFKE+osv4I+jC/uy2YU35OXoB7F94kEK1nOH1hlHTZ4wTQVMb7j7e0q/ntNszQVExJFZZx45zs/mmsjlKlE+AqQHDFxvRdEkDfyyfD9Q0dslJNbxDGOaDStTmtXYaBd4A1RcKtfYS4TZZsjg3+pj2ePpxGWz78csiu7SCsPgdkVHoFYVpE5Vn43NSpaHXnQvLNmKVhOcoE47Zjw== dmichalopoulos@videologygroup.com"
+  ],
+  "groups": [ "dmichalopoulos", "users", "optdev" ],
+  "uid": 45063,
+  "gid": 45063,
+  "shell": "/bin/bash",
+  "home": "/home/dmichalopoulos",
+  "comment": "Dennis Michalopoulos"
+}

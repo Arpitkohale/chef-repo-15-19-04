@@ -1,0 +1,12 @@
+{
+  "id": "jfrank",
+  "ssh_keys": [
+    "ssh-dss AAAAB3NzaC1kc3MAAACBAKkzSaDz0QpaKjM3+n9BPqwISZiLFKFkuf+0OiK13jW/B/lypCe3iOosuj1ZxLGEx+OepjF9Er4pV6fITfhW/ylXKlwGJfEcUjPutUAin2Q8jPfwl739ED/sXRRzzHPCr+PaBgHAceMrQ/2ja7TK80+F5+x973Lwce8Qr6Sh7CaVAAAAFQCYTQe8Qy/bdKdWwDLz44NEijFpDQAAAIBPtxVhPWq4ZfpR9fz4MF4fXLdgl7MPiwD2Xtz1Pi8ByEqfTTDBD0kgH9C1MqrY67I6ArdVHRQMf9TA5Wh+SjoXbMO0usB3eAU/p+vOCu3gJ+wJvVEXVcCuwxbP9pzbEET/fOHqQPSQCQCMFxfOqnL4kEoQNDsHVH65H+bXjPddPwAAAIBy/ls8HDJeTa69rJs2e8Ae9oO2UdlE0uNouoqqNySQEuhagcyal3gxHTAdhetQj2kGTo6vgHhQAVmeO5p6klvEGaOruq+NMrDQ+46r/aktrl1lYZnWhJnYbQwPYOupCPz+gxHkij5SiWjytdTdVpYEhaG2mP18TbHmaqQ+52yxEg== jfrank@Jeremys-MacBook-Pro.local"
+  ],
+  "groups": [ "jfrank", "users", "data" ],
+  "uid": 45024,
+  "gid": 45024,
+  "shell": "/bin/bash",
+  "home": "/home/jfrank",
+  "comment": "Jeremy Frank"
+}

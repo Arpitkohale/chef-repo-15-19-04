@@ -1,0 +1,3 @@
+#!/bin/bash
+
+knife ec2 server create -I ami-1ecae776 --bootstrap-version 11.16.4 --security-group-ids sg-46c73923,sg-99c276fd,sg-0bc7a36e --subnet subnet-72d9a05a --associate-public-ip --ssh-key gio-keypair -f m3.medium --ssh-user ec2-user --identity-file ~/VLG/gio/AWS\ Keypairs/gio-keypair.pem -N usvadtftprd01 --fqdn usvadtftprd01.inf.videologygroup.com --run-list role[vlg-base],role[vlg-data-ftp] --region=us-east-1 --environment production --secret-file ~/.chef/encrypted_data_bag_secret --tags Platform=Data,Owner=Systems,Name=usvadtftprd01,Environment=Production,Application="FTP" --ebs-size 128 --associate-eip 54.173.167.96

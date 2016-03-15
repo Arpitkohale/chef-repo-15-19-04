@@ -1,0 +1,12 @@
+{
+  "id": "bhendricks",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIcd3CnQPEhbKqdQJZOpcG7tx6ohNVAcLm44mCNTU0URh6izreHrJipS2K1o/q60D13YQj55oYH40b0rj3y4lLxJsEVs9Dgf1XvsIKdZZa5MfkDQYo3p23dtepUtpSmwu4gYzG3QJ5NGLIqwCfXpnei6IQjAi/QkCXWv7Yuzzf0siCc6pGqu/Hl1tZ9IzOcVqA7oEh8TQbvfe5GIrzz/ZGOAuf5VL5N8J4kYU/ISz3oOVxuDbRyrpEJbaEoY006PFryqyBPkbo+ZOcEiDSmmJwgiXuk8sTZ+e7Z3FR/jAjOR+XHfWzst8zPJkXmYdPGu/frw52JGCXjUufnI6L1hED"
+  ],
+  "groups": [ "bhendricks", "users", "eliza" ],
+  "uid": 45008,
+  "gid": 45008,
+  "shell": "/bin/bash",
+  "home": "/home/bhendricks",
+  "comment": "Brad Hendricks"
+}

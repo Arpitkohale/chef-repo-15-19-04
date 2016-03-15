@@ -1,0 +1,14 @@
+{
+  "id": "jbays",
+  "ssh_keys": [
+    ""
+  ],
+  "groups": [
+    "jbays", "users"
+  ],
+  "uid": 45002,
+  "gid": 45002,
+  "shell": "/bin/false",
+  "home": "/home/jbays",
+  "comment": "James Bays"
+}

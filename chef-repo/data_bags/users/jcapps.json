@@ -1,0 +1,12 @@
+{
+  "id": "jcapps",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGnbzVnnwNlWqIHYw+2xm4McD6v2J9C5nLSH90njCQ+iUSwRfpecPa7NDuUDdurY7GJCFHdtFbxF3DSbf+rgxCSvw3G7kA0PfECA9aqTUoydOtXLxQR5Gvmn2n2Ld5Hbw9GYwtpmbxYTwhDsmYdSOub9sYbfso3AT+5zWYCjc0BSAnVVv/QPcjManh9AGDLrflrKETg7eIrS9ptilBM/RdrrzedWLzLF2wdiqjDxCXSODx2vrT0qXPdZPtjGEY5hccm9EobVeK2QQbyaIY2JZ/WUAdhW2/S7uJpjQd5VKAJMusvGlKt5k0PODUfS7qPiLNiJxgHHK7rZooDkuzRsUT jcapps@c02nvd84g3qd.tidaltv.local"
+  ],
+  "groups": [ "jcapps", "users", "wheel", "gio", "data" ],
+  "uid": 45048,
+  "gid": 45048,
+  "shell": "/bin/bash",
+  "home": "/home/jcapps",
+  "comment": "John Capps"
+}

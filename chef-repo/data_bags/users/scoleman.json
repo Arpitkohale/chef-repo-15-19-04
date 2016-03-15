@@ -1,0 +1,12 @@
+{
+  "id": "scoleman",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVLXg9FKPC0cWLAgcmDu3lpW+xGcIEd0rGo/6f4iAbHKAXcehpDHFNWtjeARV1W9VqGbpIYxE7aPYFLnxIlLmshH8zHV2zTTSWa7CGJD8R6/ys3ThRWTgFEuEUT8ahH6ASg+Vrc2yF3K2MIOqJDvmlxlDHfYQfAz18f7baCfRjO+5YFscuZxj5Hi139ygT4PIDlrNSm2BWM8RRNxL0qPDZOhlAXoC2dLNlL2ac8sEQMXF1eZQdw40IouCNqEI24CgzTZvyLahMcnPAp3uR2+DiUd/LDzvgDpMvzJ/SsMMKyFjH/0PKXhOoOHCMaRv9SpSkAykY2h3iZPqTJM8f+T99 scoleman@eharley-latitude-e7440.tidaltv.local"
+  ],
+  "groups": [ "scoleman", "users" ],
+  "uid": 45077,
+  "gid": 45077,
+  "shell": "/bin/bash",
+  "home": "/home/scoleman",
+  "comment": "Steve Coleman"
+}

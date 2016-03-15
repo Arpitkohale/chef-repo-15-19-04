@@ -1,0 +1,9 @@
+{
+  "id": "git_build",
+  "password": {
+    "encrypted_data": "ZkgWuXyYwdTpmbgESAHlV8fZIH/pq9pgqyI+iil38rE=\n",
+    "iv": "kZG66j+JazIPS2maZNOYGQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

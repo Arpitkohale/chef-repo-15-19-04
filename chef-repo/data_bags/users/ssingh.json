@@ -1,0 +1,12 @@
+{
+  "id": "ssingh",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIEA4WowDM5Q51+3k89LtewyfY3FVcTk0ouR83zdGZYKh9dbShtrTqm0/9ALi+Nr1G3UyHLlHLvQnvsjJgA9jpQ4gyo5uCaPcxTdG94+CqGDSU8gSMLG+6C1ep20bizCjWbDN9ZJPIxJRGTw3BEpv+4ZiFR/SQLZECzCs5ldwqdiJ4k="
+  ],
+  "groups": [ "ssingh", "users", "wheel", "gio" ],
+  "uid": 45030,
+  "gid": 45030,
+  "shell": "/bin/bash",
+  "home": "/home/ssingh",
+  "comment": "Santosh Singh"
+}

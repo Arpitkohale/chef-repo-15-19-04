@@ -1,0 +1,12 @@
+{
+  "id": "skapoor",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3hnok6e/na8JXhj5DV6y0XxqIdxK7IczsYLAPA/NBOG8lq6UF7ILTVwZWW1l5gfUsfczD2fXdIEXvcaacTmNnFnVIMWAylHXFJwL0tfQ4xm8DgxMfyY060Bg/Duk+Lgu33UxEQi+0+qdG7S/wTqLjxa1xSI0eTeWWMd2rtlM3J0q9OWfERgjg6Pg50gCTGhR4o0eS/9ae6vKRuBve8KFuZHqMTfnV4d/+9hzWo3t64nnYkr4oqg37QKfOR4kLnyN+S1pPQE8kmppuGBUNW/tEEujAl7lp9Ch8AbqV9UW/pb4vR0xmgfWHOyQRN/bFdypFMPp+bQFKBzRodHIgzNBF"
+  ],
+  "groups": [ "skapoor", "users", "wheel" ],
+  "uid": 45004,
+  "gid": 45004,
+  "shell": "/bin/bash",
+  "home": "/home/skapoor",
+  "comment": "Sanjeev Kapoor"
+}

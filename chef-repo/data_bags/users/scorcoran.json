@@ -1,0 +1,12 @@
+{
+  "id": "scorcoran",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOS1EVAol/jSdk/7wufnNqJMfbX0O0uYIaVk3aKUJEBmjW0Av4IfmWVivs2I7Uq6vywjoxwPSsMNOvpLr5azazwopvVyAfzuiLTSCmSsiXMEcPXGkkh4WQ7H2oyPINDg/+zjH0jExmewf+NSG8MwxOQLceb4jiw7r/NbjzBAZLsfUINv5x8ODv5mnAf+dzmwN52638viw177XtCbNNzWREn79h1ElQP1h0CASDOYcZgGctRsuTBOokmK/2iMhLv0eOH0DLzEYXV70mvUE1vw4HouKtkOhSw15R+QJjxCf3Xh8L9uUEwTwukk+hXNz1QCwIPD+SX+ayi+ouCprI3GZR seancorcoran@Seans-MacBook-Pro.local"
+  ],
+  "groups": [ "scorcoran", "users", "lucy" ],
+  "uid": 45036,
+  "gid": 45036,
+  "shell": "/bin/bash",
+  "home": "/home/scorcoran",
+  "comment": "Sean Corcoran"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "root",
+  "password": "$1$t9GI0HxM$xwVxwbU7x3bi8ZjqvCdyn/",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+pWHpK97FH7B/a89IHYDhLOtSFeHm2a35TzqQ55FOWD6+6JHAg38sqQRBhbMDg0/j7sGRLOi3o2JekUFWjIRLgBg0dTPorhg/uyw/dblwj/3WgMiNWdJtwmgbbkzIOLwomEXkSEWvxds6NNMB3iDK5dN8wE8sIId/zeXLE+cdTBQJi0qIuS1PhoRIi0q5U5rOG4MvAmKk++nqLkIMzIWzUDDQKLzQc8QQy7SijUEQn9KbnJekw6iWHC35WkZ48zrkbTa7ModLESEPGsvtxiRnDdZOGY3DQSyzcYvTnxyJl2LHpe1dFuHRdCtRYXH4x8mD+zTpuUBwXBpqHvo48kur id_rsa_root-201507"
+  ],
+  "groups": [ "root" ],
+  "uid": 0,
+  "gid": 0,
+  "shell": "/bin/bash",
+  "home": "/root",
+  "comment": "root"
+}

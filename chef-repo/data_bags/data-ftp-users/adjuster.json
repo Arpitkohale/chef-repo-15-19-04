@@ -1,0 +1,11 @@
+{
+  "id": "adjuster",
+  "password": "$6$egFw7mZc$mk7MlJrRDO1IKhun7gwxD67j2HBn9jkSWMC.zV9e3U.Nw2r2q5yZ9ytp6P1ogZkNK5KJXEa8Ncp.aCqSu8XLW1",
+  "groups": [ "adjuster", "ftpusers" ],
+  "uid": 86005,
+  "gid": 86005,
+  "shell": "/sbin/nologin",
+  "comment": "adjuster",
+  "home": "/data/ftp/adjuster",
+  "action"  : "create"
+}

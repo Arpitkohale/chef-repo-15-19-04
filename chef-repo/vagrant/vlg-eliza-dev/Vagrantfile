@@ -1,0 +1,105 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+require 'yaml'
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.require_version ">= 1.5.0"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.hostname = "vlg-eliza-dev"
+
+  config.omnibus.chef_version = '11.16.4'
+
+  config.vm.box = "chef/centos-6.5"
+  config.vm.provider "parallels" do |v, override|
+	override.vm.box = "parallels/centos-6.5"
+	end
+
+  config.vm.network "private_network", ip: "192.168.27.13"
+
+  config.berkshelf.enabled = false
+
+  config.vm.provider :virtualbox do |vbox|
+    # NAT through the host so we can use the VPN connection to get to nexus.videologygroup.com
+    vbox.name = "dmp-dev"
+    vbox.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+
+    vbox.memory = 4096
+    vbox.cpus = 2
+  end
+
+# MySQL
+  config.vm.network :forwarded_port, guest: 3306, host: 3306
+
+  # ActiveMQ
+  config.vm.network :forwarded_port, guest: 61616, host: 61616
+  config.vm.network :forwarded_port, guest: 8161, host: 8161
+
+  # MongoDB
+  config.vm.network :forwarded_port, guest: 27017, host: 27017
+
+  # CouchBase
+  config.vm.network :forwarded_port, guest: 8091, host: 8091
+  config.vm.network :forwarded_port, guest: 8092, host: 8092
+  config.vm.network :forwarded_port, guest: 11209, host: 11209
+  config.vm.network :forwarded_port, guest: 11210, host: 11210
+  config.vm.network :forwarded_port, guest: 11211, host: 11211
+
+  # Zookeeper
+  config.vm.network :forwarded_port, guest: 2181, host: 2181
+
+  # Solr
+  config.vm.network :forwarded_port, guest: 9080, host: 9080
+
+  # HAProxy
+  config.vm.network :forwarded_port, guest: 28162, host: 28162
+  config.vm.network :forwarded_port, guest: 9030, host: 9030
+  config.vm.network :forwarded_port, guest: 28080, host: 28080
+
+  config.ssh.forward_x11 = true
+
+  # Storm
+  config.vm.network :forwarded_port, guest: 8081, host: 18081
+
+  # Kafka
+  config.vm.network :forwarded_port, guest: 9092, host: 9092
+
+  # Graphite
+  config.vm.network :forwarded_port, guest: 8080, host: 18080
+  config.vm.network :forwarded_port, guest: 2003, host: 2003
+  config.vm.network :forwarded_port, guest: 2004, host: 2004
+
+  config.vm.network :forwarded_port, guest: 6700, host: 16700
+  config.vm.network :forwarded_port, guest: 6627, host: 16627
+
+  if Vagrant.has_plugin?("vagrant-cachier")
+    config.cache.scope = :box
+    config.cache.enable :generic, { name: "wget", cache_dir: "/var/cache/wget" }
+  end
+
+  config.vm.provision :chef_solo do |chef|
+    #chef.log_level = :info
+    chef.encrypted_data_bag_secret_key_path = '~/.chef/encrypted_data_bag_secret'
+    chef.cookbooks_path = "../../cookbooks/"
+    chef.environments_path = "../../environments/"
+    chef.environment = "development"
+    chef.roles_path = "../../roles/"
+    chef.data_bags_path = "../../data_bags/"
+    chef.json = {
+      mysql: {
+        server_root_password: 'dmp',
+        server_debian_password: 'dmp',
+        server_repl_password: 'dmp'
+      }
+    }
+
+  chef.run_list = [
+  "recipe[vlg-base::default]",
+  "recipe[vlg-eliza-dev]"
+    ]
+  end
+end

@@ -1,0 +1,12 @@
+{
+  "id": "sfleming",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2RsOi50w8Kh//RT1mcKlMhpqWLy3MPZsdNE4nXfHJZ6ye7keDMABTsfkyGlD4KDooMHsGuNkL6pDgATXrtHYYmGt+M082+/bdfDhXe47be7bEFc6ERgq+do5j8zfBhAMtClwA6xR8TeoKozK2m6wNTzJHTtBvCdpb2uQxDONn+ejqx/xUx3n/TO6NAD4mUQfv08oTAfN5r6Z/z9ACqR1ZNGfJkhShCch6s78Ak8/qhPAWJoCwHNjRBZUiOnSLCx7wp96QNIgIOo/OxtJYh7dbizUl7Wft1eo5hnz/hNBwHd7N2clSkAktlbqbiOKn2Yu3VeDaBxaqoFRcY3IWUFAl sfleming@videologygroup.com"
+  ],
+  "groups": [ "sfleming", "users", "optdev" ],
+  "uid": 45059,
+  "gid": 45059,
+  "shell": "/bin/bash",
+  "home": "/home/sfleming",
+  "comment": "Shaun Fleming"
+}

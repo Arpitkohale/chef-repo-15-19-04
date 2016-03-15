@@ -1,0 +1,18 @@
+# Disted by Chef
+127.0.0.1 localhost.localdomain localhost
+<% if node['vlg-base']['location'] != 'usdc' %>
+<%= node['vlg-data-cdh']['dmp']['db']['ip'] %> <%= node['vlg-data-cdh']['dmp']['db']['host'] %>
+<% @cdh_hosts.each do |cdh_host| -%>
+<%= cdh_host['ipaddress'] %> <%= cdh_host['machinename'] %> <%= cdh_host['hostname'] %>
+<% end -%>
+<% end %>
+<% if node['vlg-base']['location'] == 'usdc' %>
+54.85.199.93 chef.videologygroup.com
+54.85.178.66 git-internal.gio.videologygroup.com
+52.3.187.173 graphite.inf.videologygroup.com
+10.102.65.83 usdcdtchsbx01.inf.videologygroup.com
+10.102.65.81 usdcdtchsbx02.inf.videologygroup.com
+10.102.65.88 usdcdtchsbx03.inf.videologygroup.com
+10.102.65.125 usdcdtchsbx04.inf.videologygroup.com
+54.165.108.24 nexus.videologygroup.com
+<% end %>

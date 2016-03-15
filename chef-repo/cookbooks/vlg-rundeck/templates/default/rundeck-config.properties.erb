@@ -1,0 +1,11 @@
+# Disted by Chef
+loglevel.default=INFO
+rdeck.base=/var/lib/rundeck
+rss.enabled=false
+grails.serverURL=http://<%= node['vlg-rundeck']['server_url'] %>
+grails.mail.default.from=<%= node['vlg-rundeck']['from_address'] %>
+
+dataSource.dbCreate = update
+dataSource.url = jdbc:mysql://<%= node['vlg-rundeck']['mysql']['host']%>/<%= node['vlg-rundeck']['mysql']['name']%>?autoReconnect=true
+dataSource.username = <%= node['vlg-rundeck']['mysql']['username'] %>
+dataSource.password = <%= node['vlg-rundeck']['mysql']['password'] %>

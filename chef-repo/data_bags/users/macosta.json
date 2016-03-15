@@ -1,0 +1,12 @@
+{
+  "id": "macosta",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA0uaexW755rfx7oS93B5ptgvIzVczXtuUYzmfLuDPhEGHl57YvLjhRhWiDPDXxxBr0wIcppiwiQkHypIGypb2KNJ4BO3IJkT8ujBs7V209b1CPIJeW0RQ62NsG1l9ec8BdWe3a6W+g1pj6zkwtBsL1RQnDzG2mi+UOIWVpQhs9ByZB8RnjJfAy0svkc+ehgQVRobYeb8HNjvbk5MVx3tt0+6MQj/ccVeERECACAk4cpQsZmGpHDFaV4wTLTx3kRNIHcGIXePN6J3lQn3lhqbrzkbG5/sXNrIWImw9CkfWMkh6RiDv+ATXOoBbhIHbUfKsGXGfddO/WYm+FtjrtHfB4w=="
+  ],
+  "groups": [ "macosta", "users", "data" ],
+  "uid": 45075,
+  "gid": 45075,
+  "shell": "/bin/bash",
+  "home": "/home/macosta",
+  "comment": "Monika Acosta"
+}

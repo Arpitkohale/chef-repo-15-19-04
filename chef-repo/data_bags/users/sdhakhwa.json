@@ -1,0 +1,12 @@
+{
+  "id": "sdhakhwa",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAl8WWxWBcCe9WA9ovZSpMgIXGWYS7q2OL+/fbCY0pjH/YywGpsOG3duAWALtXw7W5XMI7/Fr4tX7Jks6O8MZFzoYxZWKytu9G8UBWKuQoYiuHXGYXO1pD6w96Jji+tPHSPwPbt+KDbE9uKlLvxk9qlb8x1r+KA2iA5SxaDAoUBvtEKg6rk7y9r9DKIp2UBEctWKSs2gsiVsOsD7Qsz20cY0Ovi6EukTLePQZ+bAXi1+Qfht+9czuNU8XXsYBgFVeuYYKkkZhWiJvUsQE9lHzeBomy+0GjBaBo8U5bPArMKlIuNa11GtRDUBoXREqOOQzc/qT3CwJafOAAAKa2wQLcXQ=="
+  ],
+  "groups": [ "sdhakhwa", "users", "data" ],
+  "uid": 45071,
+  "gid": 45071,
+  "shell": "/bin/bash",
+  "home": "/home/sdhakhwa",
+  "comment": "Sanjay Dhakhwa"
+}

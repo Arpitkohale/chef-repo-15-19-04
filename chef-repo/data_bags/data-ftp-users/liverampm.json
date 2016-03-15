@@ -1,0 +1,11 @@
+{
+  "id": "liverampm",
+  "password": "$6$g6LLcp1x$VhovhYdrdOwDQErDG4ySzIJxcmn0JgncjZc/gfM84Mm.Mk.jcMFnTmlEOPLhNe76PDJ93u1PjFDV8PV8AlOvr1",
+  "groups": [ "liverampm", "ftpusers" ],
+  "uid": 86006,
+  "gid": 86006,
+  "shell": "/sbin/nologin",
+  "comment": "liverampm",
+  "home": "/data/ftp/liverampm",
+  "action"  : "create"
+}

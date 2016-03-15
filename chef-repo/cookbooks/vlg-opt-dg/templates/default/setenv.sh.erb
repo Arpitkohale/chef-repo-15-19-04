@@ -1,0 +1,41 @@
+#!/bin/sh
+# Disted by Chef
+
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CATALINA_HOME/lib
+export LD_LIBRARY_PATH
+
+APP_HOME="<%= node['vlg-clicksense']['home_dir'] %>"
+APP_DEPLOYMENT="<%= node['vlg-tomcat']['app_deployment'] %>"
+AWS_DATACENTER="<%= node['vlg-tomcat']['aws_datacenter'] %>"
+
+TZ="<%= @vlg_tomcat_timezone %>"
+HOSTNAME=$(hostname -s)
+
+CATALINA_OPTS="-Dcom.sun.management.jmxremote \
+    -Dcom.sun.management.jmxremote.port=9004 \
+    -Dcom.sun.management.jmxremote.ssl=false \
+    -Dcom.sun.management.jmxremote.authenticate=false"
+
+JAVA_OPTS="<%= @vlg_tomcat_java_opts %>"
+JAVA_OPTS="$JAVA_OPTS -Djava.library.path=/lib:/lib64:/usr/lib:/usr/lib64:$JAVA_HOME/lib:<%= @vlg_tomcat_lib %>"
+JAVA_OPTS="$JAVA_OPTS -Xms<%= @vlg_tomcat_jvm_heap %>"
+JAVA_OPTS="$JAVA_OPTS -Xmx<%= @vlg_tomcat_jvm_heap %>"
+JAVA_OPTS="$JAVA_OPTS -Xss<%= @vlg_tomcat_jvm_thread_stack %>"
+
+JAVA_OPTS="$JAVA_OPTS -XX:+<%= @vlg_tomcat_jvm_gc_algorithm %>"
+JAVA_OPTS="$JAVA_OPTS -verbose:gc -XX:+PrintGC -XX:+PrintGCTimeStamps -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -Xloggc:<%= @vlg_tomcat_jvm_gc_log %>"
+
+JAVA_OPTS="$JAVA_OPTS -XX:+HeapDumpOnOutOfMemoryError"
+JAVA_OPTS="$JAVA_OPTS -XX:-OmitStackTraceInFastThrow"
+
+JAVA_OPTS="$JAVA_OPTS -DHOSTNAME=$HOSTNAME"
+
+JAVA_OPTS="$JAVA_OPTS -Dclicksense.application.home=$APP_HOME -Dapplication.home=$APP_HOME"
+JAVA_OPTS="$JAVA_OPTS -Dspring.profiles.active=datacenter.$AWS_DATACENTER,deployment.$APP_DEPLOYMENT"
+
+export GAMS_HOME="/usr/local/gams"
+export GAMS_LIBPATH=$GAMS_HOME/apifiles/Java/api
+[ -d "$GAMS_LIBPATH" ] && {
+    export CLASSPATH="$CLASSPATH:$GAMS_LIBPATH/GAMSJavaAPI.jar"
+    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$GAMS_HOME"
+}

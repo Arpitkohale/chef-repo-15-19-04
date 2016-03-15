@@ -1,0 +1,42 @@
+# Disted by Chef
+global
+        maxconn 16384
+        nbproc 1
+        chroot /usr/share/haproxy
+        user haproxy
+        group haproxy
+        daemon
+
+defaults
+        mode http
+        retries 3
+        timeout client 4s
+        timeout connect 3s
+        timeout server 4s
+        timeout http-keep-alive 5s
+        timeout http-request 3s
+        timeout queue 3s
+        option redispatch
+        default-server inter 3s rise 3 fall 3
+
+listen  stats :8162
+        option httpclose
+        stats uri /lbstats
+
+# *.inf.videologygroup.com Server-to-Server HA Proxy
+frontend dmp-server-to-server
+         bind *:9030
+         mode http
+         maxconn 4000
+         default_backend dmp-server-to-server-backend
+
+backend dmp-server-to-server-backend
+        mode http
+        maxconn 4000
+        balance roundrobin
+        option http-server-close
+        option forwardfor header x-forwarded-for
+        option httpchk GET /server-info/healthcheck
+        <% node['vlg-lz-pd']['da_backend'].each do |backend| %>
+                server <%= backend %> <%= backend %>:9030 check port 9030
+        <% end %>

@@ -1,0 +1,12 @@
+{
+  "id": "psingh",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAuut1EVKnjhBNy2xUVXRfKJLk03j3H63KK7ENKqerlvGICVwzjVMMYVkE9SPEi6ACBAQNpa3F16WTiGitBq7LoebLKJ/+MOWwbklb5hOoH6HmEYlay3QixPUr43W5q4cn0JGRzm8GsSrHjaN9zn5pjNVuQttKTD9peiSz1szsUwslY9OGI1pSEzhUWnVCgOzDZguZZWuR26XpVBw9NvJ02fuLqKD93/V2FRTJX6jNyoNrg++/Vdt52+vy3w6rujJXoeVWYs4+1EwZ3OAOxE3CBrhZwMFgBy4jO3725NYfcuRFaihsBx8dUO2dwAJLC3lL3hxeNPs0zByGJe30EPLfgw== PSINGH-W7LT1.TidalTV.local"
+  ],
+  "groups": [ "psingh", "users", "optdev" ],
+  "uid": 45057,
+  "gid": 45057,
+  "shell": "/bin/bash",
+  "home": "/home/psingh",
+  "comment": "Pawan Singh"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "GroupM-DRTV",
+  "password": "$6$OSmikmjc$KWiv5RA718HzViZHwOrqbCYEIE2E6GXGjJMdchCKQdJlKEqXadKCcXHjNcZSDzbG2mkdLdzSHu/73LuvA8FM21",
+  "groups": [ "GroupM-DRTV", "ftpusers" ],
+  "uid": 86003,
+  "gid": 86003,
+  "shell": "/sbin/nologin",
+  "comment": "GroupM-DRTV",
+  "home": "/data/ftp/GroupM-DRTV",
+  "action"  : "create"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "tfarrell",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAjbQlIgOPkZbjUVsizu4AuKghbpyN9dU1UOdBvx2iPCH2ljXui+X1+zAQ+sktgDUXOzyIbtdq+suuQ98lB7GntKNkcFQ0mjHhn0ng7b//5dTxOtbGa/r6CmXR/ijSW/mfaMj6Sc7fCG3joOvKXQ4iuMtU5hwDWsONua0HKecfcPIlBjj+JlHILu9fwOjr80wsb0/pH1aJb2RBgivXqmc9QesNsuivNJPwT8zHi5EFZ4NIoAKUaqh+BBJ5R/DQ+Z0jzIukf7+800D1gW0q8nHPWhqs2VsrjFYgJbsDoCSDgmKjIsOJbmM1E4PkDQkWek2Pxpc2y8SEei8DdSK853VHww=="
+  ],
+  "groups": [ "tfarrell", "users", "data" ],
+  "uid": 45061,
+  "gid": 45061,
+  "shell": "/bin/bash",
+  "home": "/home/tfarrell",
+  "comment": "Tom Farrell"
+}

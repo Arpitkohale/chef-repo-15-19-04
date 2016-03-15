@@ -1,0 +1,47 @@
+#!/bin/bash
+#
+# Init script for carbon-cache
+#
+# chkconfig: 345 86 14
+# description: carbon-cache
+# processname: carbon-cache
+#
+
+instances="a b"
+
+usage() {
+  echo $"Usage: $0 {stop|start|status}"
+}
+
+# Source function library.
+. /etc/init.d/functions
+
+case "$1" in
+start)
+  for i in $instances
+  do
+    <%= node['vlg-graphite']['home'] =%>/bin/carbon-cache.py --instance=$i start
+  done
+;;
+
+stop)
+  for i in $instances
+  do
+    <%= node['vlg-graphite']['home'] =%>/bin/carbon-cache.py --instance=$i stop
+  done
+;;
+
+status)
+  for i in $instances
+  do
+    <%= node['vlg-graphite']['home'] =%>/bin/carbon-cache.py --instance=$i status
+  done
+;;
+
+*)
+        usage
+        exit 1
+;;
+esac
+
+exit $RETVAL

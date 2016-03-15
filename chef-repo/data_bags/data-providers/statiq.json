@@ -1,0 +1,13 @@
+{
+  "id": "statiq",
+  "ssh_keys": [
+    "ssh-dss AAAAB3NzaC1kc3MAAACBAOb35HKoeUFH7xB7W00vhaMiY4jt9L8jevqkv9eF3QzP8EW3g2NBKJezbR1BXFGc2kBCqltihILWRSVzKLgCCnZLrUl7CC8O70QJIPsMClihHZYk+VGV8gXgxNvLZhbHETWTb/QUURzs0LrmXUxZSXlvSR+aaVqWmWFQAruNMEuZAAAAFQCWtYX7ezz6R5kKhordEespazlaNwAAAIEAh2yqxBJJJgutpETDbxc4clGTIylhpRe0/PuFJKjtySH7hIM8TgJJjKuW/sNiyQ3cqjXMQsQyj871vh8aazQqlQzgmgW1RFpUVjZZqYG+ABkpTYXwTlbg1Z2x9RnqzLS0MWRp6mbaPVoHDponwg2FK3d2vSO3BnQu9pm7a5PAYWgAAACBAKLzTE5Vc/36G2DEQo7wD5nD29dcqGNR7+EE2dNaiItY8SAGNdhIU+wSGYXdYXIJeWBBtTRLtPekm6ZsxjBb9mjif7pXNCaBZsTPi/u3iQh6GiH5jF7WuVr+2Fgn7LU4ySODRqXoqF6x6QJAVgsi8HyXZwTTZg9raw/dzMaIJkWM ec2-user@ip-10-0-0-32"
+  ],
+  "groups": [ "statiq", "sftpusers" ],
+  "uid": 66020,
+  "gid": 66020,
+  "shell": "/sbin/nologin",
+  "comment": "statiq",
+  "home": "/data/provider/statiq",
+  "action"  : "create"
+}

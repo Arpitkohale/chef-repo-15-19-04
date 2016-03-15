@@ -1,0 +1,3 @@
+#!/bin/bash
+
+knife ec2 server create -I ami-7ee75416 --bootstrap-version 11.16.4 --security-group-ids sg-46c73923 --subnet subnet-04ca9142 --ebs-size 100 --associate-public-ip --ssh-key gio-keypair -f r3.large --ssh-user root --identity-file ~/VLG/gio/AWS\ Keypairs/gio-keypair.pem -N usvaolmcprd03 --fqdn usvaolmcprd03.inf.videologygroup.com --run-list role[vlg-base],role[vlg-opt-lite-mc] --region=us-east-1 --availability-zone=us-east-1c --environment production --secret-file ~/.chef/encrypted_data_bag_secret --tags Platform=Optimization,Owner=Systems,Name=usvaolmcprd03,Environment=Production,Application=OptLite,Component=MC

@@ -1,0 +1,9 @@
+$ModLoad ommail
+$ActionMailSMTPServer 127.0.0.1
+$ActionMailFrom rsyslog@videologygroup.com
+$ActionMailTo lucy-dev@videologygroup.com
+$template mailSubject,"rsyslog alert %hostname%"
+$template mailBody,"%msg%"
+$ActionMailSubject mailSubject
+$ActionExecOnlyOnceEveryInterval 3600
+if $msg contains 'ERROR' then :ommail:;mailBody

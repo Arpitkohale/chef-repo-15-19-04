@@ -1,0 +1,11 @@
+name             'vlg-rnd-sbx'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-rnd-sbx'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.3'
+depends		 'vlg-base'
+depends          'vlg-anaconda'
+depends          'vlg-java'
+depends          'scala'

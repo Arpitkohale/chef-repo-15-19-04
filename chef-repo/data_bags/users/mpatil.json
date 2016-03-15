@@ -1,0 +1,12 @@
+{
+  "id": "mpatil",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7yJ9Q9X+YXNW1CEKtePGx93bPFRVEGNVFiFcWmyJXk9HaM3vvuHPHwQzcaejM8t0ha68GNHpLnmZY3s5ZIhSQAeAwtqqPXj/uf/6QSBT/VWMhTpWJAR500KhfZTu0u1BMbs/g4CbXMRjALtsly1TINc4JQlKC+tOkQnCYbd0QGRuDKNHeIAKPifqfwP6Op0fT29/Z2Cu58RyiSI4pumCY827jtblu/ejqOOvb/R83iQzclcG/mdRPgjYlN0xGram8ZTb67yDhuxFZO154Kay8Y8bgv3D6p+VsyYwrauoW60PZk/ErF/sovEdEeAOYi8JHLAC2m6M9SPVJNoQUYcV1 mpatil@C02N6207G3QD-0817.local"
+  ],
+  "groups": [ "mpatil", "users", "lucy" ],
+  "uid": 45012,
+  "gid": 45012,
+  "shell": "/bin/bash",
+  "home": "/home/mpatil",
+  "comment": "Milind Patil"
+}

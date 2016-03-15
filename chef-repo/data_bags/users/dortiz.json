@@ -1,0 +1,12 @@
+{
+  "id": "dortiz",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPpVpQ95b0w2H7o2Rz0PsCBeQxhVcXAbwgc84Ll0pXeFLQwH9SuVpcwfDUhxZSCdSdtit2k5f4VHwpxSLAXujDYjAEEZmXK28gC/q3CLiRic4Tc2QbRNGWi10vINo0ZMsALGRilLJsGehjyoQ/zaSq3tT+e60NLXZc9yAaUTeIft0GSUQnWsl34/rVwQ8kFrCF+8V5+8aN2kq4R9IKtRWC1i180iOTnLNNW+upIAgsxsCy7gh8jWj+uoymx4DP8Kek6dGu0EcEIjtfGbdEN1ZB30dURWXlu0hCaksJr6UAPppuMIeVdOsoLidH/do/13nfHn4awCpyrwGWNNgdtzJB"
+  ],
+  "groups": [ "dortiz", "users", "data" ],
+  "uid": 45051,
+  "gid": 45051,
+  "shell": "/bin/bash",
+  "home": "/home/dortiz",
+  "comment": "David Ortiz"
+}

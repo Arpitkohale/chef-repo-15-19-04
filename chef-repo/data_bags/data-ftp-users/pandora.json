@@ -1,0 +1,11 @@
+{
+  "id": "pandora",
+  "password": "$6$RmwB5FAf$bROXbqA5PjGIcwEKjlexY.Vh2utgqT6mRDpr4rWc8u.YeaOZ1XXoh83CLA3g3fXxCKXuvp8aOJI8EiiEzREoL/",
+  "groups": [ "pandora", "ftpusers" ],
+  "uid": 86007,
+  "gid": 86007,
+  "shell": "/sbin/nologin",
+  "comment": "pandora",
+  "home": "/data/ftp/pandora",
+  "action"  : "create"
+}

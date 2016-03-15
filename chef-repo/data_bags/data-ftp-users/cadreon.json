@@ -1,0 +1,11 @@
+{
+  "id": "cadreon",
+  "password": "$6$dol4ZvTx$W6vJ.W0ChMJnY6r7yBYgDNqlb6n/M0cDcokP6bUqskVBT4wBKU4f3KqU28eKZaE4eGytZw.gup/whh3gW5HfH1",
+  "groups": [ "cadreon", "ftpusers" ],
+  "uid": 86001,
+  "gid": 86001,
+  "shell": "/sbin/nologin",
+  "comment": "cadreon",
+  "home": "/data/ftp/cadreon",
+  "action"  : "create"
+}

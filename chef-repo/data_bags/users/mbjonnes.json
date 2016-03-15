@@ -1,0 +1,16 @@
+{
+  "id": "mbjonnes",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAvVWf/kn2H6/tB0MAJc1jRG3aIGNGkaKvUdJt4UH0BQuJ5eRpfQC+HIGLYXyf9+FTWnd64Jj8MSc0Q2zdH+M7OsXTV/2Eg5UAbmXkd1YVLrZAaWHmAxqU7wqSrGhxyJjdkZ8B/1txJYiRQiEhzCIY6zQ9oYYjFfy+3Ay2Tm4C5n4egLrkP/uAKuhkbNErKs9K6XdrrEEWDtbRaTJ14BNzlr8hjl5Ox08oPtEhxBXbqnKPIh0fk813thItCm6KePCZmvzBNB4LofG+M5xRX+vvUEeqwbowwXKtFVFG3VNAhs4JXpQBdJx76wxPL2hD52lhuppo5jyR7uRwWE2UdB3v6Q=="
+  ],
+  "groups": [
+    "mbjonnes",
+    "users",
+    "mis"
+  ],
+  "uid": 45041,
+  "gid": 45041,
+  "shell": "/bin/bash",
+  "home": "/home/mbjonnes",
+  "comment": "Matt Bjonnes"
+}

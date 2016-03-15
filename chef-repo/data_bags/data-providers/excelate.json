@@ -1,0 +1,11 @@
+{
+  "id": "excelate",
+  "password": "$1$yoursalt$.sXGrkChxbesD8skJtncd.",
+  "groups": [ "excelate", "sftpusers" ],
+  "uid": 66001,
+  "gid": 66001,
+  "shell": "/sbin/nologin",
+  "comment": "excelate",
+  "home": "/data/provider/excelate",
+  "action"  : "create"
+}

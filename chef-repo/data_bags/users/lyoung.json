@@ -1,0 +1,12 @@
+{
+  "id": "lyoung",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAqw+8g+a/lPrpto7CngHw3bVN4A6DbrLh81b39xCJfXHuuGjggrmd834sR+M7TmknyE19MbzK+ngB7Dp00IAzaUqFwqowDVqmcyzb6HqzWAjVJBOHKlCmP3/E+Hej0YyKqDy6rFqnahIsTnPdje7sn0s8IjZ5cVkopwrh9+1UF8ZH01U5KUS4Cyr8c+6kgsCM8hzjOhDFaOe+a4Hp0fKJ2kTLcSeb36F3J3wKtPU3jcXu09NOu4HwEJrxsR5GaoOVGCwVcG86enhD5W2eKr2JTTyZSciobxxTUuJ3oLXk1ilbUJxIScNLtULYnI+oHU3cniv626++R1W1kpFqB5aozw=="
+  ],
+  "groups": [ "lyoung", "users", "maya", "wheel", "gio" ],
+  "uid": 45072,
+  "gid": 45072,
+  "shell": "/bin/bash",
+  "home": "/home/lyoung",
+  "comment": "Luke Young"
+}

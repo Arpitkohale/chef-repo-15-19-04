@@ -1,0 +1,12 @@
+{
+  "id": "jkennedy",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDR7etHc41cP/+xYTPv59hRgJoJV10F/nggVjhzhuIBiLytYUiirhrxfRQhBKFYqNaA/j2+SHR1Sds3wTnSUW2IfkC6GYNIs9+IDgUa4mCO5msrVmqtmu62AnlPYlVJ84npSRwfg7luph4JkUndyVjaowmvCYwIXy95VGQAJLN25J7RFfAsfrsZpBCLNHcNh7hhctE0c1ZUN72uDw8enp/+R2uSI4NwX04n+EBDpLtQDeNTpjJIYd9AoHpPRV9YHzzX/iqS4lNgDnjFniyI2SjZgtCX0/q8i6hs26cEkoGBaYWwYn+kOuPOVaM9a0vvcE9veQ2Tf98FO3rJnKzodZ1n jkennedy@c02pf237fvh6.tidaltv.local"
+  ],
+  "groups": [ "jkennedy", "users", "techops" ],
+  "uid": 45053,
+  "gid": 45053,
+  "shell": "/bin/bash",
+  "home": "/home/jkennedy",
+  "comment": "Justin Kennedy"
+}

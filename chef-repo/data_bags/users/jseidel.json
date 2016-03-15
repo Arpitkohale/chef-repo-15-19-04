@@ -1,0 +1,11 @@
+{
+  "id": "jseidel",
+  "ssh_keys": [
+    ""],
+  "groups": [ "jseidel", "users" ],
+  "uid": 45001,
+  "gid": 45001,
+  "shell": "/bin/false",
+  "home": "/home/jseidel",
+  "comment": "Joshua Seidel"
+}

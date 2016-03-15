@@ -1,0 +1,10 @@
+name             'vlg-storm'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs Storm distributed computation system'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '3.0.36'
+depends          'vlg-base'
+depends          'vlg-java'
+depends          'ark'

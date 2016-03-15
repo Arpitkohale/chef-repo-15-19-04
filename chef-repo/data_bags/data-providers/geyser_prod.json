@@ -1,0 +1,13 @@
+{
+  "id": "geyser_prod",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCv0FypgMWnAd+TVGtXS4LHbyPvXnZG4DNjaKza3mL0vl2B9Wv1A7mnahgpGI4y2lfsNx4hJP2dmfiga2fc84L/nhaEeS6krn5oVjzPqoZXBNR/CXrFFJaVLpu1/riUhvbbcvQlRL01l28IQSFtVp1d0ykXgaswJBxBuf9rKGDnN3qzTfIK5AOu2pj9SHl3Vhyy+niKZnKYMUPYQVLEnZhAEXPvcN1r9QjRZrFUta0fiJqSuayvqsZe9c5j7ehPj/4tR5gmUAk7Vlx6RVSE3seVBSOywMkfT6OLolxcyfwtBzZE4zFzk0yw1BtWRHyDGtQhdYn2xR14IwG99pzNTQSV geyser_prod@bl-yarnpoc-p01"
+  ],
+  "groups": [ "geyser_prod", "sftpusers" ],
+  "uid": 66019,
+  "gid": 66019,
+  "shell": "/sbin/nologin",
+  "comment": "geyser_prod",
+  "home": "/data/provider/geyser_prod",
+  "action"  : "create"
+}

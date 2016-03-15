@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+# Init script for uwsgi
+#
+# chkconfig: 345 86 14
+# description: uwsgi
+# processname: uwsgi
+#
+
+usage() {
+  echo $"Usage: $0 {stop|start|status}"
+}
+
+# Source function library.
+. /etc/init.d/functions
+
+export SOCKET="<%= node['vlg-graphite']['uwsgi']['socket'] =%>"
+export WORKERS="<%= node['vlg-graphite']['uwsgi']['workers'] =%>"
+export HARAKIRI_TIMEOUT="<%= node['vlg-graphite']['uwsgi']['harakiri']['timeout'] =%>"
+export LOG="<%= node['vlg-graphite']['home'] =%>/storage/log/uwsgi/uwsgi.log"
+export PID="<%= node['vlg-graphite']['uwsgi']['pid'] =%>"
+export MAX_REQUESTS="<%= node['vlg-graphite']['uwsgi']['max']['requests'] =%>"
+export WEBAPP="<%= node['vlg-graphite']['home'] =%>/webapp/graphite"
+export WSGI_FILE="<%= node['vlg-graphite']['home'] =%>/conf/graphite.wsgi"
+
+start() {
+  echo "Starting uwsgi"
+  exec su -l <%= node['vlg-graphite']['user'] %> -c "uwsgi --socket $SOCKET --master --workers $WORKERS --harakiri $HARAKIRI_TIMEOUT --disable-logging --daemonize $LOG --pidfile $PID --vacuum --max-requests $MAX_REQUESTS --vacuum --pythonpath $WEBAPP --wsgi-file $WSGI_FILE"
+}
+
+stop() {
+  echo "Stopping uwsgi"
+  killall -9 uwsgi
+}
+
+status() {
+  /sbin/pidof uwsgi > /dev/null
+  if [ $? == "0" ]
+  then
+    echo "uwsgi is running"
+    exit 0
+  else
+    echo "uwsgi is not running"
+    exit 1
+  fi
+}
+
+case "$1" in
+start)
+  start
+;;
+
+stop)
+  stop
+;;
+
+status)
+  status
+;;
+
+*)
+  usage
+  exit 1
+;;
+esac
+
+exit $RETVAL

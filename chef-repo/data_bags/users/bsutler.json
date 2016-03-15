@@ -1,0 +1,12 @@
+{
+  "id": "bsutler",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdX4hxpFhqEVC3sbEehp61O3USTIH6Kb2OCyfuQUHVp4AaS8s4muMp3glikKsUa+kUmuk9YMjd4zPKmN/7ukF/OJsJF8Q+oGmsPeEjsDGLPme2/4LBV238ZAhyyveGCriZyFJEULLnlu+p+PHj2VIFJsNgyWOhc4rYsgWsPoRzZzHoOrVi7mWpl/DWCNfIR3gJBLcXPSfIJ3lVSfVU0rtaXOybRYTLTDTibV2E2rNUVuiMmg0m0F5JOBm1zLHA2q9D3gNPScg5scERLAqdtIQOeSb7J47U39j7+pf7mVkHRPD8kcinDwzOnXgq0m1eMZdXZfq5kyHJwRs1y7HNqxm1 brandon@lucidmedia.com"
+  ],
+  "groups": [ "bsutler", "users", "eliza" ],
+  "uid": 45022,
+  "gid": 45022,
+  "shell": "/bin/bash",
+  "home": "/home/bsutler",
+  "comment": "Brandon Sutler"
+}

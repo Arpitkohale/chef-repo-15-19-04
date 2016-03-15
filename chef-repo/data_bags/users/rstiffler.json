@@ -1,0 +1,12 @@
+{
+  "id": "rstiffler",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAuAsb1KW0kpm1pSvSRO30qMkclp2pupTFg8sYRYttTfCXVj/N0KHe3lUksTtTnHOgt1k0Sca/Ecv5WluO0GW7NiaOORQs5go8F2Buvyu9JyRY8W40oAaSfr4TsVMq5hKv8djiA/IZ19CpiEFMFDt1StI+aJ9D82WcZzDFMJMQXKyVI7vKE/j00xhTkSo/waSKyB3T6mYUqce502iACRXfSw+8DnEGUJxVZgOHNuvtujeps0ghrg/0vlGupo4ax9QefoDfddn/Qe0KWoz246sLf2K74RPJ8kfXX5B1Ug9+kaB4ZOpLEYYSCAQgNWBQMagNaMHtQ33+tsKjYcO5v7EfsQ=="
+  ],
+  "groups": [ "rstiffler", "users", "data" ],
+  "uid": 45025,
+  "gid": 45025,
+  "shell": "/bin/bash",
+  "home": "/home/rstiffler",
+  "comment": "Ron Stiffler"
+}

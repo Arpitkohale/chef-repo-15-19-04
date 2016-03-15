@@ -1,0 +1,12 @@
+{
+  "id": "tmishra",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA3qCd3ycuupmTpvWXvtimZf/KoITtO+2pZKDFf/u+Tfue2U6qJu5FFWr3uFfa8p6O2+wFmpQuxawb9ywqcYpaAL0L8vOBDHFk0Nc+hm1BLKvmxXj9sQleIB8s6N4WrKuCuBbbYMZTtAFBThm18p0RB+9WGOyPFjOVEKbzis2+L2DmZk3vojX+35E/VEhe0u9eo/Sphtd3W7HpVStVJey3K8RZceKmlDPZqRAJYNBvPlTksy59+x3wZb3N7b+XqD4BD2VNXsZbtvY2R17NFOBdmnLiEX2WCmRWBaRP44wCWt8xPX1vrvn0QEyggIErApJGdjIKqQslGp6CnGJfkKI6hQ== tapasm@cybage.com"
+  ],
+  "groups": [ "tmishra", "users", "wheel", "gio" ],
+  "uid": 45031,
+  "gid": 45031,
+  "shell": "/bin/bash",
+  "home": "/home/tmishra",
+  "comment": "Tapas Mishra"
+}

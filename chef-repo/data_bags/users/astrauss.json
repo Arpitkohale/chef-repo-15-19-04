@@ -1,0 +1,12 @@
+{
+  "id": "astrauss",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA0fbU0UhMq9S2Bt5zNHtcV02w45YpkLy0vPzGRjtFqRxZe0nnPLy21CJEpNXf0m62O4hvw28jY7SM0YpCcRMRouaqoapUcR7yy8cHj3In+AuwUeoRKjr2mkxiL4GftIAinJkrDrrZUMzHZOWu8V68fCQnItFhtp5HZxzVwGxBMWe4GBPbnOf9KgN040DOxfKwGXylvxvnM99sAUZ8DHF9W7KFUczVGpz/UkHOwoujuvCMKsq5ikpwobTiuC67CvfLA4oEyMPp+dJsk7X2iW9T5R+HjDWOQHZhxDIIu5d4Doz0CB+H4Mywr+4qI30xnn+/ymtNTlEffI3pBayLboVO9w== astrauss@videologygroup.com"
+  ],
+  "groups": [ "astrauss", "users", "optdev" ],
+  "uid": 45062,
+  "gid": 45062,
+  "shell": "/bin/bash",
+  "home": "/home/astrauss",
+  "comment": "Andrew Strauss"
+}

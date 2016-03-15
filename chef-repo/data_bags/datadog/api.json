@@ -1,0 +1,9 @@
+{
+  "id": "api",
+  "key": {
+    "encrypted_data": "t5tkyslPxDQF3NEMTwu/p4SASyGKiAVbpDVne+Cvp8UiXA26PgKoj22CyQqE\n1CYfZ3itsQIt2qYwPG+o9zGTJA==\n",
+    "iv": "6HvVz8BGlYP3iO3ZCZxv5g==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

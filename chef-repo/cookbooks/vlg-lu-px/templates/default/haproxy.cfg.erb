@@ -1,0 +1,121 @@
+# Disted by Chef
+global
+        stats socket <%= @global_stats_socket_file %> mode 600 level admin
+        stats timeout <%= @global_stats_socket_timeout %>
+        maxconn <%= @global_maxconn %>
+        nbproc <%= @global_nbproc %>
+        chroot /usr/share/haproxy
+        user <%= @global_user %>
+        group <%= @global_group %>
+        daemon
+        <% if @listen_443_toggle == 'enable' %>
+	tune.ssl.default-dh-param <%= @global_tune_ssl_default_dh_param %>
+        ssl-default-bind-ciphers <%= @global_ssl_default_bind_ciphers %>
+        <% end %>
+
+defaults
+	mode <%= @defaults_mode %>
+	retries <%= @defaults_retries %>
+	timeout client <%= @defaults_timeout_client %>
+	timeout connect <%= @defaults_timeout_connect %>
+	timeout server <%= @defaults_timeout_server %>
+	timeout http-keep-alive <%= @defaults_timeout_http_keep_alive %>
+	timeout http-request <%= @defaults_timeout_http_request %>
+	timeout queue <%= @defaults_timeout_queue %>
+        option redispatch
+	default-server <%= @defaults_default_server %>
+
+<% if @listen_8161_toggle == 'enable' %>
+listen 8161 :8161
+        maxconn <%= @listen_8161_maxconn %>
+        mode <%= @listen_8161_mode %>
+        option http-server-close
+        option httpchk GET /status/ready
+  <% @request_handlers.each do |request_handler| -%>
+        server <%= request_handler['fqdn'] %> <%= request_handler['fqdn'] %>:9030 check port 9030 weight <%= @backend_weight %>
+  <% end -%>
+  <% if @environment == 'production' -%>
+    <% if @listen_8161_send_traffic_to_staging == 'true' -%>
+      <% @staging_request_handlers.each do |staging_request_handler| -%>
+        server <%= staging_request_handler['fqdn'] %> <%= staging_request_handler['fqdn'] %>:9030 check port 9030 weight <%= @staging_backend_weight %>
+      <% end -%>
+    <% end -%>
+  <% end -%>
+<% end %>
+
+listen 8162 :8162
+	option httpclose
+        stats uri <%= @listen_8162_stats_uri %>
+
+<% if @listen_80_toggle == 'enable' %>
+listen 80 :80
+	maxconn <%= @listen_80_maxconn %>
+	mode <%= @listen_80_mode %>
+        option http-server-close
+        option httpchk GET /status/ready
+  <% @request_handlers.each do |request_handler| -%>
+        server <%= request_handler['fqdn'] %> <%= request_handler['fqdn'] %>:8080 check port 8080 weight <%= @backend_weight %>
+  <% end -%>
+  <% if @environment == 'production' -%>
+    <% if @listen_80_send_traffic_to_staging == 'true' -%>
+      <% @staging_request_handlers.each do |staging_request_handler| -%>
+        server <%= staging_request_handler['fqdn'] %> <%= staging_request_handler['fqdn'] %>:8080 check port 8080 weight <%= @staging_backend_weight %>
+      <% end -%>
+    <% end -%>
+  <% end -%>
+<% end %>
+
+<% if @listen_443_toggle == 'enable' %>
+listen 443
+        bind *:443 <%= @global_ssl_default_bind_options %> <%= @listen_443_pem %>
+        maxconn <%= @listen_443_maxconn %>
+        mode <%= @listen_443_mode %>
+        option http-server-close
+        option httpchk GET /status/ready
+  <% @request_handlers.each do |request_handler| -%>
+        server <%= request_handler['fqdn'] %> <%= request_handler['fqdn'] %>:8080 check port 8080 weight <%= @backend_weight %>
+  <% end -%>
+  <% if @environment == 'production' -%>
+    <% if @listen_8080_send_traffic_to_staging == 'true' -%>
+      <% @staging_request_handlers.each do |staging_request_handler| -%>
+        server <%= staging_request_handler['fqdn'] %> <%= staging_request_handler['fqdn'] %>:8080 check port 8080 weight <%= @staging_backend_weight %>
+      <% end -%>
+    <% end -%>
+  <% end -%>
+<% end %>
+
+<% if @listen_8080_toggle == 'enable' %>
+listen 8080 :8080
+        maxconn <%= @listen_8080_maxconn %>
+        mode <%= @listen_8080_mode %>
+        option http-server-close
+        option httpchk GET /status/ready
+  <% @request_handlers.each do |request_handler| -%>
+        server <%= request_handler['fqdn'] %> <%= request_handler['fqdn'] %>:8080 check port 8080 weight <%= @backend_weight %>
+  <% end -%>
+  <% if @environment == 'production' -%>
+    <% if @listen_8080_send_traffic_to_staging == 'true' -%>
+      <% @staging_request_handlers.each do |staging_request_handler| -%>
+        server <%= staging_request_handler['fqdn'] %> <%= staging_request_handler['fqdn'] %>:8080 check port 8080 weight <%= @staging_backend_weight %>
+      <% end -%>
+    <% end -%>
+  <% end -%>
+<% end %>
+
+<% if @listen_9030_toggle == 'enable' %>
+listen 9030 :9030
+        maxconn <%= @listen_9030_maxconn %>
+        mode <%= @listen_9030_mode %>
+        option http-server-close
+        option httpchk GET /status/ready
+  <% @request_handlers.each do |request_handler| -%>
+        server <%= request_handler['fqdn'] %> <%= request_handler['fqdn'] %>:9030 check port 9030 weight <%= @backend_weight %>
+  <% end -%>
+  <% if @environment == 'production' -%>
+    <% if @listen_9030_send_traffic_to_staging == 'true' -%>
+      <% @staging_request_handlers.each do |staging_request_handler| -%>
+        server <%= staging_request_handler['fqdn'] %> <%= staging_request_handler['fqdn'] %>:9030 check port 9030 weight <%= @staging_backend_weight %>
+      <% end -%>
+    <% end -%>
+  <% end -%>
+<% end %>

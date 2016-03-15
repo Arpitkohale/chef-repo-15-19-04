@@ -1,0 +1,23 @@
+<% if node['vlg-storm']['zookeeper_quorum'] == true %>
+storm.zookeeper.servers:
+    - "<%= node['vlg-storm']['zookeeper']['server']['1'] %>"
+    - "<%= node['vlg-storm']['zookeeper']['server']['2'] %>"
+    - "<%= node['vlg-storm']['zookeeper']['server']['3'] %>"
+
+transactional.zookeeper.servers:
+    - "<%= node['vlg-storm']['zookeeper']['server']['1'] %>"
+    - "<%= node['vlg-storm']['zookeeper']['server']['2'] %>"
+    - "<%= node['vlg-storm']['zookeeper']['server']['3'] %>"
+<% end %>
+
+storm.local.dir: "<%= node['vlg-storm']['home_dir'] %>"
+
+nimbus.host: "<%= node['vlg-storm']['nimbus']['server'] %>"
+
+supervisor.slots.ports:
+    - 6700
+
+###worker.childopts
+worker.childopts: -Dclicksense.application.home=<%= node['vlg-clicksense']['home_dir'] %> -Dspring.profiles.active=<%= node['vlg-storm']['aws_datacenter'] %>,deployment.standard.dmp -Dapplication.name=storm
+ui.port: 8081
+

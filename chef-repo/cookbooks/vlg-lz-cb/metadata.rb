@@ -1,0 +1,11 @@
+name             'vlg-lz-cb'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-lz-cb'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.23'
+depends          'vlg-base'
+depends          'vlg-java'
+depends		 'vlg-couchbase'
+depends          'couchbase'

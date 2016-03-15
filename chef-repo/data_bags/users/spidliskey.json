@@ -1,0 +1,12 @@
+{
+  "id": "spidliskey",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDBmMmJsAKoUmK7eCzwvnhuf9N5eTZbSy8mH+8XQ6L2v4xtVwY6Q9Ry54fZjBHZQ1zPEn2s2O62/NfYhxzX8vIu1qkMaOhSSiUUWEZzJJZzWRuUJBshTzSRBpzbo6/eo/U5TtuoUfSEt6rnBy47MLqKmHLFgp9xHtz/OayKVIt2QI8Di3fpqGUbym/Ldn2v9gPj+nHIjWYrbbyuBYZ7sOK5Bo6lMU3UggkVSnKMm8695fOhgGiUOOerAbdDB2P7/4H3pHnkFJQfpqegzJEND87bT8dGEO96j7ClDv+2OCFjY66+13l5fiHQXQIANlKR2U7sZMoHUjvCF97fR7vAdtUtbRq0Bs0c/sFdvUWZrdIejYsgPYPjNJzCL+lBiP1nXRCren35nTNX9+/AH8ziubk1dROVolLLPS63zetr9rJjCovfyq0HQeekSvV42cnknprG3amBzDz36jTTxTcAnIY+tMOOQdoeKSYsrENvCevG7o8wC0UP1oSIHUhmtbOUAbFrwuP0xk5xBK1Tj77RJfb1eZNVqk13tHLVgEctMqQOxvTS6GDlODrYbJMkkCyRK2ITcU7SvdRMLEzjcfNFbER+1l8CjAG2yO8cvAOCpxnqzYSfflSuPLl1KZ1w94xA/XQQiX0DeLcFtmsNf4C5+UTfH4UgADo8Mht2Exb9WT7C1Q== spidliskey@videologygroup.com"
+  ],
+  "groups": [ "spidliskey", "users", "data" ],
+  "uid": 45080,
+  "gid": 45080,
+  "shell": "/bin/bash",
+  "home": "/home/spidliskey",
+  "comment": "Stephen Pidliskey"
+}

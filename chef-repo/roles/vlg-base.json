@@ -1,0 +1,21 @@
+{
+  "name": "vlg-base",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+   "override_attributes":{
+      "chef_client":{
+         "config":{
+            "ssl_verify_mode":":verify_peer",
+            "client_fork":true
+         }
+      }
+   },
+  "chef_type": "role",
+   "run_list":[
+      "recipe[vlg-base]"
+   ],
+  "env_run_lists": {
+  }
+}

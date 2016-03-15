@@ -1,0 +1,16 @@
+#!/bin/bash
+# bamboo-agent: Init script for running bamboo agent
+#
+# chkconfig: 2345 98 02
+#
+# description: Starts and stops bamboo agent
+
+# This is just a delegator to the Bamboo agent script
+
+if [[ "$EUID" != '0' ]]; then
+  echo 'This script must be run as root!'
+  exit 1
+fi
+
+status=`su - <%= node['vlg-base']['app_user'] %> -c "<%= node['vlg-bamboo-agent']['home'] %>/bin/bamboo-agent.sh $@ 1>&2 ;"' echo $?'`
+exit $status

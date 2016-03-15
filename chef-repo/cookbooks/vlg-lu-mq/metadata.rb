@@ -1,0 +1,10 @@
+name             'vlg-lu-mq'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-lu-mq'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.20'
+depends          'vlg-base'
+depends          'vlg-diamond'
+depends		 'vlg-activemq'

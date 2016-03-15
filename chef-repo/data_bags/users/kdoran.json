@@ -1,0 +1,12 @@
+{
+  "id": "kdoran",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWp1sOpYfKhWGST6LC1vVTxNlBrDO6Sqrch3eeZpDPYQNQnHWE4p37vpw/NKI9NlnWxPKYhHgx8uMpoH9qokE207UJcJYP7zjiIKSRmjBhBXVpwDkWCgr9oZJJMYRvJfgVw/S0w89pePf0l0In3WDevOVxzLjUarRDzzJ7gxbEePT71w1xRKTluoyOfEjVhYJgyG2f7yVlPSwp2vJnbcfEirnOaVHGzyfuwz95iDNkNTRgoXnH1VfjKj98GYqsqZBY1BzU4Aa+glTsdoeprDL/OyotZgxv4CuP1CdiWArn14Fg5ftdeXU6+/DOSiX8ESVv0PpdeFidIPNTG2pnFMgN kdoran@videologygroup.com"
+  ],
+  "groups": [ "kdoran", "users", "optdev" ],
+  "uid": 45034,
+  "gid": 45034,
+  "shell": "/bin/bash",
+  "home": "/home/kdoran",
+  "comment": "Kevin Doran"
+}

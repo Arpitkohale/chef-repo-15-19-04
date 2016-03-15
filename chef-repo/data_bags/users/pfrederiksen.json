@@ -1,0 +1,12 @@
+{
+  "id": "pfrederiksen",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDt36n1iRJPuxvf5YK0mnZr8N0fKI8LPBTcKSgWA1x1dInC/4FE5P0cuhKW4Lbf9g6DYpVWG/wBlYaICOVvstL1V8Nzfz680aseZh9hCxFZh4H21EgX9zq6uNSetZUKd65CKV2mKOU9FlKLNTOH96g9FW7eALVc7xdoDWTWfhDzXdSsFKSXCdIsQSpCyZjH4Hm1R1tkvcteKKhZsX53wJ8RVZK0DfG30I+K7r0gAqGKOrwwgwkm+nyxnKJ/VFwXXvgKPhdEXMtQgHL+jTkx8j5zaDZj4TppdfU21U+r4DfBhMnIfBMi7rn5pDZcfhEz54JX7XK7gdbOzAKbwFboby25 pfrederiksen@c02p140dg3qd.tidaltv.local"
+  ],
+  "groups": [ "pfrederiksen", "users", "wheel", "gio" ],
+  "uid": 45074,
+  "gid": 45074,
+  "shell": "/bin/bash",
+  "home": "/home/pfrederiksen",
+  "comment": "Paul Frederiksen"
+}

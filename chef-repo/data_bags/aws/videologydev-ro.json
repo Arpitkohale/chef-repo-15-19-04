@@ -1,0 +1,15 @@
+{
+  "id": "videologydev-ro",
+  "aws_access_key_id": {
+    "encrypted_data": "r2/3H2DxaDXePql5G0abx3JyUBeAzDm0OW3kGLI+Qz2dhfGjks+d4FoVMbk1\nRF6r\n",
+    "iv": "9TU6a0xn5uU3TSig2RD99g==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "aws_secret_access_key": {
+    "encrypted_data": "dNvsM8JS7mBP5IiVv5dpiKWuczLITC1vN/cAoLHReGJunpjqtblNd6hvoi6L\nfMyB2nYtWV1lNTZHUrerGTpCXQ==\n",
+    "iv": "RcHC3AZOq9NUBcyiRZrt9w==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

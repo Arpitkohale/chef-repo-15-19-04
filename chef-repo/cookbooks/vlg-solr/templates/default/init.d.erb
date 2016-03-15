@@ -1,0 +1,121 @@
+#!/bin/sh
+#
+# solr Solr  Server
+#
+# chkconfig: - 80 05
+# description: Enable Solr Server
+# Usage: service solr {start|stop|status|restart|kill}"
+
+### BEGIN INIT INFO
+# Provides:         solr
+# Default-Start:    3 5
+# Default-Stop:     0 1 2 6
+# Required-Start:
+# Required-Stop:
+# Description:       init script for solr server
+### END INIT INFO
+
+# init script for Solr in jetty container
+
+. /etc/init.d/functions
+. /etc/sysconfig/network
+
+prog="solr"
+desc="solr server"
+lockfile="/var/lock/subsys/$prog"
+pidfile="<%= @vlg_solr_log_dir %>/$prog.pid"
+
+SU="/sbin/runuser -s /bin/sh"
+SOLR_USER="<%= @vlg_solr_user %>"
+ZK_HOST_PORT="<%= @vlg_solr_zk_host %>"
+JAVA_MEM="<%= @vlg_solr_java_mem %>"
+SQL_HOST="<%= @vlg_solr_sql_host %>"
+SQL_USER="<%= @vlg_solr_sql_user %>"
+SQL_PASS="<%= @vlg_solr_sql_pass %>"
+SOLR_PORT=9080
+JMX_OPT="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=7199 -Dcom.sun.management.jmxremote.ssl=false"
+SQL_OPT="-Ddataimport.url=$SQL_HOST -Ddataimport.user=$SQL_USER -Ddataimport.password=$SQL_PASS"
+JAVA_OPT="-Xms${JAVA_MEM} -Xmx${JAVA_MEM} -Djetty.port=${SOLR_PORT} -Djetty.home="<%= @vlg_solr_base_dir %>"  -Dsolr.solr.home="<%= @vlg_solr_home_dir %>" -Dhost="<%= @fqdn %>" -DzkHost=${ZK_HOST_PORT} ${JMX_OPT} ${SQL_OPT}"
+
+[ -e /etc/sysconfig/$prog ] && . /etc/sysconfig/$prog
+
+SOLR_START_STR="nohup java $JAVA_OPT -jar "<%= @vlg_solr_base_dir %>"/start.jar  > /dev/null  2>&1 &"
+
+get_pid () {
+  echo $(ps -ef | grep java | grep [s]olr | awk '{print $2}')
+}
+
+start() {
+    CH_PORT=`netstat -vatn|grep LISTEN|grep ${SOLR_PORT}|wc -l`
+
+    if [ ${CH_PORT} -ne 0 ]; then
+        echo -n "${desc} ${prog} already running"
+        retval=1
+    else
+        echo -n "Starting ${desc} ${prog}: "
+        $SU ${SOLR_USER} -c "touch $pidfile"
+        daemon --user ${SOLR_USER} --pidfile $pidfile "$SOLR_START_STR"
+        retval=$?
+        echo
+        [ $retval -eq 0 ] && touch $lockfile
+        return $retval
+    fi
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc -p $pidfile  $prog
+    retval=$?
+    echo
+    [ $retval -eq 0 ] && rm -f $lockfile
+    return $retval
+}
+
+killsolr () {
+  PIDN=$(get_pid)
+  if [ -z ${PIDN} ]; then
+    echo "solr server not started or PID not found"
+    exit 1
+  else
+    echo -n "Kill -9 ${prog}"
+    rm -f $lockfile
+    rm -f $pidfile
+    kill -9 $PIDN
+    exit $?
+  fi
+}
+
+status () {
+  ps -ef | grep java | grep [s]olr > /dev/null
+  if [ $? -eq 0 ]
+  then
+    echo "solr is running"
+    exit 0
+  else
+    echo "solr is not running"
+    exit 1
+  fi
+
+}
+
+case "$1" in
+    start)
+       start
+    ;;
+    stop)
+       killsolr
+    ;;
+    restart)
+       stop && start
+    ;;
+    status)
+        status
+    ;;
+    kill)
+       killsolr
+    ;;
+    *)
+        echo $"Usage: solr {start|stop|status|restart|kill}"
+        exit 3
+    ;;
+esac

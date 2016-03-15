@@ -1,0 +1,15 @@
+{
+  "id": "pd2jira",
+  "username": {
+    "encrypted_data": "3OT4UwcjVgoQ7UxF/mX8MHV/QGETJO6kDJFGe3hnpwg=\n",
+    "iv": "NCzUxBaI7nyAJm4gAlGh7g==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "password": {
+    "encrypted_data": "ZFChWvtOWCk5rSctR9iR7c85C1cT07wsWysBzNSMqKY=\n",
+    "iv": "UVN9TdZLVbe5pfH0/P5Jbg==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

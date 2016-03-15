@@ -1,0 +1,13 @@
+{
+  "id": "addthis",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDDxL/GrgCN48FclWRyCQP+jJs4xNH5XGvJN66nTOTsIgVb+8f0/DKqlKlN7YDru9zckmH4luVUpexJ3FpXecT6BLOdfbpP2qvcyjoYAIaYpwyAw8P+ArEGvwA/ox4EMzoCQTlxzwlXjc0fWdswaHq+ij6y73KbZkgwv9j8605Q37h+erfx7tB+gAPDyaq2z/NVsR+IL9wWW/M5ZHr7NbfXb9WQ3J0hepYQB+U5XqvjqzFVQgt9D8zEVCY5cPmDmpAH67CcF/NMrMKHLwpF5HyWWsF9IFeG8Pn4Px5w8kiu13/vl3mZWFapGoCQPpjvpnDChaYKN8C0Fmnl4TSmbttb videology"
+  ],
+  "groups": [ "addthis", "sftpusers" ],
+  "uid": 66015,
+  "gid": 66015,
+  "shell": "/sbin/nologin",
+  "comment": "addthis",
+  "home": "/data/provider/addthis",
+  "action"  : "create"
+}

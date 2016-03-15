@@ -1,0 +1,13 @@
+{
+  "id": "pgaines",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIBmcMgHKyn1WVvknl6WLuLiYmHRD2M3ANJxm+NsdZjqG+oRbKBU3RvLtPrSRfIsSSLx6oOsTqLI6nOi8TDwflPljrY5x2CeQyn8wIPjfOf8RW8g6JoAJ3gJxQgFoQFTeniozArXpan6CjrFN4N/gcEZ8jlN07dZIY8T9qyvKF2N3Q==",
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDkTu94ksttXkb6VvrTb2q+F4hOJUqVRK8EtFDiIFyZtLDlkvH3Xx43OHlQeJF3XP/rhlHdvTDJMj9fIKSZ6bW4GY8chSbzFQrkFfq0RIYaH9micA/BOzR+znIkW1DcskNqoA6/4EpIiniF+ByzqfWFibRc1VXH8Gz7ZN9y+sM2qhEk8f6wVVuGNPcP+IbYpOqPiNLGyjRob50CgGM9FNfYqPBgc7OuwXs0OQ9Nu/TpbjA8gwFajZzPxW1nI9qYbGe4cu+9bMsDkRATSkH6Xh/mztL9+OLjaNoQpsSM+2mDGcCL83rnBLY8J8S2aHodugnV7J7ggVJFFYnXdoPfnsEZ petergaines@Peters-MacBook-Pro.local"
+  ],
+  "groups": [ "pgaines", "users", "lucy" ],
+  "uid": 45015,
+  "gid": 45015,
+  "shell": "/bin/bash",
+  "home": "/home/pgaines",
+  "comment": "Peter Gaines"
+}

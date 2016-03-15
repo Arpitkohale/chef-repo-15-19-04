@@ -1,0 +1,15 @@
+{
+  "id": "lmn",
+  "aws_access_key_id": {
+    "encrypted_data": "nSUPQO3iS6JnwZgc9UI3lj3eprE6H2xk8UyDBnMfLkZwgENHnH23kIK+BnIk\nuICh\n",
+    "iv": "+X1Y4wjML9iJqtgOwCi1pw==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "aws_secret_access_key": {
+    "encrypted_data": "Gzqrf7Adne4L9+ixJJrM7YWoQKjaWNhSJxH6Uah/XxN9f7Kn2ARXjoXy4VYM\nXxAMNU/Fh+tE/L+lUWSn3jQNAQ==\n",
+    "iv": "CDWZez4mEfSnJtE9Qr0hIA==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

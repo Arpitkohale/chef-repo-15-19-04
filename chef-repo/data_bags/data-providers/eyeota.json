@@ -1,0 +1,13 @@
+{
+  "id": "eyeota",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAutmqoAt1WieWIzrfB5vsxo1zmJpKUAICoI2fqRiFviP2vFg3gKLTO56jX1cyxwenJEkObbjnS5vzHtalsu5/cF3LWO/itM5RyI0XzsuMb/8p2FNYtTKBYMA+EJ//o0HWyynOouRdskT9n93YLYCitU8rAAGnT9TgM27GsCTImCSikjOvx+IMK25kVmDIW+29v5KcUmQ1/zJXGeFstxYGIuqhuB1IWvOz6k3e4XeSztk6oXtD31AemNngxwZkcVMRVgPV8ahMsfEUbGTDoqprahMz5v4+7lJfXAoJ8ttGsnlRG73vyLjf8MIchW2u526Yr9hMeS8f7LRR9tV1pUKOhw=="
+  ],
+  "groups": [ "eyeota", "sftpusers" ],
+  "uid": 66005,
+  "gid": 66005,
+  "shell": "/sbin/nologin",
+  "comment": "eyeota",
+  "home": "/data/provider/eyeota",
+  "action"  : "create"
+}

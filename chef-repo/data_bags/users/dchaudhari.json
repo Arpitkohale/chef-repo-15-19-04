@@ -1,0 +1,12 @@
+{
+  "id": "dchaudhari",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAxZ+7y0NiVEMjK4bmZEEUANHx/uv9cssV/SuAMPMg9sDVBeEr6HjJ53puy4afGfYEypdYwW8W9zvScVdkPirvRoHbQlcGp1yC7c6dJ9FryhdQJ57GMeDZq1/5gApi9Rezh9Pz2qh2ppfHyex9fMA9x1tKHr76BMedNKnb5fssIz8H5d7YulH0jAxLWcoK3Iw1jv6UxqI0yw82OUpBUCvHvbDhWAihAN8EDaZX5KIEVrn9NIgRg/tHceJjq9knqEzyHCTplKN0UeN2J0EfvjY/Dx8c0lfAtqRd47WR9p2nJJdUig7w63/wQfmKFFJXQFrMBoRZd6foFDugvzetZl8t dchaudhari@videologygroup.com"
+  ],
+  "groups": [ "dchaudhari", "users", "lucy" ],
+  "uid": 45038,
+  "gid": 45038,
+  "shell": "/bin/bash",
+  "home": "/home/dchaudhari",
+  "comment": "Dheeraj Chaudhari"
+}

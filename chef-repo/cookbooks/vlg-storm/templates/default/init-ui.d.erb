@@ -1,0 +1,65 @@
+#!/bin/sh
+#
+# chkconfig: 345 99 01
+# description: Storm UI
+#
+# File : Storm-UI
+#
+# Description: Starts and stops storm UI
+#
+
+source /etc/rc.d/init.d/functions
+
+STORM_HOME=<%= node['vlg-storm']['home_dir'] %>
+STORM_USER=<%= node['vlg-storm']['user'] %>
+STORM_LOGS=<%= node['vlg-storm']['log_dir'] %>
+
+function start()
+{
+  echo -n "Starting Storm UI:"
+  /bin/su $STORM_USER -c "nohup $STORM_HOME/bin/storm ui > $STORM_LOGS/storm-ui-server.out 2> $STORM_LOGS/storm-ui-server.err &"
+  while ! nc -vz localhost 8081; do sleep 1; done
+  echo " done."
+}
+
+function stop()
+{
+  echo -n "Stopping Storm UI: "
+  ps -ef | grep ui | grep storm | grep -v grep | awk '{print $2}' | xargs kill
+  while nc -vz localhost 8081; do sleep 1; done
+  echo " done."
+}
+
+case "$1" in
+start)
+    start
+    exit 0
+    ;;
+
+stop)
+    stop
+    exit 0
+    ;;
+
+status)
+    ui=`ps -ef | grep ui | grep storm | grep -v grep | awk '{print $2}'`
+    if [ "$ui" = "" ] ; then
+      echo "UI Stopped"
+    else
+      echo "UI running. pid:$ui"
+    fi
+    exit 0
+    ;;
+
+restart)
+    stop
+    start
+    ;;
+
+  *)
+    echo "Usage: storm-ui {start|stop|status|restart}"
+    exit 1
+    ;;
+
+esac
+exit 0

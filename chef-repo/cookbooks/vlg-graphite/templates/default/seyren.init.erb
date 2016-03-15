@@ -1,0 +1,69 @@
+#!/bin/bash
+
+# seyren - Startup script for seyren
+
+# chkconfig: 35 85 15
+# description: Seyren - Graphite Alerting Tool
+# processname: seyren
+
+SEYREN_WRAPPER="<%= node['vlg-graphite']['seyren']['wrapper'] %>"
+SEYREN_USER="<%= node['vlg-graphite']['user'] %>"
+SEYREN_LOG_PATH="<%= node['vlg-graphite']['seyren']['log']['path'] %>"
+PID=$(ps -ef | grep [s]eyren | grep [j]ava | awk '{print $2}')
+
+. /etc/rc.d/init.d/functions
+
+start()
+{
+  echo -en $"Starting seyren\n"
+  exec su -l $SEYREN_USER -c "$SEYREN_WRAPPER >> $SEYREN_LOG_PATH/seyren.log 2>&1"
+  RETVAL=$?
+  [ $RETVAL -eq 0 ] && touch /var/lock/subsys/seyrend
+}
+
+stop()
+{
+  echo -en $"Stopping seyren\n"
+  /bin/kill -9 $PID
+  RETVAL=$?
+  [ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/seyrend
+}
+
+restart () {
+        stop
+        start
+}
+
+ulimit -n 12000
+RETVAL=0
+
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart|reload|force-reload)
+    restart
+    ;;
+  condrestart)
+    [ -f /var/lock/subsys/seyrend ] && restart || :
+    ;;
+  status)
+    ps -aef | grep [s]eyren | grep [j]ava > /dev/null 2>&1
+    if [ $? -eq 0 ]
+    then
+      echo "seyren is running"
+      exit 0
+    else
+      echo "seyren is not running"
+      exit 1
+    fi
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|status|restart|reload|force-reload|condrestart}"
+    RETVAL=1
+esac
+
+exit $RETVAL

@@ -1,0 +1,12 @@
+{
+  "id": "flopez",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDsj0gsham4f0wMY7+pmvf05tzdP5RoP52lCJl59uD2beOa81EAiy9uq0Jb8LfCJOHzBl/BSa+rPozt20sdovol30T1m/a86ED5uycH0b0Dnw8f/xwD4InVmv6Misb9NdlXrOZt8IrMgX6xqPAL6mSj7Z5fF/iuJuy9+ecfAWIClH2q4HeZwBTbBGlL50ne66rJLhB1Fhf3NLY4iwDNCr2qJyPhPoQC4d/yFa4+XCZJvnvMwfICV5Lpneuzt75Qo5CPzTzSFKsmZ3F0Ut945jTS9xI33Y9LWmyZTQQHbr3AEZG0RFgrb6pEllV9WJknaemGIJyGrCCloKZGvIrl1NcB flopez.consultant@videologygroup.com"
+  ],
+  "groups": [ "flopez", "users", "data" ],
+  "uid": 45054,
+  "gid": 45054,
+  "shell": "/bin/bash",
+  "home": "/home/flopez",
+  "comment": "Felix Lopez"
+}

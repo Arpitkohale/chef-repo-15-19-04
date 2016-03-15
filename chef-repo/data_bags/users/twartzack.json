@@ -1,0 +1,12 @@
+{
+  "id": "twartzack",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+PRC2RJG61PJEKUNKL5yKv95828JgZLNrd1uQEbS6qV/ifDxoj9EAzTak7oLxMOgE/Tqtzf9w5wSVrcUlcG+hRsE3xPCZyB46KvluoVNeepRc0VdQx9AoA+h89nI9BbYWxC8Iwksaewy4KLr0Im2RpwaIxtnY4a5YYhgvNgdKAprvtP5/BZEwdCwWR08NGw76dVv9+q4EGP9Y67OS7s3ZhTjuj+72Jre5FiK0IH0Y/TfmIJaw9SonjPaMoA6hl2bx0/UQ8uS/htXRA3Ww5w2gW11SxObonQRhwmzsRR4O+mqUI3eRmc5I1+84Hb0uk5sAmPBHnwrRQg2Z0ddF5wlj twartzack@64Z1LQ1-0614"
+  ],
+  "groups": [ "twartzack", "users", "data" ],
+  "uid": 45065,
+  "gid": 45065,
+  "shell": "/bin/bash",
+  "home": "/home/twartzack",
+  "comment": "Thomas Wartzack"
+}

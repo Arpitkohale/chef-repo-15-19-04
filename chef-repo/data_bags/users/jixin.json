@@ -1,0 +1,16 @@
+{
+  "id": "jixin",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIEAyzgsP7LviZRPM3wpRHCglkjogucsani4hojpRw+Fk17a/rJS72EhaNJrmJSdoAqUXH+QIM5SeoqTybkHdjwFHxFq4blmVD0Ad74lfsEgj7Zk+JE5pne2fTNhHzdmi1EY2AOk6wj4Pn9Y912jhQ/g8tkkAKmRjaf4Hrm0q5/sQ2s= jixin@videologygroup.com"
+  ],
+  "groups": [
+    "jixin",
+    "users",
+    "rnd"
+  ],
+  "uid": 45047,
+  "gid": 45047,
+  "shell": "/bin/bash",
+  "home": "/home/jixin",
+  "comment": "Jixin Li"
+}

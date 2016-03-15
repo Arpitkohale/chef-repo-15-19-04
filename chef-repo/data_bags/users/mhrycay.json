@@ -1,0 +1,12 @@
+{
+  "id": "mhrycay",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAqwVugSEm5Hn4OK10xhKFrRwrWLpyDLtGX22qShwKXGPMADBxrDDVORKNSpkDnzknP8ABzAUsxvyrlL4ZJYUYzevpIkChXPePAqqrAkwgdjv10mrFpj73+7YbUD9v0qXD/KX2TFbNVrrvb0bDOoUxVdXR/PHzG+WRzgHXHK3nvFSqToj8NSxEygyc2+GdOuzkAmFTea5Wkx6XzeNBOMCsnvZDPhRqLEZAORl4ZQ1Jmbv+mwBICD8pXK6bibrhx+wT4ADPHpfSdoNgQvC0u5E+V5Tsz6N1Y+lFKsxgWFXK52AK+vAcOFjEuysyRWoPjoW9jMQIPylAJBLlk88p5GnNtw=="
+  ],
+  "groups": [ "mhrycay", "users", "optdev" ],
+  "uid": 45058,
+  "gid": 45058,
+  "shell": "/bin/bash",
+  "home": "/home/mhrycay",
+  "comment": "Mark Hrycay"
+}

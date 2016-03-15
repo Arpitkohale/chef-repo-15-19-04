@@ -1,0 +1,10 @@
+#!/bin/bash
+PATH=/bin:/usr/bin
+SEYREN_JAR="<%= node['vlg-graphite']['seyren']['location'] %>"
+SEYREN_LOG_PATH="<%= node['vlg-graphite']['seyren']['log']['path'] %>"
+SEYREN_CONF="<%= node['vlg-graphite']['seyren']['conf'] %>"
+SEYREN_PORT="<%= node['vlg-graphite']['seyren']['port'] %>"
+SEYREND="java -jar $SEYREN_JAR -httpPort=$SEYREN_PORT >> $SEYREN_LOG_PATH/seyren.log 2>&1"
+
+source $SEYREN_CONF
+$SEYREND &

@@ -1,0 +1,91 @@
+@groovy.lang.Grapes([
+        @groovy.lang.Grab(group = "org.codehaus.groovy.modules.http-builder", module = "http-builder", version = "0.6"),
+        @groovy.lang.Grab(group = "io.dropwizard.metrics", module = "metrics-graphite", version = "3.1.2"),
+        @groovy.lang.Grab(group = "com.codahale.metrics", module = "metrics-core", version = "3.0.1")
+])
+
+import com.codahale.metrics.Gauge
+import com.codahale.metrics.MetricRegistry
+import com.codahale.metrics.MetricFilter
+import com.codahale.metrics.graphite.Graphite
+import com.codahale.metrics.graphite.GraphiteReporter
+import groovyx.net.http.RESTClient
+
+import java.util.concurrent.TimeUnit
+
+class ExportClusterMetrics {
+    private static final METRIC_SUPERVISORS = 'supervisors'
+    private static final METRIC_EXECUTORS = 'executors'
+
+    private static RESTClient stormHttpClient
+    private static MetricRegistry metricsRegistry = new MetricRegistry()
+
+    public static void main(String[] args) {
+        if (args.length < 6) {
+            println 'Usage: groovy ExportClusterMetrics.groovy <storm_host> <storm_port> <graphite_host> <graphite_port> <delay> <prefix>'
+            return
+        }
+
+        initStormHttpClient(args[0], args[1])
+        initMetricsRegistry()
+
+        sendMetrics(args[2], args[3], args[5], args[4] as int)
+    }
+
+    private static def initMetricsRegistry() {
+        println "Registering metrics"
+        metricsRegistry.register(METRIC_SUPERVISORS, metric('supervisors'))
+        metricsRegistry.register(METRIC_EXECUTORS, metric('executorsTotal'))
+    }
+
+    private static void sendMetrics(String graphiteHost, String graphitePort, String prefix, int delay) {
+        def graphite = new Graphite(graphiteHost, graphitePort as int)
+        def graphiteReporter = GraphiteReporter.forRegistry(metricsRegistry)
+                .filter(MetricFilter.ALL)
+                .prefixedWith(prefix)
+                .build(graphite)
+
+        println "Started Graphite reporter with delay $delay seconds"
+//        graphiteReporter.start(delay, TimeUnit.SECONDS)
+
+        def metricsCounter = 0
+        while (true) {
+            try {
+                graphiteReporter.report(metricsRegistry.getGauges(MetricFilter.ALL),
+                                metricsRegistry.getCounters(MetricFilter.ALL),
+                                metricsRegistry.getHistograms(MetricFilter.ALL),
+                                metricsRegistry.getMeters(MetricFilter.ALL),
+                                metricsRegistry.getTimers(MetricFilter.ALL))
+                metricsCounter++
+                if (metricsCounter == 100) {
+                    println "Reported next 100 Storm cluster metrics"
+                    metricsCounter = 0
+                }
+                Thread.sleep(delay * 1000)
+            } catch(InterruptedException e) {
+                println "Exporting Storm cluster metrics to Graphite was interrupted accidentally"
+                break;
+            }
+        }
+    }
+
+    private static Gauge metric(name) {
+        new Gauge() {
+            @Override
+            Object getValue() {
+                return getMetric(name)
+            }
+        }
+    }
+
+    private static def getMetric(metricName) {
+//        println "Obtaining storm metric $metricName"
+        def data = stormHttpClient.get(path: 'cluster/summary').data
+        data && data[metricName] ? data[metricName] : null
+    }
+
+    private static void initStormHttpClient(String stormHost, String stormPort) {
+        println "Init Storm http client"
+        stormHttpClient = new RESTClient("http://$stormHost:$stormPort/api/v1/", 'application/json')
+    }
+}

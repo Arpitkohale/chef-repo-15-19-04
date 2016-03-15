@@ -1,0 +1,16 @@
+*****************************************************************************
+    Welcome to a Videology Group system!
+    Unauthorized use is prohibited and all activity is monitored.
+
+*****************************************************************************
+
+arch:    <%= @arch %>
+fqdn:    <%= @fqdn %>
+roles:   <%= @roles %>
+<% if node[:ec2][:instance_id] != nil %>
+id:      <%= node[:ec2][:instance_id] %>
+<% end %>
+<% if node[:ec2][:instance_type] != nil %>
+type:    <%= node[:ec2][:instance_type] %>
+<% end %>
+env:     <%= @environment %>

@@ -1,0 +1,12 @@
+{
+  "id": "asinitsa",
+  "ssh_keys": [
+	"ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAtZSiKkGDUPuX2t97mg+5IVIhZ2MThWqJYWw6mNwYomRx93vQEAsADaDazBxNdjjuG5CmgAefCzmayigYqKf0ZI8FXSXEWHBmN5I3iMvooOERM40BQfrYLfgwwKK9wUyJeLG8iyfHZs1ApXyWWN82IEiezZg3D+Htrw5fXGZmPJJrngnbJrIHKWnLr9QSSwiM1z60Gr59xVaxgX6yuxQdAwzoAC1J6DH05imcAeiz4GUZn9djtxxx5x27rtQPejKlbSHmWU8htD9ZjUsOHsusRnVR7nlKy2rp8KojETFsNGmnNi4dz4MjKA8GplOwdSl8DgFQZ0ynRJvhFx6UJO8k2w== asinitsa@videologygroup.com"
+  ],
+  "groups": [ "asinitsa", "users", "wheel", "gio" ],
+  "uid": 45007,
+  "gid": 45007,
+  "shell": "/bin/bash",
+  "home": "/home/asinitsa",
+  "comment": "Artem Sinitsa"
+}

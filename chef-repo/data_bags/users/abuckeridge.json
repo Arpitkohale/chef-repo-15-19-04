@@ -1,0 +1,16 @@
+{
+  "id": "abuckeridge",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCTwbqPNui64xQq3wo+AFqz8ipbozDhoUlUziaPAATqk8G0JSSpvns75asbYoqIsSG6/vnDEchayfbIJ4ZeoRNJxVk1vVc8X9+A+U7iQpree9JxjrF8HlLzpS7w73bRm69wC4HdbkyX/m/0/rQJfP3qAfvAYwjfWKuht68gEtWDYt0oiuS8nFHo9ZhiDcM+CITufGrzuArGIuufclUmE8+x/WGk8ZmVVIN3O+Hn+tDYMdzXdXBV/PFuu0yJTNWnqjGmEVxLb0xrRy2p1ZEYxqlYeKzaV7umMiHN2FFvlOIurJMbqOt2CajnVec8JH68Pd2bjxf4Q03gpapfyUyrAdHP abuckeridge@deveire-macbook-1"
+  ],
+  "groups": [
+    "abuckeridge",
+    "users",
+    "lucy"
+  ],
+  "uid": 45043,
+  "gid": 45043,
+  "shell": "/bin/bash",
+  "home": "/home/abuckeridge",
+  "comment": "Alan Buckeridge"
+}

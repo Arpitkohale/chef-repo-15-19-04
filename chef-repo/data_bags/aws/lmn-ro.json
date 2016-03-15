@@ -1,0 +1,15 @@
+{
+  "id": "lmn-ro",
+  "aws_access_key_id": {
+    "encrypted_data": "5w+DbSD2uvZhopEEyZkedB6ScRhCbPwW6Swd/CwFiXDVqtV+AmvvAE3b6bKI\nZofj\n",
+    "iv": "uuvcGcFZl8Z7BI2Yalixvg==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "aws_secret_access_key": {
+    "encrypted_data": "pcEwXPVLM0qrWOx6Io+ASwRjeJykZqEBedlA4sImbdpzQ6L5is8Y2vc9X/V5\nJx63/GBss3mR8Z71y/OBrZPNdg==\n",
+    "iv": "sOy+a2Mk1EDZ+QUNfiUO1w==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

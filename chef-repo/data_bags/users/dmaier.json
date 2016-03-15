@@ -1,0 +1,12 @@
+{
+  "id": "dmaier",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQChYpziHWuhDM3yCO0eiAAfQprzy3AEem8yO6fD0GStx8RTkH7gwDbgb4wfLIA0evWgoceO4Jva9JbBUQhQMXBdLQ7h/XyRRNMpf1C11HaceVXtT1EyYXp6DrwQHn8xj0oLoA/IbYKoPtt2IzES/S7Jaa+5kSJMUtvcxK5WXM7hFa2j6KGB74c/aSqFRvrd+/B1JQFReZHGn/KhvN9YVdPgxMJGCaWDzMjD4FsXGq7wOq8FEHajFgXzc2NlpzZzI16fNtMqso8DHE9Y0N55/CUUsQgp9H/3i0Zw+8yyU0Yn+MoZfg80rYr7ER7gG5D7dG3UHWqVDmyx8ypOXXOMEaGD danamaier@lmniadw1001.entrieva.com"
+  ],
+  "groups": [ "dmaier", "users", "eliza" ],
+  "uid": 45010,
+  "gid": 45010,
+  "shell": "/bin/bash",
+  "home": "/home/dmaier",
+  "comment": "Dana Maier"
+}

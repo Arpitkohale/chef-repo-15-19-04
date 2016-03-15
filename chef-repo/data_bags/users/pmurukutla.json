@@ -1,0 +1,12 @@
+{
+  "id": "pmurukutla",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAtjH+Obh2M1G2Vz/hccGxrUrIoRR5wV/wsPrDS6nJKCMgOBIZeBWEVoRjvH7ZgZnnJxE5ChSRlZpl0UMy+/kCRkdI4FiMDiNO9KdFF+vR9maU5TXzo5+GEPkcwVOeZna4/foc2KVbKbvoA14shKYcshGbUsDpSvyGBXoVnVRWai5YjV1GIqiG6mhHOR4ZUIIo+7JFm9Qjj523XN978ZRtz7lEkMtkDGBvVjruXs8q5q/cOm+DWkcbsIOvY0sPHKH5gHNHA1WE6b2Se+j9H2u7vPaGMIiBSPD7rQIKfRrk9YatdiLhe86/vhYQ3fmVmwwruLYDA1RjTAPnHBassUbTpw== pmurukutla@HMW4CT1-0715"
+  ],
+  "groups": [ "pmurukutla", "users", "optdev" ],
+  "uid": 45035,
+  "gid": 45035,
+  "shell": "/bin/bash",
+  "home": "/home/pmurukutla",
+  "comment": "Phani Murukutla"
+}

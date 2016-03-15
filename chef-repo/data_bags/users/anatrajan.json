@@ -1,0 +1,11 @@
+{
+  "id": "anatrajan",
+  "ssh_keys": [
+  ],
+  "groups": [ "anatrajan", "users", "lucy", "eliza" ],
+  "uid": 45019,
+  "gid": 45019,
+  "shell": "/bin/bash",
+  "home": "/home/anatrajan",
+  "comment": "Anand Natrajan"
+}

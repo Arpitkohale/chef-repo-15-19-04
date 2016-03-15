@@ -1,0 +1,12 @@
+{
+  "id": "jjulian",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDRzUQ2Otp/qvx3arw6oHmKks1TenstwzPgXV1LitU2eEuLAhQ7izlOId2dpifg9oCLhYkxXgw08KFBRCGV9wUTRojNvCy1qU3T5jkeFKOqDS+K7eSqbwA4IvYjnyN0o03llINu/KIHualftwfPwlJYPpNXprHWkGaIlpBdmGs4Sa7niD55qMfJjEECrWkRLmI1srxh185o/HSNw9e0e0LMKgLYSKzSehJrkDq2OcZhGVrpxj9iXBF+5ljcVwHoXdtQL5fkTY627YkWb5/5sFkktLwxxoSKIuWlwPuNBm2HedGKWRSuXwMI37boHo9bOCz4phuwK5WOeXi5OVxBrnaL jjulian@c02np142g3qn.tidaltv.local"
+  ],
+  "groups": [ "jjulian", "users", "wheel", "gio" ],
+  "uid": 45017,
+  "gid": 45017,
+  "shell": "/bin/bash",
+  "home": "/home/jjulian",
+  "comment": "Joseph Julian"
+}

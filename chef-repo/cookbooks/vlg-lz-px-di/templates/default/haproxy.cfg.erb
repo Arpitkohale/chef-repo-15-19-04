@@ -1,0 +1,55 @@
+# Disted by Chef
+global
+        maxconn 16384
+        nbproc 1
+        chroot /usr/share/haproxy
+        user haproxy
+        group haproxy
+        daemon
+
+defaults
+        mode http
+        retries 3
+        timeout client 3s
+        timeout connect 3s
+        timeout server 3s
+        timeout http-keep-alive 5s
+        timeout http-request 3s
+        timeout queue 3s
+        option redispatch
+        default-server inter 3s rise 3 fall 3
+
+listen  stats :8162
+        option httpclose
+        stats uri /lbstats
+
+listen  http :80
+        mode http
+        balance roundrobin
+        option httpclose
+        option forwardfor header x-forwarded-for
+        option httpchk GET /server-info/healthcheck
+        reqrep ^([^\ :]*)\ /ingest/v1/proto/(.*)    \1\ /ingest/v1/server/\2
+        <% node['vlg-lz-px-di']['di_backend'].each do |backend| %>
+        server <%= backend %> <%= backend %>:8080 check port 8080
+        <% end %>
+
+listen  https :443
+        mode tcp
+        balance roundrobin
+        option ssl-hello-chk
+        option httpchk GET /server-info/healthcheck
+        <% node['vlg-lz-px-di']['di_backend'].each do |backend| %>
+        server <%= backend %> <%= backend %>:8444 check port 8080
+        <% end %>
+
+listen  server-to-server :9030
+        mode http
+        balance roundrobin
+        option httpclose
+        option forwardfor header x-forwarded-for
+        option httpchk GET /server-info/healthcheck
+        reqrep ^([^\ :]*)\ /ingest/v1/proto/(.*)    \1\ /ingest/v1/server/\2
+        <% node['vlg-lz-px-di']['di_backend'].each do |backend| %>
+        server <%= backend %> <%= backend %>:9030 check port 9030
+        <% end %>

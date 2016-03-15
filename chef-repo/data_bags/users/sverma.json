@@ -1,0 +1,12 @@
+{
+  "id": "sverma",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEArU8qPkidVOr+viEyHRcATsVd0+OXDraLalZcqwiZXPFHovdf204uGc5gya9JIW08gyK3pAkPIEAasdAtyKOGrZAdqcyoL4kTaCkKAISXvJdcyDb3Z7PILFqCtVzO5GWgsymBLSxfmVZod4KJB48bZNiP6pLotvU6mB1OOy70ryhDx5e7yBkaXTX7XuEMaJFPwmMk89ratkd+IZ4FvPpqwJbEbng1capve4Vyhc6ZqZWh22ymnIButc23CoJ2X8rO6D05sdZ+FqfySOVuYzDdN5xQBKiLN8wnPXp+CLMn2m6IrWPFDf8D9KEgx/+/JlsPBTc98VdZ3OQj1BwszV6XwQ== sverma@lucidmedia.com"
+  ],
+  "groups": [ "sverma", "users", "lucy" ],
+  "uid": 45016,
+  "gid": 45016,
+  "shell": "/bin/bash",
+  "home": "/home/sverma",
+  "comment": "Sahil Verma"
+}

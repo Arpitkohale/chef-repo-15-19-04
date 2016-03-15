@@ -1,0 +1,11 @@
+# Disted by Chef
+
+cluster local_carbon
+  any_of
+    127.0.0.1:2203 127.0.0.1:2207
+  ;
+
+match *
+  send to local_carbon
+  stop
+  ;

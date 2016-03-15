@@ -1,0 +1,12 @@
+name             'vlg-lu-rh'
+maintainer       'Videology Group, Inc.'
+maintainer_email 'gio@videologygroup.com'
+license          'All rights reserved'
+description      'Installs/Configures vlg-lu-rh'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          '0.1.54'
+depends          'vlg-base'
+depends		 'vlg-clicksense'
+depends          'vlg-diamond'
+depends		 'vlg-tomcat'
+depends		 'vlg-s3cmd'

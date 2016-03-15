@@ -1,0 +1,7 @@
+command[check_storm_nimbus_procs]=/usr/lib64/nagios/plugins/check_procs -c 1:1 -a backtype.storm.daemon.nimbus
+command[check_storm_nimbus_tcp_port]=/usr/lib64/nagios/plugins/check_tcp -c 20 -H localhost -p 6627
+command[check_storm_ui_procs]=/usr/lib64/nagios/plugins/check_procs -c 1:1 -a backtype.storm.ui.core
+command[check_storm_ui_tcp_port]=/usr/lib64/nagios/plugins/check_tcp -c 20 -H localhost -p 8081
+command[check_storm_worker_procs]=/usr/lib64/nagios/plugins/check_procs -c 1:1 -a backtype.storm.daemon.worker
+command[check_storm_worker_tcp_port]=/usr/lib64/nagios/plugins/check_tcp -c 20 -H localhost -p 6700
+command[check_storm_supervisor_procs]=/usr/lib64/nagios/plugins/check_procs -c 1:1 -a backtype.storm.daemon.supervisor

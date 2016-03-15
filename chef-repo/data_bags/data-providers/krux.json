@@ -1,0 +1,14 @@
+{
+  "id": "krux",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDcURXxZ5Zt0MKxcZLgHfzL7nR9ETF5TzvSF41js4GnEmkYrOqz6xq4ZLLH7OwYM3EkdLBMH4lJ4m/NiAZTHpDGN4BNMe349MHD5qDejys9cU0xaj2x7pOt0OklRGwF2d8FwtDMRTYAcPVLDx40MgcGy5V26lrwf/8nnNmN67AU/PESWSg7L8VUIn1WQaObXN49YQCV/4GhXCARpCKM1j0PyOU0x+NwtdUOk90hS6r5fVCi+Q2e7bWzIoB6ML7REg/SpJLl8nHCnuYfWQ2RtgujQCWqRckzWZxqtQZQibt3H2oj5puGGsBZLyJxRVqR9vxyqe5JhhR8XzHpXaatZjct"
+  ],
+  "groups": [ "krux", "sftpusers" ],
+  "uid": 66021,
+  "gid": 66021,
+  "shell": "/sbin/nologin",
+  "comment": "krux",
+  "home": "/data/provider/krux",
+  "password": "$1$4W5e/b5L$KhvfQL5arEqMpNPvtXy0p.",
+  "action"  : "create"
+}

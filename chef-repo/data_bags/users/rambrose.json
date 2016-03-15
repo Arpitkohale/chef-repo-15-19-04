@@ -1,0 +1,16 @@
+{
+  "id": "rambrose",
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDsgdGRBW6FsGOxjJRWAtpRGTetmCN2djTtQKygt+twdn+r5lDYClLa+6rx2gZnzFm3x+1W4vCKA0dzckY4cfSayUC1b7r0xeGGHcp/Eh8lw75uaP3GhAJJBOt/Z0xykFTX2I1ZVqjdJ+gyM6PUMcSG+gAbbcgww5hPs3LSHmP+xGxYU3NjcMBTSCxt2QTReRsSqPvXtGubqkMEpdDYOPhaDYTenzag4BqjPx6T6SGvb6Qc7jDhVihRMpNPhXwvtpglrktWZI2bxCN1aG761UMS0bMLNQFUE2YAxd5xnEQcZGqnE24DV6QGSioVahdCVz5+9kLVcwWgiUivYzxq5ZJL rambrose@videologygroup.com"
+  ],
+  "groups": [
+    "rambrose",
+    "users",
+    "optdev"
+  ],
+  "uid": 45079,
+  "gid": 45079,
+  "shell": "/bin/bash",
+  "home": "/home/rambrose",
+  "comment": "Ryan Ambrose"
+}
